@@ -1,0 +1,97 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "4600"
+ ],
+ "decode_tps": 91.02992112890482,
+ "prefill_tps_mean": 123.38369064340343,
+ "peak_vram_mib": 7507,
+ "tokens": 768,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 1416 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 127168, misses = 42207, hit rate = 75.08%, uploaded = 0.00 MiB",
+  "llama_moe_cache: uses on GPU 80.26% of 308384",
+  "llama_moe_cache: swaps = 4251"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 91.7190018661567,
+   "prefill_tps": 77.49655140346255,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   To solve this, I need a table containing sales/order data.\n    *   Common columns: `order_id`, `customer_id`, `order_date`, `order_amount` (or `quantity` * `unit_price`).\n\n    *   *Step 1: Aggregate revenue by customer and month.*\n"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 108.08584228658579,
+   "prefill_tps": 153.5045079157158,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ is preferred, so C++11/14/17/20 features like `std::thread`, `std::mutex`, `std::condition_variable`, `std::future`, `std::packaged_task`, and `std::function`"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 81.5303568975324,
+   "prefill_tps": 111.1339781848117,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nLikely a friend/best friend (the \"roommate\" implies a deep, shared history).\nWarm, nostalgic, celebratory, slightly humorous (but not embarrassing), and heartfelt.\n\n    *   *Introduction:* Who am I? How do I know the [Groom/Bride]?\n    *   *The College Years:* A brief, sweet, or funny anecdote about living together (the \"roommate\" aspect).\n    *   *The Transition:* Seeing them change/grow/meet their partner.\n    *   *The Partner:* Why the"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 99.09403087208209,
+   "prefill_tps": 128.11479085260393,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    A logical flow is essential for a \"how-to\" guide.\n    *   Phase 1: Research (The Foundation)\n    *   Phase 2: Self-Assessment & Portfolio (The Proof)\n    *   Phase 3: Mastering the Content"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 86.21210485835758,
+   "prefill_tps": 136.85598411135405,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 84.7347934405929,
+   "prefill_tps": 133.1963313924725,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does not imply causation.\" Just because two things"
+  }
+ ]
+}

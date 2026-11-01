@@ -1,0 +1,79 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 29.80093678188835,
+ "prefill_tps_mean": 62.725191322354796,
+ "peak_vram_mib": 2571,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 29.88560871454937,
+   "prefill_tps": 42.93989416747418,
+   "n": 128,
+   "n_prompt": 30,
+   "text": ""
+  },
+  {
+   "id": "code7",
+   "decode_tps": 29.16430041617686,
+   "prefill_tps": 63.30636482191919,
+   "n": 128,
+   "n_prompt": 30,
+   "text": ""
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 30.3974429766708,
+   "prefill_tps": 64.22485359112079,
+   "n": 128,
+   "n_prompt": 27,
+   "text": ""
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 29.196308391179958,
+   "prefill_tps": 66.6446104741526,
+   "n": 128,
+   "n_prompt": 28,
+   "text": ""
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 30.20798075822983,
+   "prefill_tps": 73.36547098842973,
+   "n": 128,
+   "n_prompt": 41,
+   "text": ""
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 29.99913782005478,
+   "prefill_tps": 65.86995389103228,
+   "n": 128,
+   "n_prompt": 28,
+   "text": ""
+  }
+ ]
+}

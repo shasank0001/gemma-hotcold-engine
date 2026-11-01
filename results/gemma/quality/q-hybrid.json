@@ -1,0 +1,519 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 43.63362506948758,
+ "prefill_tps_mean": 78.80327808649898,
+ "peak_vram_mib": 7635,
+ "tokens": 7095,
+ "cache_stats": [
+  "llama_moe_cache: hybrid: 1542 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 895192, misses = 869931, hit rate = 50.72%, uploaded = 0.00 MiB",
+  "llama_moe_cache: large batches: 75902 experts copied from the cache, 121080.00 MiB"
+ ],
+ "rows": [
+  {
+   "id": "q0",
+   "decode_tps": 41.061915154737235,
+   "prefill_tps": 72.27269143502905,
+   "n": 153,
+   "n_prompt": 33,
+   "text": "To calculate 53 * 31, you can use the distributive property:\n\n53 * 31 = 53 * (30 + 1)\n53 * 31 = (53 * 30) + (53 * 1)\n\nFirst, calculate 53 * 30:\n53 * 3 = 159\nSo, 53 * 30 = 1590\n\nNext, calculate 53 * 1:\n53 * 1 = 53\n\nFinally, add the two results together:\n1590 + 53 = 1643\n\nANSWER: 1643"
+  },
+  {
+   "id": "q1",
+   "decode_tps": 41.73816658433777,
+   "prefill_tps": 66.3766517574495,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 504 + 766 - 16, follow these steps:\n\n1.  First, add 504 and 766:\n    504 + 766 = 1,270\n\n2.  Next, subtract 16 from the result:\n    1,270 - 16 = 1,254\n\nANSWER: 1254"
+  },
+  {
+   "id": "q2",
+   "decode_tps": 47.01847549507689,
+   "prefill_tps": 73.15526799213174,
+   "n": 69,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 22 apples = 88 apples.\n\nNext, subtract the number of apples eaten from the total:\n88 - 4 = 84 apples.\n\nANSWER: 84"
+  },
+  {
+   "id": "q3",
+   "decode_tps": 45.23025430172026,
+   "prefill_tps": 73.30960274340823,
+   "n": 190,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost of one pen:**\n    Total cost of 3 pens = 198 cents\n    Cost of 1 pen = 198 cents / 3\n    198 \u00f7 3 = 66 cents\n\n2.  **Find the cost of 6 pens:**\n    Since we know 1 pen costs 66 cents, we multiply this by 6:\n    Cost of 6 pens = 66 cents \u00d7 6\n    66 \u00d7 6 = 396 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 \u00d7 2), we can simply double the total cost:\n198 cents \u00d7 2 = 396 cents\n\nANSWER: 396"
+  },
+  {
+   "id": "q4",
+   "decode_tps": 41.97854840941347,
+   "prefill_tps": 98.4533867965058,
+   "n": 153,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 19, you can use the following steps:\n\n1.  **Method 1: Distributive Property**\n    86 * 19 = 86 * (20 - 1)\n    86 * 20 = 1720\n    86 * 1 = 86\n    1720 - 86 = 1634\n\n2.  **Method 2: Long Multiplication**\n    86 * 10 = 860\n    86 * 9 = 774\n    860 + 774 = 1634\n\nANSWER: 1634"
+  },
+  {
+   "id": "q5",
+   "decode_tps": 42.185390730463475,
+   "prefill_tps": 67.16946166259919,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 619 + 319 - 14, follow these steps:\n\n1.  First, add 619 and 319:\n    619 + 319 = 938\n\n2.  Next, subtract 14 from the result:\n    938 - 14 = 924\n\nANSWER: 924"
+  },
+  {
+   "id": "q6",
+   "decode_tps": 46.470367511248256,
+   "prefill_tps": 73.23253282038013,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 18 apples = 72 apples.\n\nNext, subtract the number of apples eaten from the total:\n72 - 4 = 68.\n\nANSWER: 68"
+  },
+  {
+   "id": "q7",
+   "decode_tps": 43.79853703517632,
+   "prefill_tps": 75.24331397726344,
+   "n": 188,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 8 pens by the number of pens.\n    $224 \\text{ cents} \\div 8 \\text{ pens} = 28 \\text{ cents per pen}$\n\n2.  **Find the cost of 11 pens:**\n    Multiply the cost of one pen by 11.\n    $28 \\text{ cents} \\times 11 = 308 \\text{ cents}$\n\n**Calculation check:**\n$28 \\times 10 = 280$\n$28 \\times 1 = 28$\n$280 + 28 = 308$\n\nANSWER: 308"
+  },
+  {
+   "id": "q8",
+   "decode_tps": 42.48808527868572,
+   "prefill_tps": 102.48479032543578,
+   "n": 101,
+   "n_prompt": 33,
+   "text": "To calculate 42 * 23, you can use the long multiplication method:\n\n1.  Multiply 42 by 3:\n    42 * 3 = 126\n\n2.  Multiply 42 by 20:\n    42 * 20 = 840\n\n3.  Add the two results together:\n    126 + 840 = 966\n\nANSWER: 966"
+  },
+  {
+   "id": "q9",
+   "decode_tps": 42.1276054131284,
+   "prefill_tps": 68.59639464385279,
+   "n": 95,
+   "n_prompt": 39,
+   "text": "To find the result of 664 + 534 - 17, follow these steps:\n\n1.  First, add 664 and 534:\n    664 + 534 = 1198\n\n2.  Next, subtract 17 from the result:\n    1198 - 17 = 1181\n\nANSWER: 1181"
+  },
+  {
+   "id": "q10",
+   "decode_tps": 47.835098488834745,
+   "prefill_tps": 71.60435790348667,
+   "n": 80,
+   "n_prompt": 46,
+   "text": "To find the number of apples remaining, follow these steps:\n\n1.  **Calculate the total number of apples initially in the box:**\n    12 rows \u00d7 8 apples per row = 96 apples.\n\n2.  **Subtract the number of apples eaten:**\n    96 apples - 12 apples = 84 apples.\n\nANSWER: 84"
+  },
+  {
+   "id": "q11",
+   "decode_tps": 44.71028046604763,
+   "prefill_tps": 73.85306194794836,
+   "n": 146,
+   "n_prompt": 45,
+   "text": "To find the cost of 8 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 5 pens = 135 cents\n    Cost per pen = 135 cents / 5\n    $135 \\div 5 = 27$ cents\n\n2.  **Find the cost for 8 pens:**\n    Cost for 8 pens = Cost per pen $\\times$ 8\n    Cost for 8 pens = 27 cents $\\times$ 8\n    $27 \\times 8 = 216$ cents\n\nANSWER: 216"
+  },
+  {
+   "id": "q12",
+   "decode_tps": 41.28296673090766,
+   "prefill_tps": 102.17319285035343,
+   "n": 200,
+   "n_prompt": 33,
+   "text": "To calculate $85 \\times 86$, you can use the following steps:\n\n1.  **Break it down:** $85 \\times 86 = 85 \\times (80 + 6)$\n2.  **Multiply 85 by 80:** $85 \\times 8 = 680$, so $85 \\times 80 = 6,800$\n3.  **Multiply 85 by 6:** $80 \\times 6 = 480$ and $5 \\times 6 = 30$. So, $480 + 30 = 510$\n4.  **Add the results together:** $6,800 + 510 = 7,310$\n\nAlternatively, using the formula $(x-1)(x+1) = x^2 - 1$ is not"
+  },
+  {
+   "id": "q13",
+   "decode_tps": 42.379844899185414,
+   "prefill_tps": 68.78852819006799,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 506 + 150 - 38, follow these steps:\n\n1.  First, add 506 and 150:\n    506 + 150 = 656\n\n2.  Next, subtract 38 from the result:\n    656 - 38 = 618\n\nANSWER: 618"
+  },
+  {
+   "id": "q14",
+   "decode_tps": 46.35269976802895,
+   "prefill_tps": 73.18251230685915,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n3 rows \u00d7 22 apples = 66 apples.\n\nNext, subtract the number of apples eaten from the total:\n66 - 3 = 63.\n\nANSWER: 63"
+  },
+  {
+   "id": "q15",
+   "decode_tps": 43.950540674799974,
+   "prefill_tps": 73.5057505998886,
+   "n": 186,
+   "n_prompt": 45,
+   "text": "To find the cost of 7 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost of one pen:**\n    Divide the total cost of 4 pens by the number of pens.\n    $228 \\text{ cents} \\div 4 = 57 \\text{ cents per pen}$\n\n2.  **Find the cost of 7 pens:**\n    Multiply the cost of one pen by 7.\n    $57 \\text{ cents} \\times 7 = ?$\n\n    Calculation:\n    $50 \\times 7 = 350$\n    $7 \\times 7 = 49$\n    $350 + 49 = 399$\n\nThe cost of 7 pens is 399 cents.\n\nANSWER: 399"
+  },
+  {
+   "id": "q16",
+   "decode_tps": 42.23358011690413,
+   "prefill_tps": 103.31548793087254,
+   "n": 108,
+   "n_prompt": 33,
+   "text": "To calculate 65 * 30:\n\n1. Multiply 65 by 3:\n   60 * 3 = 180\n   5 * 3 = 15\n   180 + 15 = 195\n\n2. Since it is 30 (which is 3 * 10), add a zero to the end:\n   195 * 10 = 1,950\n\nANSWER: 1950"
+  },
+  {
+   "id": "q17",
+   "decode_tps": 42.390244591711294,
+   "prefill_tps": 69.05832772603321,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 653 + 220 - 83, follow these steps:\n\n1.  First, add 653 and 220:\n    653 + 220 = 873\n\n2.  Next, subtract 83 from the result:\n    873 - 83 = 790\n\nANSWER: 790"
+  },
+  {
+   "id": "q18",
+   "decode_tps": 45.545352564702476,
+   "prefill_tps": 72.53338147400726,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 22 apples per row = 154 apples.\n\nNext, subtract the number of apples eaten from the total:\n154 - 7 = 147.\n\nANSWER: 147"
+  },
+  {
+   "id": "q19",
+   "decode_tps": 45.49764030301955,
+   "prefill_tps": 73.23157940988365,
+   "n": 174,
+   "n_prompt": 45,
+   "text": "To find the cost of 7 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    The total cost of 4 pens is 132 cents.\n    Cost per pen = Total cost \u00f7 Number of pens\n    Cost per pen = $132 \\div 4$\n    $132 \\div 4 = 33$ cents.\n\n2.  **Find the cost of 7 pens:**\n    Now, multiply the cost of one pen by 7.\n    Cost of 7 pens = Cost per pen \u00d7 7\n    Cost of 7 pens = $33 \\times 7$\n    $33 \\times 7 = 231$ cents.\n\nANSWER: 231"
+  },
+  {
+   "id": "q20",
+   "decode_tps": 42.83075566797253,
+   "prefill_tps": 100.76120510401304,
+   "n": 200,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 85, you can use the distributive property or long multiplication.\n\n**Method 1: Distributive Property**\n86 * 85 = 86 * (80 + 5)\n86 * 80 = 6,880\n86 * 5 = 430\n6,880 + 430 = 7,310\n\n**Method 2: Difference of Squares (Shortcut)**\nNotice that 86 and 85 are close to 85.5, but it's easier to use the identity $(x+1)(x) = x^2 + x$.\nLet $x = 85$.\n$86 \\times 85 = (85 + 1) \\times 85$\n$= 85^2 + 85$\n$85^2 = 7,"
+  },
+  {
+   "id": "q21",
+   "decode_tps": 42.27087972305529,
+   "prefill_tps": 69.23535760949838,
+   "n": 97,
+   "n_prompt": 39,
+   "text": "To find the result of 754 + 292 - 57, follow these steps:\n\n1.  **First, add 754 and 292:**\n    754 + 292 = 1,046\n\n2.  **Next, subtract 57 from the result:**\n    1,046 - 57 = 989\n\nANSWER: 989"
+  },
+  {
+   "id": "q22",
+   "decode_tps": 46.69579202243596,
+   "prefill_tps": 73.37427074127581,
+   "n": 69,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 22 apples = 88 apples.\n\nNext, subtract the number of apples eaten from the total:\n88 - 4 = 84 apples.\n\nANSWER: 84"
+  },
+  {
+   "id": "q23",
+   "decode_tps": 44.58208751166564,
+   "prefill_tps": 74.68247219350908,
+   "n": 181,
+   "n_prompt": 44,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 81 cents\n    Cost per pen = 81 cents / 3 = 27 cents\n\n2.  **Find the cost for 6 pens:**\n    Cost for 6 pens = 6 * 27 cents\n    6 * 20 = 120\n    6 * 7 = 42\n    120 + 42 = 162 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 * 2), the cost will be twice the original amount:\n81 cents * 2 = 162 cents.\n\nANSWER: 162"
+  },
+  {
+   "id": "q24",
+   "decode_tps": 41.547737166000864,
+   "prefill_tps": 99.68734423852462,
+   "n": 194,
+   "n_prompt": 33,
+   "text": "To calculate 91 * 38, you can use the long multiplication method:\n\n1.  **Multiply 91 by 8 (the ones digit of 38):**\n    91 * 8 = 728\n\n2.  **Multiply 91 by 30 (the tens digit of 38):**\n    91 * 30 = 2,730\n\n3.  **Add the two results together:**\n    728 + 2,730 = 3,458\n\nAlternatively, using the distributive property:\n91 * 38 = (90 + 1) * 38\n= (90 * 38) + (1 * 38)\n= 3,420 + 38\n= 3,458\n\nANSWER: 3458"
+  },
+  {
+   "id": "q25",
+   "decode_tps": 41.96462255153382,
+   "prefill_tps": 69.24310187790844,
+   "n": 100,
+   "n_prompt": 39,
+   "text": "To find the result of 608 + 796 - 78, follow these steps:\n\n1.  **First, add 608 and 796:**\n    608 + 796 = 1,404\n\n2.  **Next, subtract 78 from the result:**\n    1,404 - 78 = 1,326\n\nANSWER: 1326"
+  },
+  {
+   "id": "q26",
+   "decode_tps": 45.95148993110952,
+   "prefill_tps": 72.23983625637116,
+   "n": 76,
+   "n_prompt": 45,
+   "text": "To find the total number of apples initially in the box, multiply the number of rows by the number of apples in each row:\n9 rows \u00d7 29 apples = 261 apples.\n\nNext, subtract the number of apples eaten from the total:\n261 - 9 = 252 apples.\n\nANSWER: 252"
+  },
+  {
+   "id": "q27",
+   "decode_tps": 45.270547254944155,
+   "prefill_tps": 74.5247025087283,
+   "n": 200,
+   "n_prompt": 46,
+   "text": "To find the cost of 10 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 7 pens by the number of pens.\n    Cost per pen = $553 \\text{ cents} \\div 7$\n\n    Calculation:\n    $55 \\div 7 = 7$ with a remainder of $6$\n    $63 \\div 7 = 9$\n    So, $553 \\div 7 = 79$ cents per pen.\n\n2.  **Find the cost of 10 pens:**\n    Multiply the cost per pen by 10.\n    Cost for 10 pens = $79 \\text{ cents} \\times 10$\n    Cost for 10 pens = $790$ cents.\n\nANSWER: 790"
+  },
+  {
+   "id": "q28",
+   "decode_tps": 42.47029910415983,
+   "prefill_tps": 102.78068470623411,
+   "n": 121,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 70, you can multiply 86 by 7 and then add a zero at the end.\n\n1.  Multiply 86 by 7:\n    *   80 * 7 = 560\n    *   6 * 7 = 42\n    *   560 + 42 = 602\n\n2.  Add the zero from the 70:\n    *   602 * 10 = 6020\n\nANSWER: 6020"
+  },
+  {
+   "id": "q29",
+   "decode_tps": 42.30794543215215,
+   "prefill_tps": 68.66378513517083,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 470 + 406 - 41, follow these steps:\n\n1.  First, add 470 and 406:\n    470 + 406 = 876\n\n2.  Next, subtract 41 from the result:\n    876 - 41 = 835\n\nANSWER: 835"
+  },
+  {
+   "id": "q30",
+   "decode_tps": 46.389098692480786,
+   "prefill_tps": 73.53325664087012,
+   "n": 72,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n5 rows \u00d7 27 apples = 135 apples.\n\nNext, subtract the number of apples eaten from the total:\n135 - 5 = 130.\n\nANSWER: 130"
+  },
+  {
+   "id": "q31",
+   "decode_tps": 45.8618109928304,
+   "prefill_tps": 73.52352507724055,
+   "n": 113,
+   "n_prompt": 45,
+   "text": "To find the cost of 8 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 5 pens = 150 cents\n    Cost per pen = 150 cents / 5 pens = 30 cents per pen\n\n2.  **Find the cost for 8 pens:**\n    Cost for 8 pens = 8 pens \u00d7 30 cents per pen = 240 cents\n\nANSWER: 240"
+  },
+  {
+   "id": "q32",
+   "decode_tps": 42.9556737875382,
+   "prefill_tps": 101.32334428444226,
+   "n": 86,
+   "n_prompt": 33,
+   "text": "To calculate 85 * 50:\n\n1. Multiply 85 by 5:\n   85 * 5 = 425\n\n2. Since you are multiplying by 50 (which is 5 * 10), add a zero to the result:\n   425 * 10 = 4,250\n\nANSWER: 4250"
+  },
+  {
+   "id": "q33",
+   "decode_tps": 41.70837504170838,
+   "prefill_tps": 68.72295135119896,
+   "n": 93,
+   "n_prompt": 39,
+   "text": "To find the result of 637 + 606 - 53, follow these steps:\n\n1.  **Add 637 and 606:**\n    637 + 606 = 1243\n\n2.  **Subtract 53 from the result:**\n    1243 - 53 = 1190\n\nANSWER: 1190"
+  },
+  {
+   "id": "q34",
+   "decode_tps": 46.081760102043454,
+   "prefill_tps": 73.81603786919798,
+   "n": 76,
+   "n_prompt": 47,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n10 rows \u00d7 14 apples per row = 140 apples.\n\nNext, subtract the number of apples eaten from the total:\n140 - 10 = 130.\n\nANSWER: 130"
+  },
+  {
+   "id": "q35",
+   "decode_tps": 45.35794094831027,
+   "prefill_tps": 73.52845060848877,
+   "n": 147,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost of one pen:**\n    Total cost for 3 pens = 105 cents\n    Cost per pen = 105 cents / 3 = 35 cents\n\n2.  **Find the cost of 6 pens:**\n    Cost for 6 pens = 6 \u00d7 35 cents\n    6 \u00d7 35 = 210 cents\n\nAlternatively, since 6 is exactly double 3, the cost will be double the original amount:\n105 cents \u00d7 2 = 210 cents\n\nANSWER: 210"
+  },
+  {
+   "id": "q36",
+   "decode_tps": 42.05869034741264,
+   "prefill_tps": 100.38938914577754,
+   "n": 108,
+   "n_prompt": 33,
+   "text": "To calculate 77 * 65, you can use the long multiplication method:\n\n1.  Multiply 77 by 5:\n    77 * 5 = 385\n\n2.  Multiply 77 by 60:\n    77 * 60 = 4,620\n\n3.  Add the two results together:\n    385 + 4,620 = 5,005\n\nANSWER: 5005"
+  },
+  {
+   "id": "q37",
+   "decode_tps": 41.94714405623799,
+   "prefill_tps": 69.48354130885613,
+   "n": 100,
+   "n_prompt": 39,
+   "text": "To find the result of 268 + 875 - 53, follow these steps:\n\n1.  **First, add 268 and 875:**\n    268 + 875 = 1,143\n\n2.  **Next, subtract 53 from the result:**\n    1,143 - 53 = 1,090\n\nANSWER: 1090"
+  },
+  {
+   "id": "q38",
+   "decode_tps": 46.204641641291545,
+   "prefill_tps": 73.44540558185082,
+   "n": 73,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n5 rows \u00d7 20 apples = 100 apples.\n\nNext, subtract the number of apples eaten from the total:\n100 apples - 5 apples = 95 apples.\n\nANSWER: 95"
+  },
+  {
+   "id": "q39",
+   "decode_tps": 45.32508116995452,
+   "prefill_tps": 75.99185895910978,
+   "n": 132,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 8 pens = 200 cents\n    Cost of 1 pen = 200 cents / 8 pens\n    Cost of 1 pen = 25 cents\n\n2.  **Find the cost for 11 pens:**\n    Cost of 11 pens = 11 pens \u00d7 25 cents/pen\n    Cost of 11 pens = 275 cents\n\nANSWER: 275"
+  },
+  {
+   "id": "q40",
+   "decode_tps": 41.18563776651116,
+   "prefill_tps": 97.80153992970143,
+   "n": 150,
+   "n_prompt": 33,
+   "text": "To calculate 97 * 21, you can use the distributive property:\n\n97 * 21 = 97 * (20 + 1)\n97 * 21 = (97 * 20) + (97 * 1)\n\nFirst, calculate 97 * 20:\n97 * 2 = 194\n97 * 20 = 1940\n\nNext, calculate 97 * 1:\n97 * 1 = 97\n\nFinally, add the two results together:\n1940 + 97 = 2037\n\nANSWER: 2037"
+  },
+  {
+   "id": "q41",
+   "decode_tps": 41.908349059877864,
+   "prefill_tps": 68.46982236470187,
+   "n": 97,
+   "n_prompt": 39,
+   "text": "To find the result of 882 + 671 - 83, follow these steps:\n\n1.  **First, add 882 and 671:**\n    882 + 671 = 1553\n\n2.  **Next, subtract 83 from the result:**\n    1553 - 83 = 1470\n\nANSWER: 1470"
+  },
+  {
+   "id": "q42",
+   "decode_tps": 46.82954722605793,
+   "prefill_tps": 72.77949753034905,
+   "n": 77,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n8 rows \u00d7 15 apples per row = 120 apples.\n\nNext, subtract the number of apples eaten from the total:\n120 apples - 8 apples = 112 apples.\n\nANSWER: 112"
+  },
+  {
+   "id": "q43",
+   "decode_tps": 44.78599223043585,
+   "prefill_tps": 74.3991059168315,
+   "n": 140,
+   "n_prompt": 46,
+   "text": "To find the cost of 10 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 7 pens by the number of pens.\n    $581 \\text{ cents} \\div 7 \\text{ pens} = 83 \\text{ cents per pen}$\n\n2.  **Find the cost of 10 pens:**\n    Multiply the cost of one pen by 10.\n    $83 \\text{ cents} \\times 10 = 830 \\text{ cents}$\n\nANSWER: 830"
+  },
+  {
+   "id": "q44",
+   "decode_tps": 42.2459347089079,
+   "prefill_tps": 101.63133694483882,
+   "n": 121,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 70, you can multiply 86 by 7 and then add a zero at the end.\n\n1.  Multiply 86 by 7:\n    *   80 * 7 = 560\n    *   6 * 7 = 42\n    *   560 + 42 = 602\n\n2.  Add the zero from the 70:\n    *   602 * 10 = 6020\n\nANSWER: 6020"
+  },
+  {
+   "id": "q45",
+   "decode_tps": 41.540599512219146,
+   "prefill_tps": 68.99089320209731,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 170 + 960 - 21, follow these steps:\n\n1.  First, add 170 and 960:\n    170 + 960 = 1,130\n\n2.  Next, subtract 21 from the result:\n    1,130 - 21 = 1,109\n\nANSWER: 1109"
+  },
+  {
+   "id": "q46",
+   "decode_tps": 45.87746944906187,
+   "prefill_tps": 73.11342979973419,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 20 apples per row = 140 apples.\n\nNext, subtract the number of apples eaten from the total:\n140 - 7 = 133.\n\nANSWER: 133"
+  },
+  {
+   "id": "q47",
+   "decode_tps": 44.7374471072891,
+   "prefill_tps": 74.6338277824424,
+   "n": 181,
+   "n_prompt": 44,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 81 cents\n    Cost per pen = 81 cents / 3 = 27 cents\n\n2.  **Find the cost for 6 pens:**\n    Cost for 6 pens = 6 * 27 cents\n    6 * 20 = 120\n    6 * 7 = 42\n    120 + 42 = 162 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 * 2), the cost will be twice the original amount:\n81 cents * 2 = 162 cents.\n\nANSWER: 162"
+  },
+  {
+   "id": "q48",
+   "decode_tps": 42.10561139979353,
+   "prefill_tps": 102.29449655608528,
+   "n": 169,
+   "n_prompt": 33,
+   "text": "To calculate 51 * 94, you can use the distributive property:\n\n1.  Break 51 into (50 + 1).\n2.  Multiply 94 by 50: $94 \\times 50 = 4700$.\n3.  Multiply 94 by 1: $94 \\times 1 = 94$.\n4.  Add the results together: $4700 + 94 = 4794$.\n\nAlternatively, using long multiplication:\n  51\nx 94\n----\n 204 (4 * 51)\n4590 (90 * 51)\n----\n4794\n\nANSWER: 4794"
+  },
+  {
+   "id": "q49",
+   "decode_tps": 42.53218590947346,
+   "prefill_tps": 69.35762391450872,
+   "n": 100,
+   "n_prompt": 39,
+   "text": "To find the result of 691 + 797 - 67, follow these steps:\n\n1.  **First, add 691 and 797:**\n    691 + 797 = 1,488\n\n2.  **Next, subtract 67 from the result:**\n    1,488 - 67 = 1,421\n\nANSWER: 1421"
+  },
+  {
+   "id": "q50",
+   "decode_tps": 45.468546972531236,
+   "prefill_tps": 73.00051587031216,
+   "n": 72,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 27 apples = 189 apples.\n\nNext, subtract the number of apples eaten from the total:\n189 - 7 = 182.\n\nANSWER: 182"
+  },
+  {
+   "id": "q51",
+   "decode_tps": 44.551806586951024,
+   "prefill_tps": 74.87491006872214,
+   "n": 200,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    The total cost for 8 pens is 512 cents.\n    Cost per pen = Total cost / Number of pens\n    Cost per pen = $512 \\div 8$\n\n    Calculation:\n    $512 \\div 8 = 64$\n    So, each pen costs 64 cents.\n\n2.  **Find the cost for 11 pens:**\n    Now, multiply the cost of one pen by 11.\n    Cost for 11 pens = $64 \\times 11$\n\n    Calculation:\n    $64 \\times 10 = 640$\n    $64 \\times 1 = 64$\n    $640 + 64 = "
+  },
+  {
+   "id": "q52",
+   "decode_tps": 42.971266099117706,
+   "prefill_tps": 103.74846342237885,
+   "n": 97,
+   "n_prompt": 33,
+   "text": "To calculate 14 * 71, you can break it down into simpler steps:\n\n1. Multiply 14 by 70:\n   14 * 70 = 980\n\n2. Multiply 14 by 1:\n   14 * 1 = 14\n\n3. Add the two results together:\n   980 + 14 = 994\n\nANSWER: 994"
+  },
+  {
+   "id": "q53",
+   "decode_tps": 42.880767230144805,
+   "prefill_tps": 68.80479022477995,
+   "n": 93,
+   "n_prompt": 39,
+   "text": "To find the result of 463 + 272 - 88, follow these steps:\n\n1.  **First, add 463 and 272:**\n    463 + 272 = 735\n\n2.  **Next, subtract 88 from the result:**\n    735 - 88 = 647\n\nANSWER: 647"
+  },
+  {
+   "id": "q54",
+   "decode_tps": 46.80420863444041,
+   "prefill_tps": 73.4128149409761,
+   "n": 71,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 20 apples = 80 apples.\n\nNext, subtract the number of apples eaten from the total:\n80 apples - 4 apples = 76 apples.\n\nANSWER: 76"
+  },
+  {
+   "id": "q55",
+   "decode_tps": 46.29128969089089,
+   "prefill_tps": 72.85021499091854,
+   "n": 120,
+   "n_prompt": 44,
+   "text": "To find the cost of 5 pens, first determine the cost of a single pen.\n\n1.  **Find the cost of one pen:**\n    Since 2 pens cost 94 cents, divide the total cost by the number of pens:\n    $94 \\div 2 = 47$ cents per pen.\n\n2.  **Find the cost of 5 pens:**\n    Multiply the cost of one pen by 5:\n    $47 \\times 5 = 235$ cents.\n\nANSWER: 235"
+  },
+  {
+   "id": "q56",
+   "decode_tps": 41.69353424666923,
+   "prefill_tps": 101.19253873681048,
+   "n": 147,
+   "n_prompt": 33,
+   "text": "To calculate 48 * 28, you can use the distributive property or long multiplication:\n\n**Method 1: Distributive Property**\n48 * 28 = 48 * (30 - 2)\n48 * 30 = 1,440\n48 * 2 = 96\n1,440 - 96 = 1,344\n\n**Method 2: Long Multiplication**\n48 * 20 = 960\n48 * 8 = 384\n960 + 384 = 1,344\n\nANSWER: 1344"
+  },
+  {
+   "id": "q57",
+   "decode_tps": 41.92942801776252,
+   "prefill_tps": 69.49183649105426,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 856 + 353 - 60, follow these steps:\n\n1.  First, add 856 and 353:\n    856 + 353 = 1,209\n\n2.  Next, subtract 60 from the result:\n    1,209 - 60 = 1,149\n\nANSWER: 1149"
+  },
+  {
+   "id": "q58",
+   "decode_tps": 45.572904473573644,
+   "prefill_tps": 72.9884386313208,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n9 rows \u00d7 20 apples per row = 180 apples.\n\nNext, subtract the number of apples eaten from the total:\n180 - 9 = 171.\n\nANSWER: 171"
+  },
+  {
+   "id": "q59",
+   "decode_tps": 45.10784534023428,
+   "prefill_tps": 73.86979217965134,
+   "n": 163,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 123 cents\n    Cost per pen = 123 cents / 3 = 41 cents\n\n2.  **Find the cost for 6 pens:**\n    Cost for 6 pens = 6 pens \u00d7 41 cents per pen\n    Cost for 6 pens = 246 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 \u00d7 2), the cost will also be twice the original amount:\n123 cents \u00d7 2 = 246 cents\n\nANSWER: 246"
+  }
+ ]
+}

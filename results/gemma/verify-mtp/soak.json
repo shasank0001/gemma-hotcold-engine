@@ -1,0 +1,2065 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-cmoe",
+  "--moe-cache-mib",
+  "3000",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99"
+ ],
+ "decode_tps": 60.64951526748945,
+ "prefill_tps_mean": 77.00686295662554,
+ "peak_vram_mib": 5923,
+ "tokens": 24192,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 915 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 2831910, misses = 2047787, hit rate = 58.03%, uploaded = 0.00 MiB",
+  "llama_moe_cache: swaps = 11984",
+  "llama_moe_cache: large batches: 128414 experts copied from the cache, 204847.92 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code0#0",
+   "decode_tps": 47.97596959434551,
+   "prefill_tps": 39.67542763954464,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Write a Python function to merge overlapping intervals.\n    *   Requirement: Explain the complexity (Time and Space).\n\n    *   Input: A list of intervals (e.g., `[[1, 3], [2, 6], [8, 10], [15, 18]]`).\n    *   Output: A list of merged intervals (e.g., `[[1, 6"
+  },
+  {
+   "id": "code1#0",
+   "decode_tps": 48.45779249761154,
+   "prefill_tps": 79.6863107161601,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Implement an LRU (Least Recently Used) Cache in Rust.\n*   Requirements:\n    *   Generics (Key and Value types).\n    *   Unit tests.\n    *   Standard LRU behavior: `get` (updates recency), `put` (adds/updates, evicts if full).\n\n    *   An LRU cache needs two main components:\n        1.  A **Hash Map"
+  },
+  {
+   "id": "code2#0",
+   "decode_tps": 59.66752001688277,
+   "prefill_tps": 86.19801576372492,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Code snippet: `char b[8]; strcpy(b, argv[1]);`\n*   Task 1: Explain *why* it can overflow.\n*   Task 2: Fix it.\n\n    *   `char b[8];`: This allocates a fixed-size buffer of 8 bytes on the stack.\n    *   `argv[1]`: This is a command-line argument passed to the program."
+  },
+  {
+   "id": "code3#0",
+   "decode_tps": 64.57915126680503,
+   "prefill_tps": 74.26569791189614,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *"
+  },
+  {
+   "id": "code4#0",
+   "decode_tps": 56.02313578592793,
+   "prefill_tps": 81.62126154875027,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   *Goal:* Refactor nested JavaScript callbacks (callback hell) into `async/await`.\n*   *Requirement:* Include error handling.\n*   *Context:* The user hasn't provided the specific code yet, so I need to provide a *representative example* and then explain the *pattern* for refactoring.\n\n    *   *Scenario:* A common real-world task like fetching user data, then fetching their posts, then fetching"
+  },
+  {
+   "id": "code5#0",
+   "decode_tps": 58.83664470098598,
+   "prefill_tps": 99.6765335716996,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   Goal: Rotate logs older than 7 days and compress them.\n    *   Language: Bash script.\n    *   Key actions: Find files, check age, compress them, (optionally) delete the original uncompressed files.\n\n    *   Where are the logs? (Need a variable for the directory).\n    *   What is the age threshold? (7 days).\n    *   What is the file extension to look"
+  },
+  {
+   "id": "code6#0",
+   "decode_tps": 53.446121527478894,
+   "prefill_tps": 82.36951532641051,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Design a REST API for a library system.\n*   Output: API design (endpoints, methods, resources) and example requests.\n\n    *   Books (Title, Author, ISBN, Genre, Publication Year, Availability).\n    *   Authors (Name, Bio, Nationality).\n    *   Members/Users (Name, Email, Membership Date).\n    *   Loans/Borrowing (Book, Member, Due Date,"
+  },
+  {
+   "id": "code7#0",
+   "decode_tps": 62.28711738499012,
+   "prefill_tps": 81.25787185633608,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector<"
+  },
+  {
+   "id": "chat0#0",
+   "decode_tps": 35.222116226309886,
+   "prefill_tps": 85.64601360629669,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Destination: Kyoto, Japan.\n    *   Duration: 3 days.\n    *   Vibe: Relaxed (not a frantic \"see everything\" itinerary).\n    *   Travelers: Two people.\n    *   Season: Spring (Cherry blossoms/Sakura season).\n\n    *   *Spring in Kyoto:* Crowded, beautiful, cherry blossoms (late March/early April), mild weather.\n    *   "
+  },
+  {
+   "id": "chat1#0",
+   "decode_tps": 35.21262494921968,
+   "prefill_tps": 89.82427106243058,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "Friend forgot the user's birthday.\nHurt, disappointed, perhaps a bit lonely or undervalued.\nHow to bring it up (communication strategy).\n\n    *   *Why did they forget?* (Busy, stress, different values regarding birthdays, mental health issues, genuine oversight).\n    *   *What is the goal?* (To express feelings, to seek an apology, to strengthen the friendship, or to vent?)\n    *   "
+  },
+  {
+   "id": "chat2#0",
+   "decode_tps": 39.508826271789125,
+   "prefill_tps": 81.15687624177535,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Vegetarian dinners.\nBusy family (needs to be quick, easy, kid-friendly, or meal-prep friendly).\nOne week (7 days).\n\n    *   *Speed:* 30 minutes or less, or slow cooker/one-pot meals.\n    *   *Simplicity:* Minimal chopping, common ingredients, pantry staples.\n    *   *Variety:* Pasta, tacos, bowls, soups, pizza/flatbreads."
+  },
+  {
+   "id": "chat3#0",
+   "decode_tps": 39.48102811921941,
+   "prefill_tps": 87.64213444303422,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow.\n    *   *The \"Transition\" Section:* When they met their partner, how they changed (for the better), why they are a good match."
+  },
+  {
+   "id": "chat4#0",
+   "decode_tps": 42.9321288235015,
+   "prefill_tps": 91.62003861130198,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sleeping better while working night shifts.\nProvide actionable, effective \"good habits\" to mitigate the negative effects of shift work on sleep quality and circadian rhythms.\n\n    *   *The Problem:* Circadian rhythm disruption (the body's internal clock thinks it's daytime when it's night, and vice versa).\n    *   *Key Areas of Intervention:*\n        *   Light exposure (the most important signal).\n        *   Environment ("
+  },
+  {
+   "id": "chat5#0",
+   "decode_tps": 52.03760072699267,
+   "prefill_tps": 79.5221852696512,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Someone who has never exercised before.\nHow to start running.\nEncouraging, structured, safe, and realistic.\n\n    *   *Physical preparation:* Gear, health check, mindset.\n    *   *The \"How-To\" (Methodology):* Walk-run method (Couch to 5K style).\n    *   *Consistency/Frequency:* How often to run.\n    *   *Injury Prevention:* Warm-"
+  },
+  {
+   "id": "chat6#0",
+   "decode_tps": 49.9890287236959,
+   "prefill_tps": 72.53390393337762,
+   "n": 96,
+   "n_prompt": 32,
+   "text": "A lighthouse keeper.\nFinds a message in a bottle.\nShort story.\n\n    *   *The Keeper:* Needs to be solitary, perhaps a bit weathered, someone who finds comfort in the routine. Let's call him Elias. He's old, maybe a bit lonely, but content.\n    *   *The Setting:* A rugged, rocky island. Stormy weather (classic lighthouse trope). The sound of waves, the smell of"
+  },
+  {
+   "id": "chat7#0",
+   "decode_tps": 55.443824900230304,
+   "prefill_tps": 72.8806059501809,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    A logical flow is essential for a \"how-to\" guide.\n    *   Phase 1: Research"
+  },
+  {
+   "id": "reason0#0",
+   "decode_tps": 49.27595468271991,
+   "prefill_tps": 65.87784461091317,
+   "n": 96,
+   "n_prompt": 59,
+   "text": "*   Train 1: Leaves at 3:00 PM, speed = 60 km/h.\n    *   Train 2: Leaves at 4:00 PM, speed = 90 km/h.\n    *   Goal: Find the time when Train 2 catches up to Train 1.\n\n    *   Let $t$ be the time (in hours) that Train 2 has been traveling."
+  },
+  {
+   "id": "reason1#0",
+   "decode_tps": 44.73097379800811,
+   "prefill_tps": 79.44143841964498,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "The objective is to provide a formal mathematical proof that $\\sqrt{2}$ is an irrational number.\n\n    *   The most common and elegant way to prove this is by *reductio ad absurdum* (proof by contradiction).\n    *   *Core idea:* Assume $\\sqrt{2}$ is rational, show that this leads to a logical impossibility (a contradiction), and therefore the original assumption must be false.\n\n    *   *Step "
+  },
+  {
+   "id": "reason2#0",
+   "decode_tps": 51.256817156681834,
+   "prefill_tps": 92.51437015973336,
+   "n": 96,
+   "n_prompt": 38,
+   "text": "*   Topic: Comparison of economic causes.\n*   Subjects: 1929 Stock Market Crash (Great Depression era) and 2008 Financial Crisis (Great Recession era).\n*   Goal: Identify similarities and differences in the underlying economic drivers.\n\n    *   *1929 Crash:*\n        *   Speculation (buying on margin).\n        *   Overproduction (agriculture and industry).\n        *   Ine"
+  },
+  {
+   "id": "reason3#0",
+   "decode_tps": 45.85351491325239,
+   "prefill_tps": 76.82362420131537,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason4#0",
+   "decode_tps": 43.72367374591299,
+   "prefill_tps": 75.63318393746356,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "Photosynthesis (energy storage mechanism).\nStep-by-step.\nCollege level (requires biochemical detail, specific terminology, and a focus on thermodynamics/redox reactions).\n\n    *   *Overview:* Photosynthesis is a redox process. It converts electromagnetic energy (photons) into chemical potential energy (carbohydrates).\n    *   *Two Main Stages:*\n        1.  Light-Dependent Reactions (LDR) - The \"charging\""
+  },
+  {
+   "id": "reason5#0",
+   "decode_tps": 50.95795593155972,
+   "prefill_tps": 74.65185091346719,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "*   *Topic:* Small city investment decision: Light Rail Transit (LRT) vs. Bus Rapid Transit (BRT).\n*   *Goal:* Weigh the tradeoffs.\n*   *Context:* \"Small city\" (implies limited budget, specific population density, potentially different land-use patterns than a megacity).\n\n    *   *Light Rail (LRT):* Fixed rail, high capacity, high cost, permanent infrastructure, high prestige/"
+  },
+  {
+   "id": "reason6#0",
+   "decode_tps": 50.40269097314332,
+   "prefill_tps": 69.6280123440519,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sum of a geometric series.\nDerive the formula.\nMathematical derivation (clear, step-by-step).\n\n    *   What is a geometric series? It's a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio ($r$).\n    *   General term: $a, ar, ar^2, ar^3, \\dots, ar"
+  },
+  {
+   "id": "reason7#0",
+   "decode_tps": 47.8670203787541,
+   "prefill_tps": 95.10998790744439,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen ("
+  },
+  {
+   "id": "q0#0",
+   "decode_tps": 50.77924764397654,
+   "prefill_tps": 70.88972512509082,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 53 and 31.\n\n    *   Method 1: Long multiplication\n        ```\n          53\n        x 31\n        ----\n          53  (53 * 1)\n        1590  (53 * 30)\n        ----\n        1643\n        ```\n\n    *   Method 2: Distributive property\n"
+  },
+  {
+   "id": "q1#0",
+   "decode_tps": 56.4427967108703,
+   "prefill_tps": 75.16697807271869,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 504 + 766 - 16.\n\n    *   Step 1: 504 + 766\n    *   Step 2: (Result of Step 1) - 16\n\n    *   504 + 766\n    *   500 + 700 = 1200\n    "
+  },
+  {
+   "id": "q2#0",
+   "decode_tps": 60.86532553659191,
+   "prefill_tps": 55.550733443277494,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 4 rows of 22 apples.\n    *   Action: 4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 4\n    *   Apples per row = 22\n    *   Total apples = 4 * 22\n\n    *   4 * 20 = 80\n    *"
+  },
+  {
+   "id": "q3#0",
+   "decode_tps": 61.51499120335627,
+   "prefill_tps": 63.66368596825835,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 3 pens = 198 cents.\n    *   Goal: Find the total cost of 6 pens.\n\n    *   Cost of 1 pen = (Total cost of 3 pens) / 3\n    *   Cost of 1 pen = 198 / 3\n\n    *   198 / 3 = ?\n    *   180 / 3 = 6"
+  },
+  {
+   "id": "q4#0",
+   "decode_tps": 63.910100688681794,
+   "prefill_tps": 97.14632665452339,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 19.\n\n    *   Method 1: Standard multiplication (86 * 19)\n        *   86 * 10 = 860\n        *   86 * 9 = 86 * (10 - 1) = 860 - 86 = 774\n        *   860 + "
+  },
+  {
+   "id": "q5#0",
+   "decode_tps": 71.10001451937138,
+   "prefill_tps": 84.2864052048862,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 619 + 319 - 14.\n\n    *   Step 1: 619 + 319\n    *   Step 2: (Result of Step 1) - 14\n\n    *   619 + 319\n    *   600 + 300 = 900\n    *   19 + "
+  },
+  {
+   "id": "q6#0",
+   "decode_tps": 61.9180921406388,
+   "prefill_tps": 58.37612222014121,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 18 apples.\n    *   4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 4 \u00d7 18\n\n    *   4 \u00d7 10 = 40\n    *   4 \u00d7 8 = 32\n    *   4"
+  },
+  {
+   "id": "q7#0",
+   "decode_tps": 65.64078185771704,
+   "prefill_tps": 73.04852359989087,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 224 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 224 cents / 8 pens\n\n    *   224 / 8 = ?\n    *   2"
+  },
+  {
+   "id": "q8#0",
+   "decode_tps": 77.78679376755832,
+   "prefill_tps": 81.08875163866853,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 42 and 23.\n\n    *   Method 1: Long multiplication\n        ```\n          42\n        x 23\n        ----\n         126  (3 * 42)\n         840  (20 * 42)\n        ----\n         966\n        ```\n    *   Method 2: Distributive property\n        "
+  },
+  {
+   "id": "q9#0",
+   "decode_tps": 64.83216658181615,
+   "prefill_tps": 87.19373201629277,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate the result of the expression: 664 + 534 - 17.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 664 + 534\n    *   Step 2: (Result of Step 1) - 17\n\n    *   664 + 534"
+  },
+  {
+   "id": "q10#0",
+   "decode_tps": 65.2417412540012,
+   "prefill_tps": 66.83653148409837,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Initial state: A box holds 12 rows of 8 apples.\n    *   Action: 12 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 12\n    *   Apples per row = 8\n    *   Total apples = 12 * 8\n\n    *   12 * 8 = 96\n\n    "
+  },
+  {
+   "id": "q11#0",
+   "decode_tps": 85.32040055682788,
+   "prefill_tps": 63.43617923892444,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 5 pens = 135 cents.\n    *   Goal: Find the cost of 8 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 135 cents / 5 pens\n\n    *   135 / 5 = ?\n    *   100 / 5 = 20\n    *"
+  },
+  {
+   "id": "q12#0",
+   "decode_tps": 66.85470431923613,
+   "prefill_tps": 82.41701636664584,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 85 and 86.\n\n    *   Method 1: Standard multiplication\n        85 * 86 = 85 * (80 + 6)\n        85 * 80 = 85 * 8 * 10 = 680 * 10 = 6800\n        85 * 6 = 85 * "
+  },
+  {
+   "id": "q13#0",
+   "decode_tps": 69.40715332040169,
+   "prefill_tps": 109.46907498631636,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 506 + 150 - 38.\n\n    *   Step 1: 506 + 150\n    *   Step 2: (Result of Step 1) - 38\n\n    *   506 + 150 = 656\n\n    *   656 - 38 = ?\n    "
+  },
+  {
+   "id": "q14#0",
+   "decode_tps": 77.55994771643104,
+   "prefill_tps": 56.980936315493956,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 3 rows of 22 apples.\n    *   3 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 3 \u00d7 22\n\n    *   3 \u00d7 20 = 60\n    *   3 \u00d7 2 = 6\n    *   "
+  },
+  {
+   "id": "q15#0",
+   "decode_tps": 73.81455762935613,
+   "prefill_tps": 61.805174638246584,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 228 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost of 4 pens / 4\n    *   Cost of 1 pen = 228 / 4\n\n    *   228 / 4 = ?\n    *   200 / 4 = 50\n    "
+  },
+  {
+   "id": "q16#0",
+   "decode_tps": 70.74510983736816,
+   "prefill_tps": 104.4098667324062,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 65 by 30.\n\n    *   Method 1: Standard multiplication.\n        65 * 30 = 65 * 3 * 10\n        65 * 3 = (60 * 3) + (5 * 3) = 180 + 15 = 195\n        195 * 10 ="
+  },
+  {
+   "id": "q17#0",
+   "decode_tps": 72.89826624902355,
+   "prefill_tps": 88.85184378153448,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 653 + 220 - 83.\n    *   Step 1: Perform the addition: 653 + 220.\n    *   Step 2: Perform the subtraction: (Result of Step 1) - 83.\n\n    *   653 + 220 = ?\n    *   600 + 200 ="
+  },
+  {
+   "id": "q18#0",
+   "decode_tps": 63.177159395308124,
+   "prefill_tps": 60.147888621147246,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 7 rows of 22 apples.\n    *   Action: 7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 7\n    *   Apples per row = 22\n    *   Total apples = 7 * 22\n\n    *   7 * 20 = 140\n    "
+  },
+  {
+   "id": "q19#0",
+   "decode_tps": 69.73372726772246,
+   "prefill_tps": 71.89783317905255,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 132 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 132 cents / 4\n\n    *   132 / 4 = ?\n    *   100 / 4 = 25\n    *   "
+  },
+  {
+   "id": "q20#0",
+   "decode_tps": 74.57209355265378,
+   "prefill_tps": 80.95763891543749,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 85.\n\n    *   Method 1: Standard multiplication\n        86 * 85 = 86 * (80 + 5)\n        86 * 80 = 86 * 8 * 10 = 688 * 10 = 6880\n        86 * 5 = 430\n"
+  },
+  {
+   "id": "q21#0",
+   "decode_tps": 65.43803878753646,
+   "prefill_tps": 88.73920603764654,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate the result of the expression: 754 + 292 - 57.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 754 + 292\n    *   Step 2: (Result of Step 1) - 57\n\n    *   754 + 292"
+  },
+  {
+   "id": "q22#0",
+   "decode_tps": 64.0439219958513,
+   "prefill_tps": 65.3027462525747,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 22 apples.\n    *   4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 4 \u00d7 22\n\n    *   4 \u00d7 20 = 80\n    *   4 \u00d7 2 = 8\n    *   "
+  },
+  {
+   "id": "q23#0",
+   "decode_tps": 87.17947776739781,
+   "prefill_tps": 61.449475456818014,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   Given: 3 pens cost 81 cents.\n    *   Goal: Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 81 cents.\n    *   Cost of 1 pen = 81 cents / 3.\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1"
+  },
+  {
+   "id": "q24#0",
+   "decode_tps": 67.42155147635455,
+   "prefill_tps": 81.96665323324295,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 91 and 38.\n\n    *   Method 1: Long multiplication\n        ```\n          91\n        x 38\n        ----\n         728  (91 * 8)\n        2730  (91 * 30)\n        ----\n        3458\n        ```\n\n    *   Method 2: Distributive property"
+  },
+  {
+   "id": "q25#0",
+   "decode_tps": 83.15702584958032,
+   "prefill_tps": 111.50906276632745,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 608 + 796 - 78.\n\n    *   608 + 796 = ?\n    *   600 + 700 = 1300\n    *   8 + 96 = 104\n    *   1300 + 104 = 1404\n\n    *   1404"
+  },
+  {
+   "id": "q26#0",
+   "decode_tps": 73.44488193541953,
+   "prefill_tps": 57.458949770104354,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 29 apples.\n    *   9 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 9 \u00d7 29\n\n    *   9 \u00d7 29 = 9 \u00d7 (30 - 1)\n    *   9 \u00d7 3"
+  },
+  {
+   "id": "q27#0",
+   "decode_tps": 65.12389306519655,
+   "prefill_tps": 66.38819753333975,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 7\n    *   Total cost of 7 pens: 553 cents\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 553 / 7\n\n    *   553 / 7 = ?\n    *   55 /"
+  },
+  {
+   "id": "q28#0",
+   "decode_tps": 73.40152721535468,
+   "prefill_tps": 98.82155298070509,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 70.\n\n    *   Method 1: Standard multiplication.\n        86 * 70 = 86 * 7 * 10\n        86 * 7 = (80 * 7) + (6 * 7)\n        80 * 7 = 560\n        6 * 7 = 42\n        5"
+  },
+  {
+   "id": "q29#0",
+   "decode_tps": 70.83029508646516,
+   "prefill_tps": 87.53629108734663,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 470 + 406 - 41.\n\n    *   Step 1: 470 + 406\n    *   Step 2: (Result of Step 1) - 41\n\n    *   470 + 406 = ?\n    *   400 + 400 = 800\n    *   70"
+  },
+  {
+   "id": "q30#0",
+   "decode_tps": 63.7921263057241,
+   "prefill_tps": 61.582516723502195,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 5 rows of 27 apples.\n    *   5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 5 \u00d7 27\n\n    *   5 \u00d7 20 = 100\n    *   5 \u00d7 7 = 35\n    *   "
+  },
+  {
+   "id": "q31#0",
+   "decode_tps": 75.55146605631685,
+   "prefill_tps": 68.23095610048713,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   5 pens cost 150 cents.\n    *   Find the cost of 8 pens.\n\n    *   Cost of 5 pens = 150 cents.\n    *   Cost of 1 pen = 150 cents / 5.\n    *   150 / 5 = 30.\n    *   So, 1 pen costs 30 cents.\n\n    *   Cost"
+  },
+  {
+   "id": "q32#0",
+   "decode_tps": 70.08659752439382,
+   "prefill_tps": 81.46676382332573,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 85 by 50.\n\n    *   Method 1: Standard multiplication.\n        85 * 50 = 85 * 5 * 10\n        85 * 5 = (80 * 5) + (5 * 5) = 400 + 25 = 425\n        425 * 10 ="
+  },
+  {
+   "id": "q33#0",
+   "decode_tps": 72.93682826140866,
+   "prefill_tps": 95.9835456778838,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 637 + 606 - 53.\n\n    *   637 + 606 = ?\n    *   637 + 600 = 1237\n    *   1237 + 6 = 1243\n\n    *   1243 - 53 = ?\n    *   1243 - "
+  },
+  {
+   "id": "q34#0",
+   "decode_tps": 68.38517409425636,
+   "prefill_tps": 62.330849656744,
+   "n": 96,
+   "n_prompt": 50,
+   "text": "*   Initial state: A box holds 10 rows of 14 apples.\n    *   Action: 10 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 10\n    *   Apples per row = 14\n    *   Total apples = 10 * 14 = 140\n\n    *   Total apples ="
+  },
+  {
+   "id": "q35#0",
+   "decode_tps": 77.56165743546869,
+   "prefill_tps": 61.362633991064065,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 105 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 105 cents.\n    *   Cost of 1 pen = 105 cents / 3.\n    *   105 / 3 = 35 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1 pen"
+  },
+  {
+   "id": "q36#0",
+   "decode_tps": 51.42493069813944,
+   "prefill_tps": 84.16111242288153,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 77 and 65.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (breaking numbers down)\n    *   Method 3: Mental math tricks (e.g., (a+b)(c-d) or similar)\n\n    *   77 * 65\n    *   77 * 6"
+  },
+  {
+   "id": "q37#0",
+   "decode_tps": 71.16888526302147,
+   "prefill_tps": 107.41138560687433,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 268 + 875 - 53.\n\n    *   268 + 875\n    *   268 + 800 = 1068\n    *   1068 + 75 = 1143\n    *   (Alternative: 268 + 875 = (200 + 80"
+  },
+  {
+   "id": "q38#0",
+   "decode_tps": 65.78888140203725,
+   "prefill_tps": 56.9166136037821,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 5 rows of 20 apples.\n    *   Total apples initially = 5 rows * 20 apples/row.\n    *   5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 5 * 20 = 100.\n\n    *   Remaining apples = Total apples - Eaten apples.\n    *   Remaining"
+  },
+  {
+   "id": "q39#0",
+   "decode_tps": 70.5491471350734,
+   "prefill_tps": 62.98224800352701,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 200 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 200 cents / 8 pens\n\n    *   200 / 8 = ?\n    *   2"
+  },
+  {
+   "id": "q40#0",
+   "decode_tps": 69.53049351280495,
+   "prefill_tps": 102.95097531750366,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 97 and 21.\n\n    *   Method 1: Long multiplication\n        ```\n          97\n        x 21\n        ----\n          97 (97 * 1)\n        1940 (97 * 20)\n        ----\n        2037\n        ```\n\n    *   Method 2: Distributive property\n        9"
+  },
+  {
+   "id": "q41#0",
+   "decode_tps": 79.00083075610448,
+   "prefill_tps": 80.12851086886016,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 882 + 671 - 83.\n\n    *   882 + 671 = ?\n    *   800 + 600 = 1400\n    *   82 + 71 = 153\n    *   1400 + 153 = 1553\n\n    *   155"
+  },
+  {
+   "id": "q42#0",
+   "decode_tps": 66.69278215610042,
+   "prefill_tps": 57.27240186135306,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 8 rows of 15 apples.\n    *   Total apples initially = 8 rows * 15 apples/row.\n    *   Apples eaten = 8.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 8 * 15\n    *   8 * 10 = 80\n    *   8 * 5 = "
+  },
+  {
+   "id": "q43#0",
+   "decode_tps": 64.64537588223926,
+   "prefill_tps": 72.12617665025428,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 7\n    *   Total cost of 7 pens: 581 cents\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 581 / 7\n\n    *   58 / 7 = 8 with a remainder of 2 ("
+  },
+  {
+   "id": "q44#0",
+   "decode_tps": 81.96919338862371,
+   "prefill_tps": 80.62709966405374,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 70.\n\n    *   Method 1: Multiply 86 by 7 and then add a zero.\n        *   86 * 7 = (80 * 7) + (6 * 7)\n        *   80 * 7 = 560\n        *   6 * 7 = 42\n        *   56"
+  },
+  {
+   "id": "q45#0",
+   "decode_tps": 59.98807815878277,
+   "prefill_tps": 87.0152525306936,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 170 + 960 - 21.\n    *   Goal: Calculate the final result.\n\n    *   Step 1: 170 + 960\n    *   Step 2: (Result of Step 1) - 21\n\n    *   170 + 960\n    *   100 + 900 = "
+  },
+  {
+   "id": "q46#0",
+   "decode_tps": 63.531551774870934,
+   "prefill_tps": 65.99226240723276,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 20 apples.\n    *   Total apples initially = 7 rows * 20 apples/row.\n    *   Apples eaten = 7.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 7 * 20 = 140.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q47#0",
+   "decode_tps": 75.27083635407085,
+   "prefill_tps": 64.90412831684262,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   Total cost of 3 pens = 81 cents.\n    *   Goal: Find the cost of 6 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 81 cents / 3 pens\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = Cost of 1 pen *"
+  },
+  {
+   "id": "q48#0",
+   "decode_tps": 65.95289436012501,
+   "prefill_tps": 80.89324114499888,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 51 and 94.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (51 * 94 = (50 + 1) * 94)\n    *   Method 3: Distributive property (51 * 94 = 51 * (90 + 4))\n    "
+  },
+  {
+   "id": "q49#0",
+   "decode_tps": 68.66712059247438,
+   "prefill_tps": 111.89914157372822,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 691 + 797 - 67.\n\n    *   691 + 797:\n        *   600 + 700 = 1300\n        *   91 + 97 = 188\n        *   1300 + 188 = 1488\n\n    *   1488"
+  },
+  {
+   "id": "q50#0",
+   "decode_tps": 76.86587875095373,
+   "prefill_tps": 58.75865006898021,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 27 apples.\n    *   7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 7 \u00d7 27\n\n    *   7 \u00d7 20 = 140\n    *   7 \u00d7 7 = 49\n    *   "
+  },
+  {
+   "id": "q51#0",
+   "decode_tps": 73.20570881234912,
+   "prefill_tps": 63.82460477590399,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 512 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 512 cents / 8 pens\n\n    *   512 / 8 = ?\n    *   5"
+  },
+  {
+   "id": "q52#0",
+   "decode_tps": 68.03500580087945,
+   "prefill_tps": 102.96893770379269,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to find the product of 14 and 71.\n\n    *   Method 1: Long multiplication\n        ```\n          71\n        x 14\n        ----\n         284  (4 * 71)\n         710  (10 * 71)\n        ----\n         994\n        ```\n\n    *   Method 2: Distributive property\n        "
+  },
+  {
+   "id": "q53#0",
+   "decode_tps": 70.6009478363039,
+   "prefill_tps": 87.23520480541357,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 463 + 272 - 88.\n    *   Goal: Calculate the final result.\n\n    *   463 + 272\n    *   400 + 200 = 600\n    *   63 + 72 = 135\n    *   600 + 135 = 735\n\n"
+  },
+  {
+   "id": "q54#0",
+   "decode_tps": 66.58386904144461,
+   "prefill_tps": 57.60887176625201,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 20 apples.\n    *   Total apples initially = 4 rows * 20 apples/row.\n    *   Apples eaten = 4.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 4 * 20 = 80.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   Remaining"
+  },
+  {
+   "id": "q55#0",
+   "decode_tps": 68.9948682343269,
+   "prefill_tps": 66.92096633875393,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   2 pens cost 94 cents.\n    *   Find the cost of 5 pens.\n\n    *   Cost of 2 pens = 94 cents.\n    *   Cost of 1 pen = 94 cents / 2.\n    *   94 / 2 = 47 cents.\n\n    *   Cost of 5 pens = 5 * (Cost of 1 pen).\n    *"
+  },
+  {
+   "id": "q56#0",
+   "decode_tps": 75.22851651741065,
+   "prefill_tps": 83.3115411940858,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 48 and 28.\n\n    *   Method 1: Standard multiplication (long multiplication)\n        ```\n          48\n        x 28\n        ----\n         384  (8 * 48 = 8 * 40 + 8 * 8 = 320 + 64 = 384)\n         960  ("
+  },
+  {
+   "id": "q57#0",
+   "decode_tps": 61.35329877312777,
+   "prefill_tps": 88.11330531889674,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 856 + 353 - 60.\n    *   Step 1: Perform the addition (856 + 353).\n    *   Step 2: Perform the subtraction (Result of Step 1 - 60).\n\n    *   856 + 353\n    *   800 + 300 = 1100"
+  },
+  {
+   "id": "q58#0",
+   "decode_tps": 61.68991402374087,
+   "prefill_tps": 63.46503208950685,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 20 apples.\n    *   Total apples initially = 9 rows * 20 apples/row.\n    *   Apples eaten = 9.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 9 * 20 = 180.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q59#0",
+   "decode_tps": 83.15513334144461,
+   "prefill_tps": 66.50797125747177,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 123 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 123 cents.\n    *   Cost of 1 pen = 123 cents / 3.\n\n    *   123 / 3 = ?\n    *   120 / 3 = 40\n    *   3 / 3 ="
+  },
+  {
+   "id": "code0#1",
+   "decode_tps": 53.891444477913865,
+   "prefill_tps": 66.88299857239392,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Write a Python function to merge overlapping intervals.\n    *   Requirement: Explain the complexity (Time and Space).\n\n    *   Input: A list of intervals (e.g., `[[1, 3], [2, 6], [8, 10], [15, 18]]`).\n    *   Output: A list of merged intervals (e.g., `[[1, 6"
+  },
+  {
+   "id": "code1#1",
+   "decode_tps": 34.94660342925501,
+   "prefill_tps": 66.64429869515058,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Implement an LRU (Least Recently Used) Cache in Rust.\n*   Requirements:\n    *   Generics (Key and Value types).\n    *   Unit tests.\n    *   Standard LRU behavior: `get` (updates recency), `put` (adds/updates, evicts if full).\n\n    *   An LRU cache needs two main components:\n        1.  A **Hash Map"
+  },
+  {
+   "id": "code2#1",
+   "decode_tps": 53.92083966666704,
+   "prefill_tps": 75.84460365644985,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Code snippet: `char b[8]; strcpy(b, argv[1]);`\n*   Task 1: Explain *why* it can overflow.\n*   Task 2: Fix it.\n\n    *   `char b[8];`: This allocates a fixed-size buffer of 8 bytes on the stack.\n    *   `argv[1]`: This is a command-line argument passed to the program."
+  },
+  {
+   "id": "code3#1",
+   "decode_tps": 47.6384611874413,
+   "prefill_tps": 89.28810593140888,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   To solve this, I need a table containing sales/order data.\n    *   Common columns: `order_id`, `customer_id`, `order_date`, `"
+  },
+  {
+   "id": "code4#1",
+   "decode_tps": 43.50800959557702,
+   "prefill_tps": 84.53108426113016,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   *Goal:* Refactor nested JavaScript callbacks (callback hell) into `async/await`.\n*   *Requirement:* Include error handling.\n*   *Context:* The user hasn't provided the specific code yet, so I need to provide a *representative example* and then explain the process.\n\n    *   *Scenario:* A common real-world scenario is fetching user data, then fetching their posts, then fetching comments on the first post"
+  },
+  {
+   "id": "code5#1",
+   "decode_tps": 59.401136500060026,
+   "prefill_tps": 76.73723191476722,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   Goal: Rotate logs older than seven days and compress them.\n    *   Language: Bash script.\n    *   Key actions: Find files, check age, compress them, (optionally) delete the original uncompressed files.\n\n    *   Where are the logs? (Need a variable for the directory).\n    *   What is the age threshold? (7 days).\n    *   What is the file extension to look for"
+  },
+  {
+   "id": "code6#1",
+   "decode_tps": 50.35297435019486,
+   "prefill_tps": 78.9373400838369,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Design a REST API for a library system.\n*   Output: API design (endpoints, methods, resources) and example requests (JSON).\n\n    *   Books (Title, Author, ISBN, Genre, Publication Year, Availability).\n    *   Authors (Name, Bio, Nationality).\n    *   Users/Members (Name, Email, Membership Date).\n    *   Loans/Borrowing (Book, User, Due"
+  },
+  {
+   "id": "code7#1",
+   "decode_tps": 52.292848760274175,
+   "prefill_tps": 89.68609865470852,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector<"
+  },
+  {
+   "id": "chat0#1",
+   "decode_tps": 35.57105205317985,
+   "prefill_tps": 84.16988850295435,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Destination: Kyoto, Japan.\n    *   Duration: 3 days.\n    *   Vibe: Relaxed (not a frantic \"see everything\" itinerary).\n    *   Travelers: Two people.\n    *   Season: Spring (Cherry blossoms/Sakura season or early summer greenery).\n    *   Goal: A balanced plan.\n\n    *   *Spring in Kyoto:* Cherry blossoms (late March/early"
+  },
+  {
+   "id": "chat1#1",
+   "decode_tps": 35.55603462633789,
+   "prefill_tps": 90.90333119389129,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "Friend forgot the user's birthday.\nHurt, disappointed, perhaps a bit lonely or undervalued.\nHow to bring it up (communication strategy).\n\n    *   *Why did they forget?* (Busy, stress, different ways of celebrating, memory lapse, lack of importance).\n    *   *What is the goal?* (To express feelings, to feel seen, to repair the friendship, or to vent?)\n    *   *"
+  },
+  {
+   "id": "chat2#1",
+   "decode_tps": 38.239932633314474,
+   "prefill_tps": 91.63725224002172,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Vegetarian dinners.\nBusy family (needs to be quick, easy, kid-friendly, or make-ahead/leftover-friendly).\nOne week (7 days).\n\n    *   *Speed:* 30 minutes or less, or slow cooker/one-pot meals.\n    *   *Simplicity:* Minimal chopping, common ingredients, pantry staples.\n    *   *Variety:* Pasta, tacos, bowls, soups, pizza/"
+  },
+  {
+   "id": "chat3#1",
+   "decode_tps": 48.643710931419534,
+   "prefill_tps": 87.63900519991431,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nLikely a friend/best friend (the \"roommate\" implies a close, shared history).\nWarm, nostalgic, heartfelt, slightly humorous (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The College Years:* A brief, sweet, or funny anecdote about living together (the \"roommate\""
+  },
+  {
+   "id": "chat4#1",
+   "decode_tps": 40.337270534006024,
+   "prefill_tps": 73.33279206748712,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sleeping better while working night shifts.\nProvide actionable, effective \"good habits\" to mitigate the negative effects of shift work on sleep quality and circadian rhythm.\n\n    *   *The Problem:* Circadian rhythm disruption (the body's internal clock thinks it's daytime when it's night, and vice versa).\n    *   *Key Factors:* Light exposure, temperature, diet/nutrition, routine, environment, and social/lifestyle management.\n\n"
+  },
+  {
+   "id": "chat5#1",
+   "decode_tps": 53.12691012213037,
+   "prefill_tps": 75.041272699985,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Someone who has never exercised before.\nHow to start running.\nEncouraging, practical, safe, and structured.\n\n    *   *Physical preparation:* Gear, health check, mindset.\n    *   *The \"How-To\" (Methodology):* Walk-run method (Couch to 5K style).\n    *   *The \"What\" (Technique):* Posture, breathing, cadence.\n    *"
+  },
+  {
+   "id": "chat6#1",
+   "decode_tps": 44.29627211899378,
+   "prefill_tps": 74.21597777231466,
+   "n": 96,
+   "n_prompt": 32,
+   "text": "A lighthouse keeper.\nFinds a message in a bottle.\nShort story.\n\n    *   *The Keeper:* Needs to be solitary, perhaps a bit weathered, someone who finds comfort in the routine of the sea. Let's call him Elias. He's old, maybe a bit lonely, but not necessarily sad\u2014just attuned to the rhythm of the tides.\n    *   *The Setting:* A rugged, rocky island. A lighthouse"
+  },
+  {
+   "id": "chat7#1",
+   "decode_tps": 54.32501455338548,
+   "prefill_tps": 73.0528798488849,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide on how to prepare.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: Mission, values, products, target"
+  },
+  {
+   "id": "reason0#1",
+   "decode_tps": 44.83581125916892,
+   "prefill_tps": 70.9360553541693,
+   "n": 96,
+   "n_prompt": 59,
+   "text": "*   Train 1: Leaves at 3:00 PM, speed = 60 km/h.\n    *   Train 2: Leaves at 4:00 PM, speed = 90 km/h.\n    *   Goal: Find the time when Train 2 catches up to Train 1.\n\n    *   Let $t$ be the time (in hours) that Train 2 has been traveling."
+  },
+  {
+   "id": "reason1#1",
+   "decode_tps": 48.5468645879751,
+   "prefill_tps": 80.3791514343213,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "The objective is to provide a formal mathematical proof that $\\sqrt{2}$ is an irrational number.\n\n    *   The most common and elegant way to prove this is by *reductio ad absurdum* (proof by contradiction).\n    *   *Core logic:* Assume $\\sqrt{2}$ is rational, show that this leads to a logical impossibility (a contradiction), and therefore the original assumption must be false.\n\n    *   *Step "
+  },
+  {
+   "id": "reason2#1",
+   "decode_tps": 52.082562374350815,
+   "prefill_tps": 78.76839397463243,
+   "n": 96,
+   "n_prompt": 38,
+   "text": "*   Topic: Comparison of economic causes.\n    *   Subjects: 1929 Stock Market Crash (Great Depression era) and 2008 Financial Crisis (Great Recession era).\n    *   Goal: Identify similarities and differences in the underlying economic drivers.\n\n    *   *1929 Crash:*\n        *   Speculation (buying on margin).\n        *   Overproduction (agriculture and industry).\n        *"
+  },
+  {
+   "id": "reason3#1",
+   "decode_tps": 46.285401633046405,
+   "prefill_tps": 78.41187270501835,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason4#1",
+   "decode_tps": 49.548741357656375,
+   "prefill_tps": 76.41471994005143,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "Photosynthesis (energy storage mechanism).\nStep-by-step.\nCollege level (requires technical terminology, biochemical pathways, and thermodynamic context).\n\n    *   *What is the core concept?* Conversion of electromagnetic energy (photons) into chemical potential energy (covalent bonds in glucose).\n    *   *Where does it happen?* Chloroplasts (Thylakoids and Stroma).\n    *   *What are the two main"
+  },
+  {
+   "id": "reason5#1",
+   "decode_tps": 45.73034978903868,
+   "prefill_tps": 79.89598994763182,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "*   *Topic:* Small city investment decision: Light Rail Transit (LRT) vs. Bus Rapid Transit (BRT).\n*   *Goal:* Weigh the tradeoffs.\n*   *Context:* \"Small city\" (implies limited budget, specific density patterns, and potentially different ridership needs compared to a metropolis like NYC or London).\n\n    *   *Light Rail (LRT):* Fixed rail, high capacity, high cost, permanent infrastructure"
+  },
+  {
+   "id": "reason6#1",
+   "decode_tps": 52.699402055942365,
+   "prefill_tps": 85.54398335558496,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sum of a geometric series.\nDerive the formula.\nMathematical derivation (clear, step-by-step).\n\n    *   What is a geometric series? It's a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio ($r$).\n    *   General term: $a, ar, ar^2, ar^3, \\dots, ar"
+  },
+  {
+   "id": "reason7#1",
+   "decode_tps": 53.410003862386596,
+   "prefill_tps": 74.29558498486227,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen ("
+  },
+  {
+   "id": "q0#1",
+   "decode_tps": 48.67451607283757,
+   "prefill_tps": 70.1311452416018,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 53 and 31.\n\n    *   Method 1: Long multiplication\n        ```\n          53\n        x 31\n        ----\n          53  (53 * 1)\n        1590  (53 * 30)\n        ----\n        1643\n        ```\n\n    *   Method 2: Distributive property\n"
+  },
+  {
+   "id": "q1#1",
+   "decode_tps": 50.488865079403034,
+   "prefill_tps": 76.5731683971595,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 504 + 766 - 16.\n\n    *   Step 1: 504 + 766\n    *   Step 2: (Result of Step 1) - 16\n\n    *   504 + 766\n    *   500 + 700 = 1200\n    *   4 + "
+  },
+  {
+   "id": "q2#1",
+   "decode_tps": 55.88560745596361,
+   "prefill_tps": 58.585597219136986,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 4 rows of 22 apples.\n    *   Action: 4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 4\n    *   Apples per row = 22\n    *   Total apples = 4 * 22\n\n    *   4 * 20 = 80\n    *"
+  },
+  {
+   "id": "q3#1",
+   "decode_tps": 56.52389919706314,
+   "prefill_tps": 69.48435371589295,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 3 pens = 198 cents.\n    *   Goal: Find the total cost of 6 pens.\n\n    *   Cost of 1 pen = Total cost of 3 pens / 3\n    *   Cost of 1 pen = 198 / 3\n\n    *   198 / 3 = ?\n    *   180 / 3 = 60\n"
+  },
+  {
+   "id": "q4#1",
+   "decode_tps": 70.23271425043951,
+   "prefill_tps": 80.03361411792953,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 19.\n\n    *   Method 1: Standard multiplication (86 * 19)\n        *   86 * 10 = 860\n        *   86 * 9 = 86 * (10 - 1) = 860 - 86 = 774\n        *   860 + "
+  },
+  {
+   "id": "q5#1",
+   "decode_tps": 67.91287992788367,
+   "prefill_tps": 86.50786294682857,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 619 + 319 - 14.\n\n    *   Step 1: 619 + 319\n    *   Step 2: (Result of Step 1) - 14\n\n    *   619 + 319\n    *   600 + 300 = 900\n    *   19 + "
+  },
+  {
+   "id": "q6#1",
+   "decode_tps": 60.45087443780687,
+   "prefill_tps": 62.57267555546285,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 18 apples.\n    *   4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 4 \u00d7 18\n\n    *   4 \u00d7 10 = 40\n    *   4 \u00d7 8 = 32\n    *   4"
+  },
+  {
+   "id": "q7#1",
+   "decode_tps": 68.53796967447349,
+   "prefill_tps": 70.04052344570786,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 224 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 224 cents / 8 pens\n\n    *   224 / 8 = ?\n    *   2"
+  },
+  {
+   "id": "q8#1",
+   "decode_tps": 76.57152989916739,
+   "prefill_tps": 81.29548877783523,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 42 and 23.\n\n    *   Method 1: Long multiplication\n        ```\n          42\n        x 23\n        ----\n         126  (3 * 42)\n         840  (20 * 42)\n        ----\n         966\n        ```\n    *   Method 2: Distributive property\n        "
+  },
+  {
+   "id": "q9#1",
+   "decode_tps": 65.63053325844544,
+   "prefill_tps": 96.17344193299458,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate: 664 + 534 - 17.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 664 + 534\n    *   Step 2: (Result of Step 1) - 17\n\n    *   664 + 534\n    *   6"
+  },
+  {
+   "id": "q10#1",
+   "decode_tps": 68.04168161793092,
+   "prefill_tps": 62.880571828220546,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Initial number of apples: 12 rows of 8 apples.\n    *   Apples eaten: 12 apples.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 12 \u00d7 8\n\n    *   12 \u00d7 8 = 96\n\n    *   Remaining apples = Total apples"
+  },
+  {
+   "id": "q11#1",
+   "decode_tps": 83.4999670394867,
+   "prefill_tps": 61.99595992994456,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 5 pens = 135 cents.\n    *   Goal: Find the cost of 8 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 135 cents / 5 pens\n\n    *   135 / 5 = ?\n    *   100 / 5 = 20\n    *"
+  },
+  {
+   "id": "q12#1",
+   "decode_tps": 67.82168180636981,
+   "prefill_tps": 83.89730969293583,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 85 and 86.\n\n    *   Method 1: Standard multiplication\n        85 * 86 = 85 * (80 + 6)\n        85 * 80 = 85 * 8 * 10 = 680 * 10 = 6800\n        85 * 6 = 85 * "
+  },
+  {
+   "id": "q13#1",
+   "decode_tps": 71.37796284288659,
+   "prefill_tps": 93.36071914428233,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 506 + 150 - 38.\n\n    *   Step 1: 506 + 150\n    *   Step 2: (Result of Step 1) - 38\n\n    *   506 + 150 = 656\n\n    *   656 - 38 = ?\n    "
+  },
+  {
+   "id": "q14#1",
+   "decode_tps": 74.04664938911515,
+   "prefill_tps": 57.99679084423995,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 3 rows of 22 apples.\n    *   3 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 3 \u00d7 22\n\n    *   3 \u00d7 20 = 60\n    *   3 \u00d7 2 = 6\n    *   "
+  },
+  {
+   "id": "q15#1",
+   "decode_tps": 70.57991429369565,
+   "prefill_tps": 65.28329550075688,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 228 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 228 cents / 4\n\n    *   228 / 4 = ?\n    *   200 / 4 = 50\n    *   "
+  },
+  {
+   "id": "q16#1",
+   "decode_tps": 71.21658161907524,
+   "prefill_tps": 95.8731917250783,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 65 by 30.\n\n    *   Method 1: Standard multiplication\n        65 * 30 = 65 * 3 * 10\n        65 * 3 = (60 * 3) + (5 * 3) = 180 + 15 = 195\n        195 * 10 = "
+  },
+  {
+   "id": "q17#1",
+   "decode_tps": 65.00304487947066,
+   "prefill_tps": 88.44861135680169,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 653 + 220 - 83.\n    *   Step 1: Perform the addition (653 + 220).\n    *   Step 2: Perform the subtraction (Result of Step 1 - 83).\n\n    *   653 + 220 = ?\n    *   600 + 200 = 80"
+  },
+  {
+   "id": "q18#1",
+   "decode_tps": 63.85331213851463,
+   "prefill_tps": 61.412172916208206,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 22 apples.\n    *   7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 7 \u00d7 22\n\n    *   7 \u00d7 20 = 140\n    *   7 \u00d7 2 = 14\n    *   "
+  },
+  {
+   "id": "q19#1",
+   "decode_tps": 72.5123862605057,
+   "prefill_tps": 69.58094873623601,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 132 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 132 cents / 4\n\n    *   132 / 4 = ?\n    *   100 / 4 = 25\n    *   "
+  },
+  {
+   "id": "q20#1",
+   "decode_tps": 74.5167003691322,
+   "prefill_tps": 82.07485226526592,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 85.\n\n    *   Method 1: Standard multiplication\n        86 * 85 = 86 * (80 + 5)\n        86 * 80 = 86 * 8 * 10 = 688 * 10 = 6880\n        86 * 5 = 430\n"
+  },
+  {
+   "id": "q21#1",
+   "decode_tps": 66.92737815870807,
+   "prefill_tps": 96.66283084004603,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate: 754 + 292 - 57.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 754 + 292\n    *   Step 2: (Result of Step 1) - 57\n\n    *   754 + 292\n    *   7"
+  },
+  {
+   "id": "q22#1",
+   "decode_tps": 65.29083976390832,
+   "prefill_tps": 62.35661226918311,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 4 rows of 22 apples.\n    *   Action: 4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 4\n    *   Apples per row = 22\n    *   Total apples = 4 * 22\n\n    *   4 * 20 = 80\n    *"
+  },
+  {
+   "id": "q23#1",
+   "decode_tps": 83.75800109326232,
+   "prefill_tps": 61.455903427931844,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   Given: 3 pens cost 81 cents.\n    *   Goal: Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 81 cents.\n    *   Cost of 1 pen = 81 cents / 3.\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1"
+  },
+  {
+   "id": "q24#1",
+   "decode_tps": 70.52317057327915,
+   "prefill_tps": 83.30826371693703,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 91 and 38.\n\n    *   Method 1: Long multiplication\n        ```\n          91\n        x 38\n        ----\n         728  (91 * 8)\n        2730  (91 * 30)\n        ----\n        3458\n        ```\n\n    *   Method 2: Distributive property"
+  },
+  {
+   "id": "q25#1",
+   "decode_tps": 88.50126370488647,
+   "prefill_tps": 92.83409221519827,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 608 + 796 - 78.\n\n    *   608 + 796 = ?\n    *   600 + 700 = 1300\n    *   8 + 96 = 104\n    *   1300 + 104 = 1404\n\n    *   1404"
+  },
+  {
+   "id": "q26#1",
+   "decode_tps": 72.7032284825229,
+   "prefill_tps": 56.725117172820156,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 29 apples.\n    *   9 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 9 \u00d7 29\n\n    *   9 \u00d7 29 = 9 \u00d7 (30 - 1)\n    *   9 \u00d7 3"
+  },
+  {
+   "id": "q27#1",
+   "decode_tps": 69.92075402541141,
+   "prefill_tps": 69.69850418475508,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total cost of 7 pens = 553 cents.\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 553 / 7\n\n    *   553 / 7 = ?\n    *   55 / 7 = 7 with a remainder of 6"
+  },
+  {
+   "id": "q28#1",
+   "decode_tps": 75.43280564777326,
+   "prefill_tps": 83.05667002738564,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 86 by 70.\n\n    *   Method 1: Standard multiplication.\n        86 * 70 = 86 * 7 * 10\n        86 * 7 = (80 * 7) + (6 * 7)\n        80 * 7 = 560\n        6 * 7 = 42\n        "
+  },
+  {
+   "id": "q29#1",
+   "decode_tps": 69.67322523960254,
+   "prefill_tps": 90.28704832291807,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 470 + 406 - 41.\n\n    *   Step 1: 470 + 406\n    *   Step 2: (Result of Step 1) - 41\n\n    *   470 + 406 = ?\n    *   400 + 400 = 800\n    *   70"
+  },
+  {
+   "id": "q30#1",
+   "decode_tps": 62.58411799543729,
+   "prefill_tps": 66.55758617820794,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 5 rows of 27 apples.\n    *   5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 5 \u00d7 27\n\n    *   5 \u00d7 20 = 100\n    *   5 \u00d7 7 = 35\n    *   "
+  },
+  {
+   "id": "q31#1",
+   "decode_tps": 77.13781360581116,
+   "prefill_tps": 63.89334071656382,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 5 pens = 150 cents.\n    *   Goal: Find the cost of 8 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 150 cents / 5 pens\n    *   150 / 5 = 30 cents.\n\n    *   Cost of 8 pens = Cost of "
+  },
+  {
+   "id": "q32#1",
+   "decode_tps": 67.78350092506642,
+   "prefill_tps": 82.37496167276088,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 85 by 50.\n\n    *   Method 1: Standard multiplication.\n        85 * 50 = 85 * 5 * 10\n        85 * 5 = (80 * 5) + (5 * 5) = 400 + 25 = 425\n        425 * 10 ="
+  },
+  {
+   "id": "q33#1",
+   "decode_tps": 76.65809440888137,
+   "prefill_tps": 111.76603643040568,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 637 + 606 - 53.\n\n    *   637 + 606 = ?\n    *   637 + 600 = 1237\n    *   1237 + 6 = 1243\n\n    *   1243 - 53 = ?\n    *   1243 - "
+  },
+  {
+   "id": "q34#1",
+   "decode_tps": 71.05943635655082,
+   "prefill_tps": 58.20450735704973,
+   "n": 96,
+   "n_prompt": 50,
+   "text": "*   Initial state: A box holds 10 rows of 14 apples.\n    *   Action: 10 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 10\n    *   Apples per row = 14\n    *   Total apples = 10 * 14 = 140\n\n    *   Apples eaten"
+  },
+  {
+   "id": "q35#1",
+   "decode_tps": 76.66421879161051,
+   "prefill_tps": 61.478165645232565,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 105 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 105 cents.\n    *   Cost of 1 pen = 105 cents / 3.\n    *   105 / 3 = 35.\n    *   So, 1 pen costs 35 cents.\n\n    *   Cost"
+  },
+  {
+   "id": "q36#1",
+   "decode_tps": 54.19788274544795,
+   "prefill_tps": 102.8709569570771,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 77 and 65.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (breaking numbers down)\n    *   Method 3: Mental math tricks (e.g., (a+b)(c+d))\n\n    *   77 * 65\n    *   77 * 60 = "
+  },
+  {
+   "id": "q37#1",
+   "decode_tps": 78.63424728401448,
+   "prefill_tps": 89.18503984660174,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 268 + 875 - 53.\n\n    *   268 + 875\n    *   268 + 800 = 1068\n    *   1068 + 75 = 1143\n    *   (Alternative: 268 + 875 = (200 + 80"
+  },
+  {
+   "id": "q38#1",
+   "decode_tps": 64.66482519396044,
+   "prefill_tps": 56.78658890058798,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 5 rows of 20 apples.\n    *   Action: 5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 5\n    *   Apples per row = 20\n    *   Total apples = 5 * 20 = 100\n\n    *   Total apples = 100"
+  },
+  {
+   "id": "q39#1",
+   "decode_tps": 59.00199675178481,
+   "prefill_tps": 68.08401845771635,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 200 cents\n    *   Target number of pens: 11\n    *   Goal: Find the total cost of 11 pens in cents.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 200 cents / 8 pens\n\n    "
+  },
+  {
+   "id": "q40#1",
+   "decode_tps": 80.02574301796452,
+   "prefill_tps": 98.00398549541015,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 97 and 21.\n\n    *   Method 1: Standard multiplication\n        ```\n          97\n        x 21\n        ----\n          97  (97 * 1)\n        1940  (97 * 20)\n        ----\n        2037\n        ```\n\n    *   Method 2: Distributive property\n"
+  },
+  {
+   "id": "q41#1",
+   "decode_tps": 64.16343710699896,
+   "prefill_tps": 89.1852292272737,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 882 + 671 - 83.\n    *   Step 1: Perform the addition (882 + 671).\n    *   Step 2: Perform the subtraction (Result of Step 1 - 83).\n\n    *   882 + 671\n    *   800 + 600 = 1400"
+  },
+  {
+   "id": "q42#1",
+   "decode_tps": 62.05877030873258,
+   "prefill_tps": 61.35055579769143,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 8 rows of 15 apples.\n    *   8 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 8 \u00d7 15\n\n    *   8 \u00d7 10 = 80\n    *   8 \u00d7 5 = 40\n    *   8"
+  },
+  {
+   "id": "q43#1",
+   "decode_tps": 73.8467470119274,
+   "prefill_tps": 70.25331337565737,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 7\n    *   Total cost of 7 pens: 581 cents\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 581 / 7\n\n    *   581 / 7 = ?\n    *   58 /"
+  },
+  {
+   "id": "q44#1",
+   "decode_tps": 76.94924589739021,
+   "prefill_tps": 82.751962485777,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 70.\n\n    *   Method 1: Multiply 86 by 7 and then add a zero.\n        *   86 * 7 = (80 * 7) + (6 * 7)\n        *   80 * 7 = 560\n        *   6 * 7 = 42\n        *   56"
+  },
+  {
+   "id": "q45#1",
+   "decode_tps": 59.74632339993056,
+   "prefill_tps": 107.24572549179825,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate the result of the expression: 170 + 960 - 21.\n    *   The user also specified a specific format for the final answer: \"ANSWER: <number>\".\n\n    *   Step 1: 170 + 960\n    *   Step 2: (Result of Step 1) - 21\n\n    *   170"
+  },
+  {
+   "id": "q46#1",
+   "decode_tps": 67.44816608436416,
+   "prefill_tps": 62.30149510608776,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 20 apples.\n    *   Total apples initially = 7 rows * 20 apples/row.\n    *   Apples eaten = 7.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 7 * 20 = 140.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q47#1",
+   "decode_tps": 76.1579821181058,
+   "prefill_tps": 61.79892732840608,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   3 pens cost 81 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 81 cents.\n    *   Cost of 1 pen = 81 cents / 3.\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1 pen).\n    *"
+  },
+  {
+   "id": "q48#1",
+   "decode_tps": 63.13584441201255,
+   "prefill_tps": 81.6496865559255,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 51 and 94.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (51 * 94 = (50 + 1) * 94)\n    *   Method 3: Distributive property (51 * 94 = 51 * (90 + 4))\n    "
+  },
+  {
+   "id": "q49#1",
+   "decode_tps": 75.9768422584796,
+   "prefill_tps": 105.68749716908488,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 691 + 797 - 67.\n\n    *   691 + 797:\n        *   600 + 700 = 1300\n        *   91 + 97 = 188\n        *   1300 + 188 = 1488\n\n    *   1488"
+  },
+  {
+   "id": "q50#1",
+   "decode_tps": 74.00408035129348,
+   "prefill_tps": 57.95512582902997,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 27 apples.\n    *   7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 7 \u00d7 27\n\n    *   7 \u00d7 20 = 140\n    *   7 \u00d7 7 = 49\n    *   "
+  },
+  {
+   "id": "q51#1",
+   "decode_tps": 65.5267314576594,
+   "prefill_tps": 66.84583168492422,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 512 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 512 cents / 8 pens\n\n    *   512 / 8 = ?\n    *   5"
+  },
+  {
+   "id": "q52#1",
+   "decode_tps": 75.72581197998288,
+   "prefill_tps": 101.49593734317467,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 14 and 71.\n\n    *   Method 1: Long multiplication\n        ```\n          71\n        x 14\n        ----\n         284  (4 * 71 = 284)\n         710  (10 * 71 = 710)\n        ----\n         994\n        ```\n    *"
+  },
+  {
+   "id": "q53#1",
+   "decode_tps": 66.38500788933409,
+   "prefill_tps": 88.73301924661442,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 463 + 272 - 88.\n    *   Goal: Calculate the final result.\n\n    *   463 + 272\n    *   400 + 200 = 600\n    *   63 + 72 = 135\n    *   600 + 135 = 735\n\n"
+  },
+  {
+   "id": "q54#1",
+   "decode_tps": 61.022884866517266,
+   "prefill_tps": 61.392065075588974,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 20 apples.\n    *   Total apples initially = 4 rows * 20 apples/row.\n    *   Apples eaten = 4.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 4 * 20 = 80.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   Remaining"
+  },
+  {
+   "id": "q55#1",
+   "decode_tps": 71.05125188566282,
+   "prefill_tps": 69.27136837482,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   2 pens cost 94 cents.\n    *   Find the cost of 5 pens.\n\n    *   Cost of 2 pens = 94 cents.\n    *   Cost of 1 pen = 94 cents / 2.\n    *   94 / 2 = 47 cents.\n\n    *   Cost of 5 pens = 5 * (Cost of 1 pen).\n    *"
+  },
+  {
+   "id": "q56#1",
+   "decode_tps": 77.62363811369656,
+   "prefill_tps": 82.58244480739938,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 48 and 28.\n\n    *   Method 1: Standard multiplication (long multiplication)\n        ```\n          48\n        x 28\n        ----\n         384  (8 * 48 = 8 * 40 + 8 * 8 = 320 + 64 = 384)\n         960  ("
+  },
+  {
+   "id": "q57#1",
+   "decode_tps": 65.14640110707738,
+   "prefill_tps": 100.11584833879202,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate the result of the expression: 856 + 353 - 60.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 856 + 353\n    *   Step 2: (Result of Step 1) - 60\n\n    *   856 + 353"
+  },
+  {
+   "id": "q58#1",
+   "decode_tps": 66.33073060856002,
+   "prefill_tps": 61.74538774817144,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 20 apples.\n    *   Total apples initially = 9 rows * 20 apples/row.\n    *   Apples eaten = 9.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 9 * 20 = 180.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q59#1",
+   "decode_tps": 83.83516770563443,
+   "prefill_tps": 60.76149341623902,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 3 pens = 123 cents.\n    *   Number of pens = 3.\n    *   Goal: Find the cost of 6 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 123 cents / 3\n\n    *   123 / 3 = ?\n    *   120"
+  },
+  {
+   "id": "code0#2",
+   "decode_tps": 48.91942147377224,
+   "prefill_tps": 68.48053499827617,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Write a Python function to merge overlapping intervals.\n    *   Requirement: Explain the complexity (Time and Space).\n\n    *   Input: A list of intervals (e.g., `[[1, 3], [2, 6], [8, 10], [15, 18]]`).\n    *   Output: A list of merged intervals (e.g., `[[1, 6"
+  },
+  {
+   "id": "code1#2",
+   "decode_tps": 37.417764615477324,
+   "prefill_tps": 83.76878659468329,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Implement an LRU (Least Recently Used) Cache in Rust.\n*   Requirements:\n    *   Generics (Key and Value types).\n    *   Unit tests.\n    *   Standard LRU behavior: `get` (updates recency), `put` (adds/updates, evicts if full).\n\n    *   An LRU cache needs two main components:\n        1.  A **HashMap**"
+  },
+  {
+   "id": "code2#2",
+   "decode_tps": 55.866677408750604,
+   "prefill_tps": 101.2093280441174,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Code snippet: `char b[8]; strcpy(b, argv[1]);`\n*   Task 1: Explain *why* it can overflow.\n*   Task 2: Fix it.\n\n    *   `char b[8];`: This allocates a fixed-size buffer of 8 bytes on the stack.\n    *   `argv[1]`: This is a command-line argument passed to the program."
+  },
+  {
+   "id": "code3#2",
+   "decode_tps": 59.34814496440361,
+   "prefill_tps": 70.01771448176387,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or `Sales`):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *   "
+  },
+  {
+   "id": "code4#2",
+   "decode_tps": 49.14048125601001,
+   "prefill_tps": 74.85590238790328,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   *Goal:* Refactor nested JavaScript callbacks (callback hell) into `async/await`.\n*   *Requirement:* Include error handling.\n*   *Context:* The user hasn't provided the specific code yet, so I need to provide a *representative example* and then explain the *pattern* for refactoring.\n\n    *   *Scenario:* A common real-world task like fetching user data $\\rightarrow$ fetching user posts $\\rightarrow"
+  },
+  {
+   "id": "code5#2",
+   "decode_tps": 52.91061281071758,
+   "prefill_tps": 84.75062811150995,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   Goal: Rotate logs older than 7 days and compress them.\n    *   Language: Bash script.\n    *   Key actions: Find files, check age, compress them, (optionally) delete the original uncompressed files.\n\n    *   Where are the logs? (Need a variable for the directory).\n    *   What is the age threshold? (7 days).\n    *   What is the file extension to look"
+  },
+  {
+   "id": "code6#2",
+   "decode_tps": 46.91003593308753,
+   "prefill_tps": 75.70931798957822,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Design a REST API for a library system.\n*   Output: API design (endpoints, methods, resources) and example requests (JSON).\n\n    *   Books (Title, Author, ISBN, Genre, Publication Year, Availability).\n    *   Authors (Name, Bio, Nationality).\n    *   Users/Members (Name, Email, Membership Date).\n    *   Loans/Borrowing (Book, User, Due"
+  },
+  {
+   "id": "code7#2",
+   "decode_tps": 66.35931824531993,
+   "prefill_tps": 77.61946282157098,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector<"
+  },
+  {
+   "id": "chat0#2",
+   "decode_tps": 34.635658394699206,
+   "prefill_tps": 65.6397689480133,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Destination: Kyoto, Japan.\n    *   Duration: 3 days.\n    *   Vibe: Relaxed (not a frantic \"see everything\" itinerary).\n    *   Travelers: Two people.\n    *   Season: Spring (Cherry blossoms/Sakura season or late spring greenery).\n    *   Goal: A balanced plan.\n\n    *   *Spring in Kyoto:* High season. Crowds are a"
+  },
+  {
+   "id": "chat1#2",
+   "decode_tps": 35.978511360688366,
+   "prefill_tps": 71.2398321330501,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "Friend forgot the user's birthday.\nHurt, disappointed, perhaps a bit lonely or undervalued.\nHow to bring it up (communication strategy).\n\n    *   *Why did they forget?* (Busy, stress, different values regarding birthdays, memory issues, technical glitch, intentional?)\n    *   *What is the goal?* (To express hurt, to get an apology, to strengthen the friendship, or to vent?)\n    *"
+  },
+  {
+   "id": "chat2#2",
+   "decode_tps": 43.90535853346859,
+   "prefill_tps": 70.8096426997881,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Vegetarian dinners.\nBusy family (needs to be quick, easy, kid-friendly, or meal-prep friendly).\nOne week (7 days).\n\n    *   *Speed:* 30 minutes or less, or slow cooker/one-pot meals.\n    *   *Simplicity:* Minimal chopping, common ingredients, pantry staples.\n    *   *Variety:* Pasta, tacos, bowls, soups, sheet pan meals.\n    "
+  },
+  {
+   "id": "chat3#2",
+   "decode_tps": 43.43802354249428,
+   "prefill_tps": 71.98790603178666,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, sentimental, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the chaos of dorm life, seeing them grow.\n    *   *The \"Transition\" Section:* When they met their partner, how they changed (for the better), why they are a good match.\n"
+  },
+  {
+   "id": "chat4#2",
+   "decode_tps": 42.77599069194443,
+   "prefill_tps": 78.000078000078,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sleeping better while working night shifts.\nProvide actionable, effective \"good habits\" to mitigate the negative effects of shift work.\n\n    *   *Circadian Rhythm:* The body's internal clock is disrupted.\n    *   *Light Exposure:* Light tells the brain it's daytime; darkness tells it to sleep.\n    *   *Temperature:* Body temperature drops during sleep; it rises during the day.\n    *   *Diet/Stim"
+  },
+  {
+   "id": "chat5#2",
+   "decode_tps": 48.966573355277234,
+   "prefill_tps": 91.63982928808944,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Someone who has never exercised before.\nHow to start running.\nEncouraging, structured, safe, and realistic.\n\n    *   *Physical readiness:* Medical clearance, shoes, gear.\n    *   *The \"How-To\" (Methodology):* Walk-run method (Couch to 5K style), consistency over intensity.\n    *   *The \"What\" (Technique):* Posture, breathing, pace"
+  },
+  {
+   "id": "chat6#2",
+   "decode_tps": 50.39442924065144,
+   "prefill_tps": 77.84353935112544,
+   "n": 96,
+   "n_prompt": 32,
+   "text": "A lighthouse keeper.\nFinds a message in a bottle.\nShort story.\n\n    *   *The Keeper:* Needs to be solitary, perhaps a bit weathered, someone who finds comfort in the routine. Let's call him Elias. He's old, maybe a bit lonely, but content.\n    *   *The Setting:* A rugged, rocky island. Stormy weather (classic lighthouse trope) or a calm, post-storm morning"
+  },
+  {
+   "id": "chat7#2",
+   "decode_tps": 60.489211271623304,
+   "prefill_tps": 73.15021396437585,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: What do they do? Who are"
+  },
+  {
+   "id": "reason0#2",
+   "decode_tps": 51.141257536606375,
+   "prefill_tps": 61.0755929508414,
+   "n": 96,
+   "n_prompt": 59,
+   "text": "*   Train 1: Leaves at 3:00 PM, speed = 60 km/h.\n    *   Train 2: Leaves at 4:00 PM, speed = 90 km/h.\n    *   Goal: Find the time when Train 2 catches up to Train 1.\n\n    *   Let $t$ be the time (in hours) that Train 2 has been traveling."
+  },
+  {
+   "id": "reason1#2",
+   "decode_tps": 46.57890220882057,
+   "prefill_tps": 56.24519572286534,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "The objective is to provide a formal mathematical proof that $\\sqrt{2}$ is an irrational number.\n\n    *   The most common and elegant way to prove this is by *reductio ad absurdum* (proof by contradiction).\n    *   *Core idea:* Assume $\\sqrt{2}$ is rational, show that this leads to a logical impossibility (a contradiction), and therefore the original assumption must be false.\n\n    *   *Step "
+  },
+  {
+   "id": "reason2#2",
+   "decode_tps": 41.89479115446609,
+   "prefill_tps": 98.94493454011436,
+   "n": 96,
+   "n_prompt": 38,
+   "text": "*   Topic: Comparison of economic causes.\n*   Subjects: 1929 Stock Market Crash (Great Depression era) and 2008 Financial Crisis (Great Recession era).\n*   Goal: Identify similarities and differences in the underlying economic drivers.\n\n    *   *1929 Crash:*\n        *   Speculation/Stock Market bubble (buying on margin).\n        *   Overproduction in agriculture and industry (supply"
+  },
+  {
+   "id": "reason3#2",
+   "decode_tps": 43.27221777859565,
+   "prefill_tps": 98.06078812172932,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason4#2",
+   "decode_tps": 43.89726376803023,
+   "prefill_tps": 84.78145528735443,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "Photosynthesis (energy storage mechanism).\nStep-by-step.\nCollege level (requires biochemical detail, specific terminology, and a focus on thermodynamics/redox reactions).\n\n    *   *Overview:* Conversion of light energy to chemical energy.\n    *   *Equation:* $6CO_2 + 6H_2O + \\text{light} \\rightarrow C_6H_{12}O_6 + 6O_"
+  },
+  {
+   "id": "reason5#2",
+   "decode_tps": 42.84136563842879,
+   "prefill_tps": 74.36016458383095,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "*   *Topic:* Small city investment decision: Light Rail Transit (LRT) vs. Bus Rapid Transit (BRT).\n*   *Goal:* Weigh the tradeoffs.\n*   *Context:* \"Small city\" (implies limited budget, specific density patterns, and different political/social priorities compared to a metropolis like NYC or London).\n\n    *   *Light Rail (LRT):* Fixed rail, high capacity, high cost, permanent infrastructure"
+  },
+  {
+   "id": "reason6#2",
+   "decode_tps": 60.242835700031264,
+   "prefill_tps": 68.0148175138155,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sum of a geometric series.\nDerive the formula.\nMathematical derivation (clear, step-by-step).\n\n    *   What is a geometric series? It's a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio ($r$).\n    *   General term: $a, ar, ar^2, ar^3, \\dots, ar"
+  },
+  {
+   "id": "reason7#2",
+   "decode_tps": 49.04177533291622,
+   "prefill_tps": 72.21240763904113,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen ("
+  },
+  {
+   "id": "q0#2",
+   "decode_tps": 47.396249609604574,
+   "prefill_tps": 93.40653638184592,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 53 and 31.\n\n    *   Method 1: Long multiplication\n        ```\n          53\n        x 31\n        ----\n          53  (53 * 1)\n        1590  (53 * 30)\n        ----\n        1643\n        ```\n\n    *   Method 2: Distributive property\n"
+  },
+  {
+   "id": "q1#2",
+   "decode_tps": 51.25319455766605,
+   "prefill_tps": 89.64609004309415,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 504 + 766 - 16.\n\n    *   Step 1: 504 + 766\n    *   Step 2: (Result of Step 1) - 16\n\n    *   504 + 766\n    *   500 + 700 = 1200\n    "
+  },
+  {
+   "id": "q2#2",
+   "decode_tps": 61.08688355296747,
+   "prefill_tps": 56.99568613900535,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 22 apples.\n    *   4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 4 \u00d7 22\n\n    *   4 \u00d7 20 = 80\n    *   4 \u00d7 2 = 8\n    *   80"
+  },
+  {
+   "id": "q3#2",
+   "decode_tps": 74.23237860075874,
+   "prefill_tps": 58.090633490460434,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 198 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 198 cents.\n    *   Cost of 1 pen = 198 / 3.\n\n    *   198 / 3 = ?\n    *   180 / 3 = 60\n    *   18 / 3 ="
+  },
+  {
+   "id": "q4#2",
+   "decode_tps": 60.63259582822211,
+   "prefill_tps": 77.87892423245994,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 19.\n\n    *   Method 1: Standard multiplication\n        86 * 19 = 86 * (20 - 1)\n        86 * 20 = 1720\n        86 * 1 = 86\n        1720 - 86 = 1634\n\n    *   Method "
+  },
+  {
+   "id": "q5#2",
+   "decode_tps": 69.02083412041303,
+   "prefill_tps": 105.15168130027565,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 619 + 319 - 14.\n\n    *   Step 1: 619 + 319\n    *   Step 2: (Result of Step 1) - 14\n\n    *   619 + 319\n    *   600 + 300 = 900\n    *   19 + "
+  },
+  {
+   "id": "q6#2",
+   "decode_tps": 70.44269153367829,
+   "prefill_tps": 57.41269681790128,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 18 apples.\n    *   4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 4 \u00d7 18\n\n    *   4 \u00d7 10 = 40\n    *   4 \u00d7 8 = 32\n    *   4"
+  },
+  {
+   "id": "q7#2",
+   "decode_tps": 67.92370809107211,
+   "prefill_tps": 63.456871343135916,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 224 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 224 cents / 8 pens\n\n    *   224 / 8 = ?\n    *   2"
+  },
+  {
+   "id": "q8#2",
+   "decode_tps": 73.9615602307912,
+   "prefill_tps": 100.43325791539613,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 42 and 23.\n\n    *   Method 1: Long multiplication\n        ```\n          42\n        x 23\n        ----\n          66  (3 * 42)\n         840  (20 * 42)\n        ----\n         906\n        ```\n    *   Method 2: Distributive property\n        4"
+  },
+  {
+   "id": "q9#2",
+   "decode_tps": 77.61875465201878,
+   "prefill_tps": 86.22618771441066,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 664 + 534 - 17.\n\n    *   664 + 534:\n        *   600 + 500 = 1100\n        *   64 + 34 = 98\n        *   1100 + 98 = 1198\n\n    *   1198 - "
+  },
+  {
+   "id": "q10#2",
+   "decode_tps": 68.15488232880212,
+   "prefill_tps": 61.05044136977256,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Initial state: A box holds 12 rows of 8 apples.\n    *   Action: 12 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 12\n    *   Apples per row = 8\n    *   Total apples = 12 * 8\n\n    *   12 * 8 = 96\n\n    "
+  },
+  {
+   "id": "q11#2",
+   "decode_tps": 77.12892058481583,
+   "prefill_tps": 69.51343491949476,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 5 pens = 135 cents.\n    *   Goal: Find the cost of 8 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 135 cents / 5 pens\n\n    *   135 / 5 = ?\n    *   100 / 5 = 20\n    *"
+  },
+  {
+   "id": "q12#2",
+   "decode_tps": 70.55150482646556,
+   "prefill_tps": 82.71982794275787,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 85 and 86.\n\n    *   Method 1: Standard multiplication\n        85 * 86 = 85 * (80 + 6)\n        85 * 80 = 85 * 8 * 10 = 680 * 10 = 6800\n        85 * 6 = 85 * "
+  },
+  {
+   "id": "q13#2",
+   "decode_tps": 61.61377502411044,
+   "prefill_tps": 97.44983073892494,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 506 + 150 - 38.\n\n    *   Step 1: 506 + 150\n    *   Step 2: (Result of Step 1) - 38\n\n    *   506 + 150 = 656\n\n    *   656 - 38 = ?\n    "
+  },
+  {
+   "id": "q14#2",
+   "decode_tps": 70.19151199905426,
+   "prefill_tps": 62.23840420731612,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 3 rows of 22 apples.\n    *   3 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 3 \u00d7 22\n\n    *   3 \u00d7 20 = 60\n    *   3 \u00d7 2 = 6\n    *   "
+  },
+  {
+   "id": "q15#2",
+   "decode_tps": 80.50308496295587,
+   "prefill_tps": 62.02936832134314,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 228 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 228 / 4\n\n    *   228 / 4 = ?\n    *   200 / 4 = 50\n    *   2"
+  },
+  {
+   "id": "q16#2",
+   "decode_tps": 65.04198631379677,
+   "prefill_tps": 79.98489174267084,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 65 by 30.\n\n    *   Method 1: Standard multiplication.\n        65 * 30 = 65 * 3 * 10\n        65 * 3 = (60 * 3) + (5 * 3) = 180 + 15 = 195\n        195 * 10 ="
+  },
+  {
+   "id": "q17#2",
+   "decode_tps": 75.46576277218317,
+   "prefill_tps": 86.0174533508918,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 653 + 220 - 83.\n\n    *   Step 1: 653 + 220\n    *   Step 2: (Result of Step 1) - 83\n\n    *   653 + 220 = ?\n    *   600 + 200 = 800\n    *   53"
+  },
+  {
+   "id": "q18#2",
+   "decode_tps": 74.1809061470984,
+   "prefill_tps": 57.93721778238057,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 22 apples.\n    *   7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 7 \u00d7 22\n\n    *   7 \u00d7 20 = 140\n    *   7 \u00d7 2 = 14\n    "
+  },
+  {
+   "id": "q19#2",
+   "decode_tps": 70.23717986632755,
+   "prefill_tps": 63.231442888833854,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Total cost of 4 pens = 132 cents.\n    *   Goal: Find the cost of 7 pens.\n\n    *   Cost of 1 pen = Total cost / Number of pens\n    *   Cost of 1 pen = 132 cents / 4\n\n    *   132 / 4 = ?\n    *   100 / 4 = 25\n    *   "
+  },
+  {
+   "id": "q20#2",
+   "decode_tps": 70.61595697629905,
+   "prefill_tps": 95.84843168003664,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 85.\n\n    *   Method 1: Standard multiplication\n        86 * 85 = 86 * (80 + 5)\n        86 * 80 = 86 * 8 * 10 = 688 * 10 = 6880\n        86 * 5 = 430\n"
+  },
+  {
+   "id": "q21#2",
+   "decode_tps": 72.26736185333071,
+   "prefill_tps": 87.80090100448412,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate: 754 + 292 - 57.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 754 + 292\n    *   Step 2: (Result of Step 1) - 57\n\n    *   754 + 292\n    *   7"
+  },
+  {
+   "id": "q22#2",
+   "decode_tps": 61.8599126928727,
+   "prefill_tps": 61.98203037636006,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   Initial state: A box holds 4 rows of 22 apples.\n    *   Action: 4 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 4\n    *   Apples per row = 22\n    *   Total apples = 4 * 22\n\n    *   4 * 20 = 80\n    *"
+  },
+  {
+   "id": "q23#2",
+   "decode_tps": 69.5584430038118,
+   "prefill_tps": 68.53739735795625,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   3 pens cost 81 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 81 cents.\n    *   Cost of 1 pen = 81 cents / 3.\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1 pen).\n    *"
+  },
+  {
+   "id": "q24#2",
+   "decode_tps": 70.95578185055666,
+   "prefill_tps": 81.56403569785962,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 91 and 38.\n\n    *   Method 1: Long multiplication\n        ```\n          91\n        x 38\n        ----\n         728  (91 * 8)\n        2730  (91 * 30)\n        ----\n        3458\n        ```\n\n    *   Method 2: Distributive property"
+  },
+  {
+   "id": "q25#2",
+   "decode_tps": 70.43026217850438,
+   "prefill_tps": 89.24397603161786,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 608 + 796 - 78.\n\n    *   Step 1: 608 + 796\n    *   Step 2: (Result of Step 1) - 78\n\n    *   608 + 796\n    *   600 + 700 = 1300\n    *   8 + "
+  },
+  {
+   "id": "q26#2",
+   "decode_tps": 74.31210458138037,
+   "prefill_tps": 61.97810881548214,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 29 apples.\n    *   9 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Number of apples per row\n    *   Total apples = 9 \u00d7 29\n\n    *   9 \u00d7 29 = 9 \u00d7 (30 - 1)\n    *   9 \u00d7 3"
+  },
+  {
+   "id": "q27#2",
+   "decode_tps": 74.02685850272496,
+   "prefill_tps": 63.644711838825614,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 7\n    *   Total cost of 7 pens: 553 cents\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 553 / 7\n\n    *   553 / 7 = ?\n    *   55 /"
+  },
+  {
+   "id": "q28#2",
+   "decode_tps": 68.58626383186403,
+   "prefill_tps": 81.61303632233522,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 70.\n\n    *   Method 1: Multiply 86 by 7 and then add a zero.\n        *   86 * 7 = (80 * 7) + (6 * 7)\n        *   80 * 7 = 560\n        *   6 * 7 = 42\n        *   56"
+  },
+  {
+   "id": "q29#2",
+   "decode_tps": 74.90630797846798,
+   "prefill_tps": 95.66805916841679,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 470 + 406 - 41.\n\n    *   Step 1: 470 + 406\n    *   Step 2: (Result of Step 1) - 41\n\n    *   470 + 406 = ?\n    *   400 + 400 = 800\n    *   70"
+  },
+  {
+   "id": "q30#2",
+   "decode_tps": 69.5577809164201,
+   "prefill_tps": 57.32650670182692,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 5 rows of 27 apples.\n    *   5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 5 \u00d7 27\n\n    *   5 \u00d7 20 = 100\n    *   5 \u00d7 7 = 35\n    *   "
+  },
+  {
+   "id": "q31#2",
+   "decode_tps": 69.49560092846123,
+   "prefill_tps": 63.4521121621836,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   5 pens cost 150 cents.\n    *   Find the cost of 8 pens.\n\n    *   Cost of 5 pens = 150 cents.\n    *   Cost of 1 pen = 150 cents / 5.\n    *   150 / 5 = 30.\n    *   So, 1 pen costs 30 cents.\n\n    *   Cost"
+  },
+  {
+   "id": "q32#2",
+   "decode_tps": 70.64315761529521,
+   "prefill_tps": 94.55519659601292,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the result of multiplying 85 by 50.\n\n    *   Method 1: Standard multiplication.\n        85 * 50 = 85 * 5 * 10\n        85 * 5 = (80 * 5) + (5 * 5) = 400 + 25 = 425\n        425 * 10 ="
+  },
+  {
+   "id": "q33#2",
+   "decode_tps": 77.87976839376667,
+   "prefill_tps": 89.49785311697582,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 637 + 606 - 53.\n\n    *   637 + 606 = ?\n    *   637 + 600 = 1237\n    *   1237 + 6 = 1243\n\n    *   1243 - 53 = ?\n    *   1243 - "
+  },
+  {
+   "id": "q34#2",
+   "decode_tps": 60.39015856548581,
+   "prefill_tps": 63.12517596142799,
+   "n": 96,
+   "n_prompt": 50,
+   "text": "*   Initial state: A box holds 10 rows of 14 apples.\n    *   Action: 10 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Number of rows = 10\n    *   Apples per row = 14\n    *   Total apples = 10 * 14 = 140\n\n    *   Total apples ="
+  },
+  {
+   "id": "q35#2",
+   "decode_tps": 71.7658710223766,
+   "prefill_tps": 66.90790684189105,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 105 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 105 cents.\n    *   Cost of 1 pen = 105 cents / 3.\n    *   105 / 3 = 35 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1 pen"
+  },
+  {
+   "id": "q36#2",
+   "decode_tps": 57.91958931962773,
+   "prefill_tps": 82.35536339304097,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 77 and 65.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (breaking numbers down)\n    *   Method 3: Mental math tricks (e.g., (a+b)(c+d))\n\n    *   77 * 65\n    *   77 * 60 = "
+  },
+  {
+   "id": "q37#2",
+   "decode_tps": 69.13666499283163,
+   "prefill_tps": 88.92671803243285,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 268 + 875 - 53.\n\n    *   268 + 875 = ?\n    *   268 + 800 = 1068\n    *   1068 + 75 = 1143\n    *   (Alternative: 268 + 875 = (200 + "
+  },
+  {
+   "id": "q38#2",
+   "decode_tps": 58.59578591443658,
+   "prefill_tps": 63.54560654943384,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 5 rows of 20 apples.\n    *   Total apples initially = 5 rows * 20 apples/row.\n    *   5 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 5 * 20 = 100.\n\n    *   Remaining apples = Total apples - Eaten apples.\n    *   Remaining"
+  },
+  {
+   "id": "q39#2",
+   "decode_tps": 69.49056830118236,
+   "prefill_tps": 63.848972422456065,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 200 cents\n    *   Target number of pens: 11\n    *   Goal: Find the total cost of 11 pens in cents.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 200 cents / 8 pens\n\n    "
+  },
+  {
+   "id": "q40#2",
+   "decode_tps": 71.96882462030763,
+   "prefill_tps": 80.6346845615937,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 97 and 21.\n\n    *   Method 1: Long multiplication\n        ```\n          97\n        x 21\n        ----\n          97  (97 * 1)\n        1940  (97 * 20)\n        ----\n        2037\n        ```\n    *   Method 2: Distributive property\n"
+  },
+  {
+   "id": "q41#2",
+   "decode_tps": 68.40871253362829,
+   "prefill_tps": 86.63545040120465,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 882 + 671 - 83.\n\n    *   882 + 671 = ?\n    *   800 + 600 = 1400\n    *   82 + 71 = 153\n    *   1400 + 153 = 1553\n\n    *   155"
+  },
+  {
+   "id": "q42#2",
+   "decode_tps": 73.3408938788146,
+   "prefill_tps": 57.81802019053447,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 8 rows of 15 apples.\n    *   Total apples initially = 8 rows * 15 apples/row.\n    *   Apples eaten = 8.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 8 * 15\n    *   8 * 10 = 80\n    *   8 * 5 = "
+  },
+  {
+   "id": "q43#2",
+   "decode_tps": 63.15704097961224,
+   "prefill_tps": 63.685244128935324,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 7\n    *   Total cost of 7 pens: 581 cents\n    *   Goal: Find the cost of 10 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 581 / 7\n\n    *   58 / 7 = 8 with a remainder of 2 ("
+  },
+  {
+   "id": "q44#2",
+   "decode_tps": 62.373898033777756,
+   "prefill_tps": 77.47983910020079,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 86 and 70.\n\n    *   Method 1: Standard multiplication\n        86 * 70 = 86 * 7 * 10\n        86 * 7 = (80 * 7) + (6 * 7)\n        80 * 7 = 560\n        6 * 7 = 42\n        56"
+  },
+  {
+   "id": "q45#2",
+   "decode_tps": 78.384778501118,
+   "prefill_tps": 90.20424819054574,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "The user wants to calculate the result of the expression: 170 + 960 - 21.\n\n    *   Step 1: 170 + 960\n    *   Step 2: (Result of Step 1) - 21\n\n    *   170 + 960 = ?\n    *   100 + 900 = 1000"
+  },
+  {
+   "id": "q46#2",
+   "decode_tps": 70.42164776277838,
+   "prefill_tps": 57.289559335870784,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 20 apples.\n    *   Total apples initially = 7 rows * 20 apples/row.\n    *   Apples eaten = 7.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 7 * 20 = 140.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q47#2",
+   "decode_tps": 71.78729198687577,
+   "prefill_tps": 63.91044922246819,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   Given: 3 pens cost 81 cents.\n    *   Goal: Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 81 cents.\n    *   Cost of 1 pen = 81 cents / 3.\n    *   81 / 3 = 27 cents.\n\n    *   Cost of 6 pens = 6 * (Cost of 1"
+  },
+  {
+   "id": "q48#2",
+   "decode_tps": 70.75786138460474,
+   "prefill_tps": 90.34375799918689,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 51 and 94.\n\n    *   Method 1: Standard multiplication (long multiplication)\n    *   Method 2: Distributive property (51 * 94 = (50 + 1) * 94)\n    *   Method 3: Distributive property (51 * 94 = 51 * (90 + 4))\n    "
+  },
+  {
+   "id": "q49#2",
+   "decode_tps": 74.24293695680545,
+   "prefill_tps": 88.68524129776071,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 691 + 797 - 67.\n\n    *   691 + 797:\n        *   600 + 700 = 1300\n        *   91 + 97 = 188\n        *   1300 + 188 = 1488\n\n    *   1488"
+  },
+  {
+   "id": "q50#2",
+   "decode_tps": 64.70715245618133,
+   "prefill_tps": 61.991075868036496,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 7 rows of 27 apples.\n    *   7 apples are eaten.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = Number of rows \u00d7 Apples per row\n    *   Total apples = 7 \u00d7 27\n\n    *   7 \u00d7 20 = 140\n    *   7 \u00d7 7 = 49\n    *   "
+  },
+  {
+   "id": "q51#2",
+   "decode_tps": 72.3181389117262,
+   "prefill_tps": 69.22507473482558,
+   "n": 96,
+   "n_prompt": 49,
+   "text": "*   Total number of pens: 8\n    *   Total cost of 8 pens: 512 cents\n    *   Goal: Find the cost of 11 pens.\n\n    *   Cost of 1 pen = Total cost / Total number of pens\n    *   Cost of 1 pen = 512 cents / 8 pens\n\n    *   512 / 8 = ?\n    *   5"
+  },
+  {
+   "id": "q52#2",
+   "decode_tps": 70.96802628954505,
+   "prefill_tps": 81.1752370429665,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 14 and 71.\n\n    *   Method 1: Long multiplication\n        ```\n          71\n        x 14\n        ----\n          84  (4 * 71 = 284? No, 4 * 71 = 284. Let's re-calculate)\n          4 * 1 = 4\n          4 *"
+  },
+  {
+   "id": "q53#2",
+   "decode_tps": 58.408018744670265,
+   "prefill_tps": 108.10755156987608,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The expression is: 463 + 272 - 88.\n    *   Step 1: Perform the addition (463 + 272).\n    *   Step 2: Perform the subtraction (Result of Step 1 - 88).\n\n    *   463 + 272\n    *   400 + 200 = 600\n"
+  },
+  {
+   "id": "q54#2",
+   "decode_tps": 66.89047986526145,
+   "prefill_tps": 62.45324138828351,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 4 rows of 20 apples.\n    *   Total apples initially = 4 rows * 20 apples/row.\n    *   Apples eaten = 4.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 4 * 20 = 80.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   Remaining"
+  },
+  {
+   "id": "q55#2",
+   "decode_tps": 80.80945555692601,
+   "prefill_tps": 61.6100946173751,
+   "n": 96,
+   "n_prompt": 47,
+   "text": "*   2 pens cost 94 cents.\n    *   Find the cost of 5 pens.\n\n    *   Cost of 2 pens = 94 cents.\n    *   Cost of 1 pen = 94 cents / 2.\n    *   94 / 2 = 47 cents.\n\n    *   Cost of 5 pens = 5 * (Cost of 1 pen).\n    *"
+  },
+  {
+   "id": "q56#2",
+   "decode_tps": 62.47936536749047,
+   "prefill_tps": 83.18698585821241,
+   "n": 96,
+   "n_prompt": 36,
+   "text": "The user wants to know the product of 48 and 28.\n\n    *   Method 1: Standard multiplication\n        ```\n          48\n        x 28\n        ----\n         384  (48 * 8)\n         960  (48 * 20)\n        ----\n        1344\n        ```\n\n    *   Method 2: Distributive property ("
+  },
+  {
+   "id": "q57#2",
+   "decode_tps": 72.66730307925785,
+   "prefill_tps": 98.94156087379532,
+   "n": 96,
+   "n_prompt": 42,
+   "text": "*   The user wants to calculate the result of the expression: 856 + 353 - 60.\n    *   The final answer must be formatted as \"ANSWER: <number>\".\n\n    *   Step 1: 856 + 353\n    *   Step 2: (Result of Step 1) - 60\n\n    *   856 + 353"
+  },
+  {
+   "id": "q58#2",
+   "decode_tps": 71.84788215132222,
+   "prefill_tps": 57.76951887619029,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   The box has 9 rows of 20 apples.\n    *   Total apples initially = 9 rows * 20 apples/row.\n    *   Apples eaten = 9.\n    *   Goal: Find the number of apples remaining.\n\n    *   Total apples = 9 * 20 = 180.\n\n    *   Remaining apples = Total apples - Apples eaten.\n    *   "
+  },
+  {
+   "id": "q59#2",
+   "decode_tps": 76.52459137882008,
+   "prefill_tps": 62.76347584129209,
+   "n": 96,
+   "n_prompt": 48,
+   "text": "*   3 pens cost 123 cents.\n    *   Find the cost of 6 pens.\n\n    *   Cost of 3 pens = 123 cents.\n    *   Cost of 1 pen = 123 cents / 3.\n\n    *   123 / 3 = ?\n    *   120 / 3 = 40\n    *   3 / 3 ="
+  }
+ ]
+}

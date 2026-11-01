@@ -1,0 +1,88 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Deep_learing/projects/custem-model/models/24B-Q4KM/LFM2.5-24B-A2B-Q4_K_M.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-cmoe",
+  "--moe-cache-mib",
+  "3000"
+ ],
+ "decode_tps": 45.24470438048302,
+ "prefill_tps_mean": 87.68731037494757,
+ "peak_vram_mib": 4151,
+ "tokens": 768,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 501 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 54862, misses = 71361, hit rate = 43.46%, uploaded = 0.00 MiB",
+  "llama_moe_cache: swaps = 1588"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 44.84388853716057,
+   "prefill_tps": 65.66814602406737,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to respond with a SQL query that returns the top three customers by revenue per month. The user asks: \"Write a SQL query for the top three customers by revenue per month.\"\n\nInterpretation: We have some table(s) presumably containing sales data, like orders or transactions, with fields such as customer_id, order_date (or month), amount (revenue). Need to compute monthly revenue per customer and then find top 3 customers each month? Or overall top three customers by total revenue across all months? The phrase \"per month\" suggests grouping by month and ranking within each month.\n\nThus we need a query that"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 44.69935984885281,
+   "prefill_tps": 90.99147955785422,
+   "n": 128,
+   "n_prompt": 25,
+   "text": "\nWe need to answer the question: \"Write a C++ thread pool with a task queue and graceful shutdown.\" This is a coding task. The user expects a solution. We should provide a concise but complete implementation. Since it's a complex question, we need to produce a working C++ thread pool that uses a task queue (probably std::queue of function objects), multiple worker threads, and graceful shutdown (i.e., stop accepting new tasks, wait for workers to finish pending tasks, then exit). We'll use standard library features: std::thread, std::mutex, std::condition_variable, std::atomic,"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 45.86697061660738,
+   "prefill_tps": 86.89796007038736,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to produce a warm wedding toast for an old college roommate. The user asks: \"Write a warm wedding toast for an old college roommate.\"\n\nWe must consider the context: It's a wedding toast, presumably delivered at a wedding (the roommate is getting married). The speaker is an old college roommate, so they have a shared history, likely some inside jokes, memories. The tone should be warm, heartfelt, maybe humorous but respectful. Should include congratulations, mention of the couple's love, personal anecdotes, well-wishes for marriage.\n\nWe"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 49.60658462961459,
+   "prefill_tps": 90.86814636882985,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Preparing for a first job interview.\n    *   **Field:** Marketing (this is crucial\u2014it implies creativity, data analysis, strategy, brand awareness, and communication skills).\n    *   **Target Audience:** Someone likely entering the workforce (entry-level/new grad or career changer with some experience but no formal job history). \"First job\" suggests limited professional experience.\n\n2.  **Determine Key Categories of Preparation:**\n    To provide a comprehensive answer, I need to cover several aspects:\n    *   Research (Company & Role)\n    *   Self-A"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 41.98799606172434,
+   "prefill_tps": 100.81777619029788,
+   "n": 128,
+   "n_prompt": 35,
+   "text": "We need to parse the problem: \"Five people sit in a row. Alice is not next to Bob and Carol is at one end. How many arrangements exist?\" So we have 5 distinct people: presumably Alice, Bob, Carol, plus two other people (maybe Dave and Eve?). The problem states: \"Alice is not next to Bob\" and \"Carol is at one end\". We need to count the number of permutations of the five people satisfying these constraints.\n\nWe need to interpret \"Carol is at one end\" meaning Carol sits either in position 1 or position 5 (the ends). So Carol must be at"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 45.1185944030206,
+   "prefill_tps": 90.88035403824877,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Difference between correlation and causation.\n    *   **Requirement:** Explain the concept.\n    *   **Constraint:** Provide exactly three real-world examples.\n\n2.  **Define the Concepts:**\n    *   *Correlation:* A statistical relationship where two variables change together (they move in relation to each other). One goes up, the other goes up (positive) or down (negative). However, this doesn't mean one *causes* the other.\n    *   *Causation:* A relationship where one event (the cause) is directly"
+  }
+ ]
+}

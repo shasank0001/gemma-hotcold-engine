@@ -1,0 +1,86 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000",
+  "-lm",
+  "none",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 27.37435758564053,
+ "prefill_tps_mean": 55.93032039665808,
+ "peak_vram_mib": 7611,
+ "tokens": 192,
+ "cache_stats": [
+  "llama_moe_cache: hybrid: 0 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 0, misses = 62372, hit rate = 0.00%, uploaded = 0.00 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 26.93078527563659,
+   "prefill_tps": 48.80969425607518,
+   "n": 32,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 27.302407631991727,
+   "prefill_tps": 51.488091662533314,
+   "n": 32,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 27.469484504109346,
+   "prefill_tps": 55.99649918182892,
+   "n": 32,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 27.39747819470062,
+   "prefill_tps": 56.93348136038487,
+   "n": 32,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 27.35594228425648,
+   "prefill_tps": 65.74527075024974,
+   "n": 32,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note:"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 27.804560844899882,
+   "prefill_tps": 56.60888516887644,
+   "n": 32,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation"
+  }
+ ]
+}

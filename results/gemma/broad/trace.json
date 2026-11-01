@@ -1,0 +1,279 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000",
+  "-lm",
+  "none",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 42.703636414971974,
+ "prefill_tps_mean": 60.86410542458604,
+ "peak_vram_mib": 7621,
+ "tokens": 3089,
+ "cache_stats": [
+  "llama_moe_cache: ubatch <= 8: hits = 658451, misses = 100407, hit rate = 86.77%, uploaded = 320341.47 MiB",
+  "llama_moe_cache: ubatch  > 8: hits = 11188, misses = 15410, hit rate = 42.06%, uploaded = 49164.52 MiB",
+  "llama_moe_cache: large batches: 32316 experts copied from the cache, 51550.96 MiB"
+ ],
+ "rows": [
+  {
+   "id": "q0",
+   "decode_tps": 47.3277418097319,
+   "prefill_tps": 38.876767714847155,
+   "n": 153,
+   "n_prompt": 33,
+   "text": "To calculate 53 * 31, you can use the distributive property:\n\n53 * 31 = 53 * (30 + 1)\n53 * 31 = (53 * 30) + (53 * 1)\n\nFirst, calculate 53 * 30:\n53 * 3 = 159\nSo, 53 * 30 = 1590\n\nNext, calculate 53 * 1:\n53 * 1 = 53\n\nFinally, add the two results together:\n1590 + 53 = 1643\n\nANSWER: 1643"
+  },
+  {
+   "id": "q2",
+   "decode_tps": 38.68143643225524,
+   "prefill_tps": 67.54079463996253,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 22 apples = 88 apples.\n\nNext, subtract the number of apples eaten from the total:\n88 - 4 = 84.\n\nANSWER: 84"
+  },
+  {
+   "id": "q4",
+   "decode_tps": 47.86350838886707,
+   "prefill_tps": 52.70294226153117,
+   "n": 153,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 19, you can use the following steps:\n\n1.  **Method 1: Distributive Property**\n    86 * 19 = 86 * (20 - 1)\n    86 * 20 = 1720\n    86 * 1 = 86\n    1720 - 86 = 1634\n\n2.  **Method 2: Long Multiplication**\n    86 * 10 = 860\n    86 * 9 = 774\n    860 + 774 = 1634\n\nANSWER: 1634"
+  },
+  {
+   "id": "q6",
+   "decode_tps": 38.40688251334639,
+   "prefill_tps": 67.86849197719015,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 18 apples = 72 apples.\n\nNext, subtract the number of apples eaten from the total:\n72 - 4 = 68.\n\nANSWER: 68"
+  },
+  {
+   "id": "q8",
+   "decode_tps": 42.3118518882087,
+   "prefill_tps": 54.20072004835362,
+   "n": 101,
+   "n_prompt": 33,
+   "text": "To calculate 42 * 23, you can use the long multiplication method:\n\n1.  Multiply 42 by 3:\n    42 * 3 = 126\n\n2.  Multiply 42 by 20:\n    42 * 20 = 840\n\n3.  Add the two results together:\n    126 + 840 = 966\n\nANSWER: 966"
+  },
+  {
+   "id": "q10",
+   "decode_tps": 38.155016587772714,
+   "prefill_tps": 67.25716508124957,
+   "n": 80,
+   "n_prompt": 46,
+   "text": "To find the number of apples remaining, follow these steps:\n\n1.  **Calculate the total number of apples initially in the box:**\n    12 rows \u00d7 8 apples per row = 96 apples.\n\n2.  **Subtract the number of apples eaten:**\n    96 apples - 12 apples = 84 apples.\n\nANSWER: 84"
+  },
+  {
+   "id": "q12",
+   "decode_tps": 44.58640396984794,
+   "prefill_tps": 52.799155213516585,
+   "n": 200,
+   "n_prompt": 33,
+   "text": "To calculate 85 * 86, you can use the following steps:\n\n1.  **Method 1: Long Multiplication**\n    *   85 * 6 = 510\n    *   85 * 80 = 6,800\n    *   510 + 6,800 = 7,310\n\n2.  **Method 2: Using the identity $(x)(x+1) = x^2 + x$**\n    *   Here, $x = 85$.\n    *   $85^2 = 7,225$\n    *   $7,225 + 85 = 7,310$\n\n3.  **Method 3: Difference of Squares (using the midpoint 85.5)**\n    *   $(85.5 - 0.5) \\times ("
+  },
+  {
+   "id": "q14",
+   "decode_tps": 38.479452833667104,
+   "prefill_tps": 63.63653076260604,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n3 rows \u00d7 22 apples = 66 apples.\n\nNext, subtract the number of apples eaten from the total:\n66 - 3 = 63.\n\nANSWER: 63"
+  },
+  {
+   "id": "q16",
+   "decode_tps": 42.20515478864652,
+   "prefill_tps": 54.31481856381745,
+   "n": 86,
+   "n_prompt": 33,
+   "text": "To calculate 65 * 30:\n\n1. Multiply 65 by 3:\n   65 * 3 = 195\n\n2. Since you are multiplying by 30 (which is 3 * 10), add a zero to the result:\n   195 * 10 = 1,950\n\nANSWER: 1950"
+  },
+  {
+   "id": "q18",
+   "decode_tps": 37.85535417313795,
+   "prefill_tps": 70.60783935304391,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 22 apples per row = 154 apples.\n\nNext, subtract the number of apples eaten from the total:\n154 - 7 = 147.\n\nANSWER: 147"
+  },
+  {
+   "id": "q20",
+   "decode_tps": 48.0158821764122,
+   "prefill_tps": 51.91144222571095,
+   "n": 157,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 85, you can use the distributive property or the long multiplication method.\n\n**Method 1: Distributive Property**\n86 * 85 = 86 * (80 + 5)\n86 * 80 = 6,880\n86 * 5 = 430\n6,880 + 430 = 7,310\n\n**Method 2: Long Multiplication**\n  86\nx 85\n----\n 430  (86 * 5)\n6880  (86 * 80)\n----\n7310\n\nANSWER: 7310"
+  },
+  {
+   "id": "q22",
+   "decode_tps": 38.716507331866346,
+   "prefill_tps": 69.56134615117072,
+   "n": 68,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 22 apples = 88 apples.\n\nNext, subtract the number of apples eaten from the total:\n88 - 4 = 84.\n\nANSWER: 84"
+  },
+  {
+   "id": "q24",
+   "decode_tps": 46.150517264076285,
+   "prefill_tps": 54.76996614220275,
+   "n": 184,
+   "n_prompt": 33,
+   "text": "To calculate 91 * 38, you can use the long multiplication method:\n\n1.  Multiply 91 by 8:\n    $91 \\times 8 = 728$\n\n2.  Multiply 91 by 30:\n    $91 \\times 30 = 2730$\n\n3.  Add the two results together:\n    $728 + 2730 = 3458$\n\nAlternatively, using the distributive property:\n$91 \\times 38 = (90 + 1) \\times 38$\n$= (90 \\times 38) + (1 \\times 38)$\n$= 3420 + 38$\n$= 3458$\n\nANSWER: 3458"
+  },
+  {
+   "id": "q26",
+   "decode_tps": 38.07839930759062,
+   "prefill_tps": 67.63205158071133,
+   "n": 75,
+   "n_prompt": 45,
+   "text": "To find the total number of apples initially in the box, multiply the number of rows by the number of apples in each row:\n9 rows \u00d7 29 apples = 261 apples.\n\nNext, subtract the number of apples eaten from the total:\n261 - 9 = 252.\n\nANSWER: 252"
+  },
+  {
+   "id": "q28",
+   "decode_tps": 47.00776019774598,
+   "prefill_tps": 53.711024920287954,
+   "n": 121,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 70, you can multiply 86 by 7 and then add a zero at the end.\n\n1.  Multiply 86 by 7:\n    *   80 * 7 = 560\n    *   6 * 7 = 42\n    *   560 + 42 = 602\n\n2.  Add the zero from the 70:\n    *   602 * 10 = 6020\n\nANSWER: 6020"
+  },
+  {
+   "id": "q30",
+   "decode_tps": 38.00848392187597,
+   "prefill_tps": 69.73187319956178,
+   "n": 72,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n5 rows \u00d7 27 apples = 135 apples.\n\nNext, subtract the number of apples eaten from the total:\n135 - 5 = 130.\n\nANSWER: 130"
+  },
+  {
+   "id": "q32",
+   "decode_tps": 43.26750055865979,
+   "prefill_tps": 54.85700607084201,
+   "n": 86,
+   "n_prompt": 33,
+   "text": "To calculate 85 * 50:\n\n1. Multiply 85 by 5:\n   85 * 5 = 425\n\n2. Since you are multiplying by 50 (which is 5 * 10), add a zero to the result:\n   425 * 10 = 4,250\n\nANSWER: 4250"
+  },
+  {
+   "id": "q34",
+   "decode_tps": 38.9480090816371,
+   "prefill_tps": 72.69262773022683,
+   "n": 76,
+   "n_prompt": 47,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n10 rows \u00d7 14 apples/row = 140 apples.\n\nNext, subtract the number of apples eaten from the total:\n140 - 10 = 130.\n\nANSWER: 130"
+  },
+  {
+   "id": "q36",
+   "decode_tps": 43.518454875226084,
+   "prefill_tps": 54.585965452046224,
+   "n": 108,
+   "n_prompt": 33,
+   "text": "To calculate 77 * 65, you can use the long multiplication method:\n\n1.  Multiply 77 by 5:\n    77 * 5 = 385\n\n2.  Multiply 77 by 60:\n    77 * 60 = 4,620\n\n3.  Add the two results together:\n    385 + 4,620 = 5,005\n\nANSWER: 5005"
+  },
+  {
+   "id": "q38",
+   "decode_tps": 38.37063367502738,
+   "prefill_tps": 69.59405017267058,
+   "n": 73,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n5 rows \u00d7 20 apples = 100 apples.\n\nNext, subtract the number of apples eaten from the total:\n100 apples - 5 apples = 95 apples.\n\nANSWER: 95"
+  },
+  {
+   "id": "q40",
+   "decode_tps": 43.77527070246748,
+   "prefill_tps": 53.293110492767475,
+   "n": 116,
+   "n_prompt": 33,
+   "text": "To calculate 97 * 21, you can break it down into two simpler multiplications:\n\n1.  Multiply 97 by 20:\n    $97 \\times 20 = 1,940$\n\n2.  Multiply 97 by 1:\n    $97 \\times 1 = 97$\n\n3.  Add the two results together:\n    $1,940 + 97 = 2,037$\n\nANSWER: 2037"
+  },
+  {
+   "id": "q42",
+   "decode_tps": 39.50822654848855,
+   "prefill_tps": 68.56474187660176,
+   "n": 77,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n8 rows \u00d7 15 apples per row = 120 apples.\n\nNext, subtract the number of apples eaten from the total:\n120 apples - 8 apples = 112 apples.\n\nANSWER: 112"
+  },
+  {
+   "id": "q44",
+   "decode_tps": 47.65634059668916,
+   "prefill_tps": 52.0570418980313,
+   "n": 121,
+   "n_prompt": 33,
+   "text": "To calculate 86 * 70, you can multiply 86 by 7 and then add a zero at the end.\n\n1.  Multiply 86 by 7:\n    *   80 * 7 = 560\n    *   6 * 7 = 42\n    *   560 + 42 = 602\n\n2.  Add the zero from the 70:\n    *   602 * 10 = 6020\n\nANSWER: 6020"
+  },
+  {
+   "id": "q46",
+   "decode_tps": 38.75041072781234,
+   "prefill_tps": 70.25815970460347,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 20 apples per row = 140 apples.\n\nNext, subtract the number of apples eaten from the total:\n140 - 7 = 133.\n\nANSWER: 133"
+  },
+  {
+   "id": "q48",
+   "decode_tps": 44.60896656159662,
+   "prefill_tps": 54.2132750239442,
+   "n": 169,
+   "n_prompt": 33,
+   "text": "To calculate 51 * 94, you can use the distributive property:\n\n1.  Break 51 into (50 + 1).\n2.  Multiply 94 by 50: $94 \\times 50 = 4700$.\n3.  Multiply 94 by 1: $94 \\times 1 = 94$.\n4.  Add the results together: $4700 + 94 = 4794$.\n\nAlternatively, using long multiplication:\n  51\nx 94\n----\n  204 (4 * 51)\n4590 (90 * 51)\n----\n4794\n\nANSWER: 4794"
+  },
+  {
+   "id": "q50",
+   "decode_tps": 37.55743377989651,
+   "prefill_tps": 69.62872416967747,
+   "n": 72,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n7 rows \u00d7 27 apples = 189 apples.\n\nNext, subtract the number of apples eaten from the total:\n189 - 7 = 182.\n\nANSWER: 182"
+  },
+  {
+   "id": "q52",
+   "decode_tps": 43.33035286704759,
+   "prefill_tps": 55.3162244162462,
+   "n": 97,
+   "n_prompt": 33,
+   "text": "To calculate 14 * 71, you can break it down into simpler steps:\n\n1. Multiply 14 by 70:\n   14 * 70 = 980\n\n2. Multiply 14 by 1:\n   14 * 1 = 14\n\n3. Add the two results together:\n   980 + 14 = 994\n\nANSWER: 994"
+  },
+  {
+   "id": "q54",
+   "decode_tps": 38.92344425773548,
+   "prefill_tps": 69.70486958218902,
+   "n": 71,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n4 rows \u00d7 20 apples = 80 apples.\n\nNext, subtract the number of apples eaten from the total:\n80 apples - 4 apples = 76 apples.\n\nANSWER: 76"
+  },
+  {
+   "id": "q56",
+   "decode_tps": 46.83702511747752,
+   "prefill_tps": 53.903072475131076,
+   "n": 147,
+   "n_prompt": 33,
+   "text": "To calculate 48 * 28, you can use the distributive property or long multiplication:\n\n**Method 1: Distributive Property**\n48 * 28 = 48 * (30 - 2)\n48 * 30 = 1,440\n48 * 2 = 96\n1,440 - 96 = 1,344\n\n**Method 2: Long Multiplication**\n48 * 8 = 384\n48 * 20 = 960\n384 + 960 = 1,344\n\nANSWER: 1344"
+  },
+  {
+   "id": "q58",
+   "decode_tps": 38.53483179281985,
+   "prefill_tps": 70.13136383684015,
+   "n": 74,
+   "n_prompt": 45,
+   "text": "To find the total number of apples, first multiply the number of rows by the number of apples in each row:\n9 rows \u00d7 20 apples per row = 180 apples.\n\nNext, subtract the number of apples eaten from the total:\n180 - 9 = 171.\n\nANSWER: 171"
+  }
+ ]
+}

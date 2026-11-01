@@ -1,0 +1,97 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-cmoe",
+  "--moe-cache-mib",
+  "3000",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99"
+ ],
+ "decode_tps": 46.22913925378587,
+ "prefill_tps_mean": 76.7777974489242,
+ "peak_vram_mib": 5899,
+ "tokens": 384,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 915 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 48735, misses = 47912, hit rate = 50.43%, uploaded = 0.00 MiB",
+  "llama_moe_cache: uses on GPU 54.29% of 182864",
+  "llama_moe_cache: swaps = 872"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 50.219451029658174,
+   "prefill_tps": 50.94027253045804,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n*   Output: A list of customers, their revenue, and the month they achieved it.\n*   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 58.1056452862487,
+   "prefill_tps": 85.9556984330276,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 35.57832568399331,
+   "prefill_tps": 72.78177328747184,
+   "n": 64,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow."
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 52.51343468704077,
+   "prefill_tps": 83.1929452382438,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 40.749559031557624,
+   "prefill_tps": 84.7950132259539,
+   "n": 64,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 47.67410887253003,
+   "prefill_tps": 83.00108197839008,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about"
+  }
+ ]
+}

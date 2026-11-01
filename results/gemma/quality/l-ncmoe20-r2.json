@@ -1,0 +1,58 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-ncmoe",
+  "20",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 36.026613207821256,
+ "prefill_tps_mean": 493.32876458144165,
+ "peak_vram_mib": 6683,
+ "tokens": 96,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "long0",
+   "decode_tps": 31.8775244942785,
+   "prefill_tps": 474.986406318197,
+   "n": 32,
+   "n_prompt": 1948,
+   "text": "*   Input: A log containing multiple \"Sections\" (0 to 69).\n    *   Each section contains: Section number,"
+  },
+  {
+   "id": "long1",
+   "decode_tps": 40.61685206294302,
+   "prefill_tps": 500.2484541629048,
+   "n": 32,
+   "n_prompt": 1947,
+   "text": "*   Input: A log containing 70 entries (Section 0 to Section 69).\n    *   Each entry contains:"
+  },
+  {
+   "id": "long2",
+   "decode_tps": 36.65502771001853,
+   "prefill_tps": 504.7514332632232,
+   "n": 32,
+   "n_prompt": 1946,
+   "text": "The user wants to identify a \"retry rule\" based on a provided log.\n\n    The log consists of several sections (0 to 6"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 35.91801423589252,
+ "prefill_tps_mean": 491.46449629786713,
+ "peak_vram_mib": 7617,
+ "tokens": 96,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "long0",
+   "decode_tps": 33.7819061930952,
+   "prefill_tps": 449.25380741448674,
+   "n": 32,
+   "n_prompt": 1948,
+   "text": "*   Input: A log containing 70 entries (Section 0 to Section 69).\n    *   Format: `Section"
+  },
+  {
+   "id": "long1",
+   "decode_tps": 37.09651556019328,
+   "prefill_tps": 517.1858713426433,
+   "n": 32,
+   "n_prompt": 1947,
+   "text": "A log containing 70 entries (Section 0 to Section 69). Each entry includes: Section number, Task ID, Worker ID"
+  },
+  {
+   "id": "long2",
+   "decode_tps": 37.08484414197035,
+   "prefill_tps": 507.9538101364715,
+   "n": 32,
+   "n_prompt": 1946,
+   "text": "The user wants to identify the \"retry rule\" from a provided log.\n\n    *   Section 0: task 0, worker "
+  }
+ ]
+}

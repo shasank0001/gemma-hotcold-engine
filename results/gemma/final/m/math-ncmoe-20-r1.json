@@ -1,0 +1,282 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99",
+  "-ncmoe",
+  "20"
+ ],
+ "decode_tps": 60.87942965227116,
+ "prefill_tps_mean": 65.80301469772029,
+ "peak_vram_mib": 6977,
+ "tokens": 3899,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "q1",
+   "decode_tps": 62.11657423891188,
+   "prefill_tps": 53.10356284057766,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 504 + 766 - 16, follow these steps:\n\n1.  First, add 504 and 766:\n    504 + 766 = 1,270\n\n2.  Next, subtract 16 from the result:\n    1,270 - 16 = 1,254\n\nANSWER: 1254"
+  },
+  {
+   "id": "q3",
+   "decode_tps": 57.003038061415474,
+   "prefill_tps": 67.79364818712251,
+   "n": 200,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we can first determine the cost of one pen or use the ratio between the number of pens.\n\n**Method 1: Find the cost per pen**\n1. The cost of 3 pens is 198 cents.\n2. To find the cost of 1 pen, divide the total cost by the number of pens:\n   $198 \\div 3 = 66$ cents per pen.\n3. To find the cost of 6 pens, multiply the cost of one pen by 6:\n   $66 \\times 6 = 396$ cents.\n\n**Method 2: Use the ratio**\n1. We are comparing 3 pens to 6 pens.\n2. Since 6 is exactly twice as much as 3 ($6 \\div 3 = 2$), the cost will also be twice as much.\n3. Multiply the total cost"
+  },
+  {
+   "id": "q5",
+   "decode_tps": 62.41370438511752,
+   "prefill_tps": 62.52515034092239,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 619 + 319 - 14, follow these steps:\n\n1.  First, add 619 and 319:\n    619 + 319 = 938\n\n2.  Next, subtract 14 from the result:\n    938 - 14 = 924\n\nANSWER: 924"
+  },
+  {
+   "id": "q7",
+   "decode_tps": 68.00045041158553,
+   "prefill_tps": 68.93316929237105,
+   "n": 187,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 8 pens by the number of pens.\n    $224 \\text{ cents} \\div 8 \\text{ pens} = 28 \\text{ cents per pen}$\n\n2.  **Find the cost of 11 pens:**\n    Multiply the cost per pen by 11.\n    $28 \\text{ cents} \\times 11 = 308 \\text{ cents}$\n\n**Calculation check:**\n$28 \\times 10 = 280$\n$28 \\times 1 = 28$\n$280 + 28 = 308$\n\nANSWER: 308"
+  },
+  {
+   "id": "q9",
+   "decode_tps": 60.78209747379257,
+   "prefill_tps": 64.16003816699707,
+   "n": 95,
+   "n_prompt": 39,
+   "text": "To find the result of 664 + 534 - 17, follow these steps:\n\n1.  First, add 664 and 534:\n    664 + 534 = 1198\n\n2.  Next, subtract 17 from the result:\n    1198 - 17 = 1181\n\nANSWER: 1181"
+  },
+  {
+   "id": "q11",
+   "decode_tps": 59.644984823436445,
+   "prefill_tps": 67.84649203482185,
+   "n": 146,
+   "n_prompt": 45,
+   "text": "To find the cost of 8 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 5 pens = 135 cents\n    Cost per pen = 135 cents / 5\n    $135 \\div 5 = 27$ cents\n\n2.  **Find the cost for 8 pens:**\n    Cost for 8 pens = Cost per pen $\\times$ 8\n    Cost for 8 pens = 27 cents $\\times$ 8\n    $27 \\times 8 = 216$ cents\n\nANSWER: 216"
+  },
+  {
+   "id": "q13",
+   "decode_tps": 61.965163185257246,
+   "prefill_tps": 63.02001612666054,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 506 + 150 - 38, follow these steps:\n\n1.  First, add 506 and 150:\n    506 + 150 = 656\n\n2.  Next, subtract 38 from the result:\n    656 - 38 = 618\n\nANSWER: 618"
+  },
+  {
+   "id": "q15",
+   "decode_tps": 64.66186910550266,
+   "prefill_tps": 67.87760310607912,
+   "n": 186,
+   "n_prompt": 45,
+   "text": "To find the cost of 7 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost of one pen:**\n    Divide the total cost of 4 pens by the number of pens.\n    $228 \\text{ cents} \\div 4 = 57 \\text{ cents per pen}$\n\n2.  **Find the cost of 7 pens:**\n    Multiply the cost of one pen by 7.\n    $57 \\text{ cents} \\times 7 = ?$\n\n    Calculation:\n    $50 \\times 7 = 350$\n    $7 \\times 7 = 49$\n    $350 + 49 = 399$\n\nThe cost of 7 pens is 399 cents.\n\nANSWER: 399"
+  },
+  {
+   "id": "q17",
+   "decode_tps": 63.163036429632164,
+   "prefill_tps": 64.58696635019052,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 653 + 220 - 83, follow these steps:\n\n1.  First, add 653 and 220:\n    653 + 220 = 873\n\n2.  Next, subtract 83 from the result:\n    873 - 83 = 790\n\nANSWER: 790"
+  },
+  {
+   "id": "q19",
+   "decode_tps": 61.1205976835715,
+   "prefill_tps": 67.77057401676193,
+   "n": 146,
+   "n_prompt": 45,
+   "text": "To find the cost of 7 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 4 pens = 132 cents\n    Cost per pen = $132 \\div 4$\n    $132 \\div 4 = 33$ cents\n\n2.  **Find the cost for 7 pens:**\n    Cost for 7 pens = Cost per pen $\\times$ 7\n    Cost for 7 pens = $33 \\times 7$\n    $33 \\times 7 = 231$ cents\n\nANSWER: 231"
+  },
+  {
+   "id": "q21",
+   "decode_tps": 57.68939548724704,
+   "prefill_tps": 64.4306478419037,
+   "n": 97,
+   "n_prompt": 39,
+   "text": "To find the result of 754 + 292 - 57, follow these steps:\n\n1.  **First, add 754 and 292:**\n    754 + 292 = 1,046\n\n2.  **Next, subtract 57 from the result:**\n    1,046 - 57 = 989\n\nANSWER: 989"
+  },
+  {
+   "id": "q23",
+   "decode_tps": 53.53032492907232,
+   "prefill_tps": 66.79032997458931,
+   "n": 182,
+   "n_prompt": 44,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 81 cents\n    Cost of 1 pen = 81 cents \u00f7 3 = 27 cents\n\n2.  **Find the cost for 6 pens:**\n    Cost of 6 pens = 6 \u00d7 27 cents\n    6 \u00d7 20 = 120\n    6 \u00d7 7 = 42\n    120 + 42 = 162 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 \u00d7 2), the cost will be twice the original amount:\n81 cents \u00d7 2 = 162 cents\n\nANSWER: 162"
+  },
+  {
+   "id": "q25",
+   "decode_tps": 61.84388479546228,
+   "prefill_tps": 65.56164475674949,
+   "n": 100,
+   "n_prompt": 39,
+   "text": "To find the result of 608 + 796 - 78, follow these steps:\n\n1.  **First, add 608 and 796:**\n    608 + 796 = 1,404\n\n2.  **Next, subtract 78 from the result:**\n    1,404 - 78 = 1,326\n\nANSWER: 1326"
+  },
+  {
+   "id": "q27",
+   "decode_tps": 61.19367644842972,
+   "prefill_tps": 68.62209810573174,
+   "n": 200,
+   "n_prompt": 46,
+   "text": "To find the cost of 10 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 7 pens by the number of pens.\n    Cost per pen = $553 \\text{ cents} \\div 7$\n\n    Calculation:\n    $55 \\div 7 = 7$ with a remainder of $6$\n    $63 \\div 7 = 9$\n    So, $553 \\div 7 = 79$ cents per pen.\n\n2.  **Find the cost of 10 pens:**\n    Multiply the cost per pen by 10.\n    Cost for 10 pens = $79 \\text{ cents} \\times 10$\n    Cost for 10 pens = $790$ cents.\n\nANSWER: 790"
+  },
+  {
+   "id": "q29",
+   "decode_tps": 59.80551247343639,
+   "prefill_tps": 64.12343267532826,
+   "n": 91,
+   "n_prompt": 39,
+   "text": "To find the result of 470 + 406 - 41, follow these steps:\n\n1.  First, add 470 and 406:\n    470 + 406 = 876\n\n2.  Next, subtract 41 from the result:\n    876 - 41 = 835\n\nANSWER: 835"
+  },
+  {
+   "id": "q31",
+   "decode_tps": 64.86083297524749,
+   "prefill_tps": 67.216648219431,
+   "n": 113,
+   "n_prompt": 45,
+   "text": "To find the cost of 8 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 5 pens = 150 cents\n    Cost per pen = 150 cents / 5 pens = 30 cents per pen\n\n2.  **Find the cost for 8 pens:**\n    Cost for 8 pens = 8 pens \u00d7 30 cents per pen = 240 cents\n\nANSWER: 240"
+  },
+  {
+   "id": "q33",
+   "decode_tps": 67.48732228644114,
+   "prefill_tps": 64.80946018705008,
+   "n": 93,
+   "n_prompt": 39,
+   "text": "To find the result of 637 + 606 - 53, follow these steps:\n\n1.  **Add 637 and 606:**\n    637 + 606 = 1243\n\n2.  **Subtract 53 from the result:**\n    1243 - 53 = 1190\n\nANSWER: 1190"
+  },
+  {
+   "id": "q35",
+   "decode_tps": 56.49065620507791,
+   "prefill_tps": 67.68413468841986,
+   "n": 189,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we can first determine the cost of one pen or use the ratio between the number of pens.\n\n**Method 1: Find the cost per pen**\n1. The cost of 3 pens is 105 cents.\n2. To find the cost of 1 pen: $105 \\div 3 = 35$ cents.\n3. To find the cost of 6 pens: $35 \\times 6 = 210$ cents.\n\n**Method 2: Use the ratio**\n1. We are comparing 3 pens to 6 pens.\n2. Since 6 is exactly double 3 ($3 \\times 2 = 6$), the cost will also be double.\n3. $105 \\times 2 = 210$ cents.\n\nANSWER: 210"
+  },
+  {
+   "id": "q37",
+   "decode_tps": 63.35914845304479,
+   "prefill_tps": 65.25831416021752,
+   "n": 100,
+   "n_prompt": 39,
+   "text": "To find the result of 268 + 875 - 53, follow these steps:\n\n1.  **First, add 268 and 875:**\n    268 + 875 = 1,143\n\n2.  **Next, subtract 53 from the result:**\n    1,143 - 53 = 1,090\n\nANSWER: 1090"
+  },
+  {
+   "id": "q39",
+   "decode_tps": 65.57116355771579,
+   "prefill_tps": 68.98775467354545,
+   "n": 128,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 8 pens = 200 cents\n    Cost per pen = 200 cents / 8 pens\n    Cost per pen = 25 cents\n\n2.  **Find the cost for 11 pens:**\n    Cost for 11 pens = 11 pens \u00d7 25 cents per pen\n    Cost for 11 pens = 275 cents\n\nANSWER: 275"
+  },
+  {
+   "id": "q41",
+   "decode_tps": 63.71823795177724,
+   "prefill_tps": 64.48796555350518,
+   "n": 97,
+   "n_prompt": 39,
+   "text": "To find the result of 882 + 671 - 83, follow these steps:\n\n1.  **First, add 882 and 671:**\n    882 + 671 = 1553\n\n2.  **Next, subtract 83 from the result:**\n    1553 - 83 = 1470\n\nANSWER: 1470"
+  },
+  {
+   "id": "q43",
+   "decode_tps": 64.77696305882452,
+   "prefill_tps": 68.95063134795487,
+   "n": 139,
+   "n_prompt": 46,
+   "text": "To find the cost of 10 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 7 pens by the number of pens.\n    $581 \\text{ cents} \\div 7 \\text{ pens} = 83 \\text{ cents per pen}$\n\n2.  **Find the cost of 10 pens:**\n    Multiply the cost per pen by 10.\n    $83 \\text{ cents} \\times 10 = 830 \\text{ cents}$\n\nANSWER: 830"
+  },
+  {
+   "id": "q45",
+   "decode_tps": 60.6956345447014,
+   "prefill_tps": 64.20514036231455,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 170 + 960 - 21, follow these steps:\n\n1.  First, add 170 and 960:\n    170 + 960 = 1,130\n\n2.  Next, subtract 21 from the result:\n    1,130 - 21 = 1,109\n\nANSWER: 1109"
+  },
+  {
+   "id": "q47",
+   "decode_tps": 53.65019951353201,
+   "prefill_tps": 67.09168230868579,
+   "n": 182,
+   "n_prompt": 44,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 81 cents\n    Cost of 1 pen = 81 cents \u00f7 3 = 27 cents\n\n2.  **Find the cost for 6 pens:**\n    Cost of 6 pens = 6 \u00d7 27 cents\n    6 \u00d7 20 = 120\n    6 \u00d7 7 = 42\n    120 + 42 = 162 cents\n\nAlternatively, since 6 pens is exactly twice the amount of 3 pens (6 = 3 \u00d7 2), the cost will be twice the original amount:\n81 cents \u00d7 2 = 162 cents\n\nANSWER: 162"
+  },
+  {
+   "id": "q49",
+   "decode_tps": 66.71760614419992,
+   "prefill_tps": 64.83424045856096,
+   "n": 96,
+   "n_prompt": 39,
+   "text": "To find the result of 691 + 797 - 67, follow these steps:\n\n1.  **Add 691 and 797:**\n    691 + 797 = 1,488\n\n2.  **Subtract 67 from the result:**\n    1,488 - 67 = 1,421\n\nANSWER: 1421"
+  },
+  {
+   "id": "q51",
+   "decode_tps": 64.96950005119325,
+   "prefill_tps": 69.16118013029364,
+   "n": 192,
+   "n_prompt": 46,
+   "text": "To find the cost of 11 pens, we first need to determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    The total cost of 8 pens is 512 cents.\n    Cost per pen = Total cost / Number of pens\n    Cost per pen = 512 cents / 8\n    Cost per pen = 64 cents\n\n2.  **Find the cost of 11 pens:**\n    Now, multiply the cost of one pen by 11.\n    Cost of 11 pens = 64 cents \u00d7 11\n    Cost of 11 pens = 704 cents\n\nCalculation check:\n64 \u00d7 10 = 640\n64 \u00d7 1 = 64\n640 + 64 = 704\n\nANSWER: 704"
+  },
+  {
+   "id": "q53",
+   "decode_tps": 56.32678350800759,
+   "prefill_tps": 64.38172087387457,
+   "n": 93,
+   "n_prompt": 39,
+   "text": "To find the result of 463 + 272 - 88, follow these steps:\n\n1.  **First, add 463 and 272:**\n    463 + 272 = 735\n\n2.  **Next, subtract 88 from the result:**\n    735 - 88 = 647\n\nANSWER: 647"
+  },
+  {
+   "id": "q55",
+   "decode_tps": 65.20962124898571,
+   "prefill_tps": 66.89664923806237,
+   "n": 107,
+   "n_prompt": 44,
+   "text": "To find the cost of 5 pens, first determine the cost of a single pen.\n\n1.  **Find the cost per pen:**\n    Divide the total cost of 2 pens by 2.\n    94 cents \u00f7 2 = 47 cents per pen.\n\n2.  **Find the cost of 5 pens:**\n    Multiply the cost of one pen by 5.\n    47 cents \u00d7 5 = 235 cents.\n\nANSWER: 235"
+  },
+  {
+   "id": "q57",
+   "decode_tps": 57.54589878684939,
+   "prefill_tps": 65.27076488968405,
+   "n": 98,
+   "n_prompt": 39,
+   "text": "To find the result of 856 + 353 - 60, follow these steps:\n\n1.  First, add 856 and 353:\n    856 + 353 = 1,209\n\n2.  Next, subtract 60 from the result:\n    1,209 - 60 = 1,149\n\nANSWER: 1149"
+  },
+  {
+   "id": "q59",
+   "decode_tps": 57.35380864301889,
+   "prefill_tps": 67.70878002320154,
+   "n": 173,
+   "n_prompt": 45,
+   "text": "To find the cost of 6 pens, we first determine the cost of one pen.\n\n1.  **Find the cost per pen:**\n    Total cost for 3 pens = 123 cents\n    Cost of 1 pen = 123 cents / 3 = 41 cents\n\n2.  **Find the cost for 6 pens:**\n    Since 6 pens is twice the amount of 3 pens (6 = 3 \u00d7 2), we can simply multiply the total cost of 3 pens by 2:\n    Cost of 6 pens = 123 cents \u00d7 2 = 246 cents\n\nAlternatively, using the unit price:\nCost of 6 pens = 41 cents \u00d7 6 = 246 cents\n\nANSWER: 246"
+  }
+ ]
+}

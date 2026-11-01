@@ -1,0 +1,83 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000",
+  "-lm",
+  "none",
+  "-t",
+  "8"
+ ],
+ "decode_tps": 49.603694472748856,
+ "prefill_tps_mean": 44.60297970580074,
+ "peak_vram_mib": 7601,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 47.232123199228816,
+   "prefill_tps": 38.14066786852149,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *   `order_date` (Date/Timestamp)\n        *   `total_amount` (Decimal/Float) - *Note: Sometimes revenue is"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 52.34490760299479,
+   "prefill_tps": 45.396973837723976,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key Features:\n    *   Task queue (to hold pending work).\n    *   Worker threads (to execute tasks).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector<std::thread>`: To manage the worker threads.\n    *   `std::queue<std::function<void()>>`: To store the"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 56.87943306880664,
+   "prefill_tps": 42.89097907396787,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nFriends, family, the couple.\nNostalgic, heartfelt, funny (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* A lighthearted anecdote or a general description of their personality back then.\n    *   *The \"Transition\" Section:* When they met their partner, or how they changed for the better.\n    *   *The \"Partner\" Section:* Why the partner is perfect for them.\n"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 57.42835812324126,
+   "prefill_tps": 47.98563173084173,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: What do they do? Who are their customers? What's their brand voice?\n        *   Role: Read the JD (Job Description) carefully.\n        *   Industry"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 39.82013839222585,
+   "prefill_tps": 47.24819592559216,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 48.60107358623495,
+   "prefill_tps": 45.95542979815719,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change too (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does not imply causation.\" Just because two things happen"
+  }
+ ]
+}

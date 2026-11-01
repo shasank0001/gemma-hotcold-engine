@@ -1,0 +1,22 @@
+workload,engine,setting,vram_mib,decode_tps,reps
+Mixed,Stock cache,cache-2000,4895,13.15,3
+Mixed,Stock cache,cache-3000,5897,23.5,3
+Mixed,Stock cache,cache-4000,6895,41.94,3
+Mixed,Stock cache,cache-4600,7501,51.03,3
+Mixed,This engine,lfu-2000,4903,49.64,3
+Mixed,This engine,lfu-3000,5915,56.13,3
+Mixed,This engine,lfu-4000,6913,64.94,3
+Mixed,This engine,lfu-4600,7513,69.04,3
+Mixed,Stock layer split,ncmoe-22,6153,46.49,3
+Mixed,Stock layer split,ncmoe-24,5339,44.16,3
+Mixed,Stock layer split,ncmoe-26,4527,41.25,3
+Math,Stock cache,cache-3000,5903,24.36,3
+Math,Stock cache,cache-4000,6901,39.35,3
+Math,Stock cache,cache-4600,7501,48.64,3
+Math,This engine,lfu-2000,4911,69.29,2
+Math,This engine,lfu-3000,5913,83.07,3
+Math,This engine,lfu-4000,6911,94.43,3
+Math,This engine,lfu-4600,7511,102.4,3
+Math,Stock layer split,ncmoe-22,6159,58.98,3
+Math,Stock layer split,ncmoe-24,5345,54.9,3
+Math,Stock layer split,ncmoe-26,4533,52.22,3

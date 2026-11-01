@@ -1,0 +1,60 @@
+{"id": "q0", "cat": "quality", "split": "qtrain", "prompt": "What is 53 * 31? End your reply with: ANSWER: <number>", "answer": 1643}
+{"id": "q1", "cat": "quality", "split": "qtest", "prompt": "What is 504 + 766 - 16? End your reply with: ANSWER: <number>", "answer": 1254}
+{"id": "q2", "cat": "quality", "split": "qtrain", "prompt": "A box holds 4 rows of 22 apples. After eating 4 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 84}
+{"id": "q3", "cat": "quality", "split": "qtest", "prompt": "If 3 pens cost 198 cents in total, how many cents do 6 pens cost? End your reply with: ANSWER: <number>", "answer": 396}
+{"id": "q4", "cat": "quality", "split": "qtrain", "prompt": "What is 86 * 19? End your reply with: ANSWER: <number>", "answer": 1634}
+{"id": "q5", "cat": "quality", "split": "qtest", "prompt": "What is 619 + 319 - 14? End your reply with: ANSWER: <number>", "answer": 924}
+{"id": "q6", "cat": "quality", "split": "qtrain", "prompt": "A box holds 4 rows of 18 apples. After eating 4 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 68}
+{"id": "q7", "cat": "quality", "split": "qtest", "prompt": "If 8 pens cost 224 cents in total, how many cents do 11 pens cost? End your reply with: ANSWER: <number>", "answer": 308}
+{"id": "q8", "cat": "quality", "split": "qtrain", "prompt": "What is 42 * 23? End your reply with: ANSWER: <number>", "answer": 966}
+{"id": "q9", "cat": "quality", "split": "qtest", "prompt": "What is 664 + 534 - 17? End your reply with: ANSWER: <number>", "answer": 1181}
+{"id": "q10", "cat": "quality", "split": "qtrain", "prompt": "A box holds 12 rows of 8 apples. After eating 12 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 84}
+{"id": "q11", "cat": "quality", "split": "qtest", "prompt": "If 5 pens cost 135 cents in total, how many cents do 8 pens cost? End your reply with: ANSWER: <number>", "answer": 216}
+{"id": "q12", "cat": "quality", "split": "qtrain", "prompt": "What is 85 * 86? End your reply with: ANSWER: <number>", "answer": 7310}
+{"id": "q13", "cat": "quality", "split": "qtest", "prompt": "What is 506 + 150 - 38? End your reply with: ANSWER: <number>", "answer": 618}
+{"id": "q14", "cat": "quality", "split": "qtrain", "prompt": "A box holds 3 rows of 22 apples. After eating 3 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 63}
+{"id": "q15", "cat": "quality", "split": "qtest", "prompt": "If 4 pens cost 228 cents in total, how many cents do 7 pens cost? End your reply with: ANSWER: <number>", "answer": 399}
+{"id": "q16", "cat": "quality", "split": "qtrain", "prompt": "What is 65 * 30? End your reply with: ANSWER: <number>", "answer": 1950}
+{"id": "q17", "cat": "quality", "split": "qtest", "prompt": "What is 653 + 220 - 83? End your reply with: ANSWER: <number>", "answer": 790}
+{"id": "q18", "cat": "quality", "split": "qtrain", "prompt": "A box holds 7 rows of 22 apples. After eating 7 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 147}
+{"id": "q19", "cat": "quality", "split": "qtest", "prompt": "If 4 pens cost 132 cents in total, how many cents do 7 pens cost? End your reply with: ANSWER: <number>", "answer": 231}
+{"id": "q20", "cat": "quality", "split": "qtrain", "prompt": "What is 86 * 85? End your reply with: ANSWER: <number>", "answer": 7310}
+{"id": "q21", "cat": "quality", "split": "qtest", "prompt": "What is 754 + 292 - 57? End your reply with: ANSWER: <number>", "answer": 989}
+{"id": "q22", "cat": "quality", "split": "qtrain", "prompt": "A box holds 4 rows of 22 apples. After eating 4 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 84}
+{"id": "q23", "cat": "quality", "split": "qtest", "prompt": "If 3 pens cost 81 cents in total, how many cents do 6 pens cost? End your reply with: ANSWER: <number>", "answer": 162}
+{"id": "q24", "cat": "quality", "split": "qtrain", "prompt": "What is 91 * 38? End your reply with: ANSWER: <number>", "answer": 3458}
+{"id": "q25", "cat": "quality", "split": "qtest", "prompt": "What is 608 + 796 - 78? End your reply with: ANSWER: <number>", "answer": 1326}
+{"id": "q26", "cat": "quality", "split": "qtrain", "prompt": "A box holds 9 rows of 29 apples. After eating 9 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 252}
+{"id": "q27", "cat": "quality", "split": "qtest", "prompt": "If 7 pens cost 553 cents in total, how many cents do 10 pens cost? End your reply with: ANSWER: <number>", "answer": 790}
+{"id": "q28", "cat": "quality", "split": "qtrain", "prompt": "What is 86 * 70? End your reply with: ANSWER: <number>", "answer": 6020}
+{"id": "q29", "cat": "quality", "split": "qtest", "prompt": "What is 470 + 406 - 41? End your reply with: ANSWER: <number>", "answer": 835}
+{"id": "q30", "cat": "quality", "split": "qtrain", "prompt": "A box holds 5 rows of 27 apples. After eating 5 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 130}
+{"id": "q31", "cat": "quality", "split": "qtest", "prompt": "If 5 pens cost 150 cents in total, how many cents do 8 pens cost? End your reply with: ANSWER: <number>", "answer": 240}
+{"id": "q32", "cat": "quality", "split": "qtrain", "prompt": "What is 85 * 50? End your reply with: ANSWER: <number>", "answer": 4250}
+{"id": "q33", "cat": "quality", "split": "qtest", "prompt": "What is 637 + 606 - 53? End your reply with: ANSWER: <number>", "answer": 1190}
+{"id": "q34", "cat": "quality", "split": "qtrain", "prompt": "A box holds 10 rows of 14 apples. After eating 10 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 130}
+{"id": "q35", "cat": "quality", "split": "qtest", "prompt": "If 3 pens cost 105 cents in total, how many cents do 6 pens cost? End your reply with: ANSWER: <number>", "answer": 210}
+{"id": "q36", "cat": "quality", "split": "qtrain", "prompt": "What is 77 * 65? End your reply with: ANSWER: <number>", "answer": 5005}
+{"id": "q37", "cat": "quality", "split": "qtest", "prompt": "What is 268 + 875 - 53? End your reply with: ANSWER: <number>", "answer": 1090}
+{"id": "q38", "cat": "quality", "split": "qtrain", "prompt": "A box holds 5 rows of 20 apples. After eating 5 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 95}
+{"id": "q39", "cat": "quality", "split": "qtest", "prompt": "If 8 pens cost 200 cents in total, how many cents do 11 pens cost? End your reply with: ANSWER: <number>", "answer": 275}
+{"id": "q40", "cat": "quality", "split": "qtrain", "prompt": "What is 97 * 21? End your reply with: ANSWER: <number>", "answer": 2037}
+{"id": "q41", "cat": "quality", "split": "qtest", "prompt": "What is 882 + 671 - 83? End your reply with: ANSWER: <number>", "answer": 1470}
+{"id": "q42", "cat": "quality", "split": "qtrain", "prompt": "A box holds 8 rows of 15 apples. After eating 8 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 112}
+{"id": "q43", "cat": "quality", "split": "qtest", "prompt": "If 7 pens cost 581 cents in total, how many cents do 10 pens cost? End your reply with: ANSWER: <number>", "answer": 830}
+{"id": "q44", "cat": "quality", "split": "qtrain", "prompt": "What is 86 * 70? End your reply with: ANSWER: <number>", "answer": 6020}
+{"id": "q45", "cat": "quality", "split": "qtest", "prompt": "What is 170 + 960 - 21? End your reply with: ANSWER: <number>", "answer": 1109}
+{"id": "q46", "cat": "quality", "split": "qtrain", "prompt": "A box holds 7 rows of 20 apples. After eating 7 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 133}
+{"id": "q47", "cat": "quality", "split": "qtest", "prompt": "If 3 pens cost 81 cents in total, how many cents do 6 pens cost? End your reply with: ANSWER: <number>", "answer": 162}
+{"id": "q48", "cat": "quality", "split": "qtrain", "prompt": "What is 51 * 94? End your reply with: ANSWER: <number>", "answer": 4794}
+{"id": "q49", "cat": "quality", "split": "qtest", "prompt": "What is 691 + 797 - 67? End your reply with: ANSWER: <number>", "answer": 1421}
+{"id": "q50", "cat": "quality", "split": "qtrain", "prompt": "A box holds 7 rows of 27 apples. After eating 7 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 182}
+{"id": "q51", "cat": "quality", "split": "qtest", "prompt": "If 8 pens cost 512 cents in total, how many cents do 11 pens cost? End your reply with: ANSWER: <number>", "answer": 704}
+{"id": "q52", "cat": "quality", "split": "qtrain", "prompt": "What is 14 * 71? End your reply with: ANSWER: <number>", "answer": 994}
+{"id": "q53", "cat": "quality", "split": "qtest", "prompt": "What is 463 + 272 - 88? End your reply with: ANSWER: <number>", "answer": 647}
+{"id": "q54", "cat": "quality", "split": "qtrain", "prompt": "A box holds 4 rows of 20 apples. After eating 4 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 76}
+{"id": "q55", "cat": "quality", "split": "qtest", "prompt": "If 2 pens cost 94 cents in total, how many cents do 5 pens cost? End your reply with: ANSWER: <number>", "answer": 235}
+{"id": "q56", "cat": "quality", "split": "qtrain", "prompt": "What is 48 * 28? End your reply with: ANSWER: <number>", "answer": 1344}
+{"id": "q57", "cat": "quality", "split": "qtest", "prompt": "What is 856 + 353 - 60? End your reply with: ANSWER: <number>", "answer": 1149}
+{"id": "q58", "cat": "quality", "split": "qtrain", "prompt": "A box holds 9 rows of 20 apples. After eating 9 apples, how many remain? End your reply with: ANSWER: <number>", "answer": 171}
+{"id": "q59", "cat": "quality", "split": "qtest", "prompt": "If 3 pens cost 123 cents in total, how many cents do 6 pens cost? End your reply with: ANSWER: <number>", "answer": 246}

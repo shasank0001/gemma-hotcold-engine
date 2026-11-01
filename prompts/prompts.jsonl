@@ -1,0 +1,24 @@
+{"id": "code0", "cat": "code", "split": "profile", "prompt": "Write a Python function that merges overlapping intervals and explain its complexity."}
+{"id": "code1", "cat": "code", "split": "profile", "prompt": "Implement an LRU cache in Rust with generics and unit tests."}
+{"id": "code2", "cat": "code", "split": "profile", "prompt": "Explain why this C snippet can overflow: char b[8]; strcpy(b, argv[1]); then fix it."}
+{"id": "code3", "cat": "code", "split": "heldout", "prompt": "Write a SQL query for the top three customers by revenue per month."}
+{"id": "code4", "cat": "code", "split": "profile", "prompt": "Refactor a nested JavaScript callback flow to async/await with error handling."}
+{"id": "code5", "cat": "code", "split": "profile", "prompt": "Write a Bash script that rotates logs older than seven days and compresses them."}
+{"id": "code6", "cat": "code", "split": "profile", "prompt": "Design a REST API for a library system and show example requests."}
+{"id": "code7", "cat": "code", "split": "heldout", "prompt": "Write a C++ thread pool with a task queue and graceful shutdown."}
+{"id": "chat0", "cat": "chat", "split": "profile", "prompt": "Plan a relaxed three day trip to Kyoto for two people in spring."}
+{"id": "chat1", "cat": "chat", "split": "profile", "prompt": "My friend forgot my birthday and I feel hurt. How should I bring it up?"}
+{"id": "chat2", "cat": "chat", "split": "profile", "prompt": "Suggest a week of vegetarian dinners for a busy family."}
+{"id": "chat3", "cat": "chat", "split": "heldout", "prompt": "Write a warm wedding toast for an old college roommate."}
+{"id": "chat4", "cat": "chat", "split": "profile", "prompt": "What are good habits for sleeping better when working night shifts?"}
+{"id": "chat5", "cat": "chat", "split": "profile", "prompt": "Explain how to start running if I have never exercised before."}
+{"id": "chat6", "cat": "chat", "split": "profile", "prompt": "Write a short story about a lighthouse keeper who finds a message in a bottle."}
+{"id": "chat7", "cat": "chat", "split": "heldout", "prompt": "Recommend how to prepare for a first job interview in marketing."}
+{"id": "reason0", "cat": "reason", "split": "profile", "prompt": "A train leaves at 3pm at 60 km/h and another at 4pm at 90 km/h from the same station. When does the second catch up? Show your steps."}
+{"id": "reason1", "cat": "reason", "split": "profile", "prompt": "Prove that the square root of 2 is irrational."}
+{"id": "reason2", "cat": "reason", "split": "profile", "prompt": "Compare the economic causes of the 1929 crash and the 2008 financial crisis."}
+{"id": "reason3", "cat": "reason", "split": "heldout", "prompt": "Five people sit in a row. Alice is not next to Bob and Carol is at one end. How many arrangements exist?"}
+{"id": "reason4", "cat": "reason", "split": "profile", "prompt": "Explain how photosynthesis stores energy, step by step, at a college level."}
+{"id": "reason5", "cat": "reason", "split": "profile", "prompt": "Should a small city invest in light rail or bus rapid transit? Weigh the tradeoffs."}
+{"id": "reason6", "cat": "reason", "split": "profile", "prompt": "Derive the formula for the sum of a geometric series."}
+{"id": "reason7", "cat": "reason", "split": "heldout", "prompt": "Explain the difference between correlation and causation with three real examples."}

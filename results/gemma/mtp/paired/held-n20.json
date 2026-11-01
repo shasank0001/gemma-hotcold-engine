@@ -1,0 +1,90 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99",
+  "-ncmoe",
+  "20"
+ ],
+ "decode_tps": 39.208369638808584,
+ "prefill_tps_mean": 75.8123392276251,
+ "peak_vram_mib": 6969,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 40.377590882167695,
+   "prefill_tps": 57.14089802635338,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *   `order_date` (Date/Timestamp)\n        *   `total_amount` (Decimal/Float) - *Note: Sometimes revenue is"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 43.39275293191506,
+   "prefill_tps": 75.81290386165661,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ is preferred, so C++11/14/17/20 features like `std::thread`, `std::mutex`, `std::condition_variable`, `std::future`, `std::packaged_task`).\n\n    *   *Task"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 33.02194763447148,
+   "prefill_tps": 71.58196134574086,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm.\nWedding toast.\nSince I don't know the specific details (names, funny stories, etc.), I need to provide a *template* or a *structured guide* with placeholders, while offering a few different \"vibes\" (Sentimental, Humorous/Lighthearted, and Short/Sweet).\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Connection:* A brief, non-embarrassing anecdote or a general description of the bond.\n    *   *The"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 38.39531758520661,
+   "prefill_tps": 90.39051932581586,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company (Mission, values, products).\n        *   Industry (Competitors, trends).\n        *   The Role (Job description, KPIs).\n        *   The Interviewer (LinkedIn)."
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 46.000792517590774,
+   "prefill_tps": 87.2429524717418,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 36.831696836273245,
+   "prefill_tps": 72.70480033444207,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explain the difference.\n*   Requirement: Provide three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does"
+  }
+ ]
+}

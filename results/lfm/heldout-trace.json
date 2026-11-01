@@ -1,0 +1,84 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Deep_learing/projects/custem-model/models/24B-Q4KM/LFM2.5-24B-A2B-Q4_K_M.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000"
+ ],
+ "decode_tps": 25.71815510797524,
+ "prefill_tps_mean": 24.64069491274086,
+ "peak_vram_mib": 6119,
+ "tokens": 1536,
+ "cache_stats": [
+  "llama_moe_cache: upload time = 0.00 ms",
+  "llama_moe_cache: upload time = 53557.75 ms",
+  "llama_moe_cache: ubatch <= 8: hits = 176003, misses = 59754, hit rate = 74.65%, uploaded = 324810.56 MiB",
+  "llama_moe_cache: ubatch  > 8: hits = 1690, misses = 5525, hit rate = 23.42%, uploaded = 29954.95 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 23.76677025250376,
+   "prefill_tps": 22.089013200946518,
+   "n": 256,
+   "n_prompt": 24,
+   "text": ""
+  },
+  {
+   "id": "code7",
+   "decode_tps": 26.519883100355298,
+   "prefill_tps": 25.09337243884494,
+   "n": 256,
+   "n_prompt": 25,
+   "text": ""
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 26.336946004922837,
+   "prefill_tps": 23.324363171996765,
+   "n": 256,
+   "n_prompt": 24,
+   "text": ""
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 30.011852916498906,
+   "prefill_tps": 24.647064748910708,
+   "n": 256,
+   "n_prompt": 23,
+   "text": ""
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 23.036797353966353,
+   "prefill_tps": 28.995016170934733,
+   "n": 256,
+   "n_prompt": 35,
+   "text": ""
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 25.762132272081658,
+   "prefill_tps": 23.69533974481149,
+   "n": 256,
+   "n_prompt": 23,
+   "text": ""
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-cmoe",
+  "--moe-cache-mib",
+  "3000",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 49.901552408113226,
+ "prefill_tps_mean": 95.15517991984521,
+ "peak_vram_mib": 5615,
+ "tokens": 1728,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 915 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 310846, misses = 150372, hit rate = 67.40%, uploaded = 0.00 MiB",
+  "llama_moe_cache: swaps = 8677",
+  "llama_moe_cache: large batches: 1086 experts copied from the cache, 1732.40 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code0",
+   "decode_tps": 45.873818990602146,
+   "prefill_tps": 70.79473189546792,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Write a Python function to merge overlapping intervals.\n    *   Requirement: Explain the complexity (Time and Space).\n\n    *   Input: A list of intervals, e.g., `[[1, 3], [2, 6], [8, 10], [15, 18]]`.\n    *   Output: A list of merged intervals, e.g., `[[1, 6"
+  },
+  {
+   "id": "code1",
+   "decode_tps": 52.01930737661158,
+   "prefill_tps": 98.30408504320296,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Implement an LRU (Least Recently Used) Cache in Rust.\n*   Requirements:\n    *   Generics (Key and Value types).\n    *   Unit tests.\n    *   Standard LRU behavior: `get` (updates recency), `put` (adds/updates, evicts if full).\n\n    *   An LRU cache needs two main components:\n        1.  A **HashMap**"
+  },
+  {
+   "id": "code2",
+   "decode_tps": 49.859344165931894,
+   "prefill_tps": 117.67305832278582,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Code snippet: `char b[8]; strcpy(b, argv[1]);`\n*   Task 1: Explain *why* it can overflow.\n*   Task 2: Fix it.\n\n    *   `char b[8];`: This allocates a fixed-size buffer of 8 bytes on the stack.\n    *   `argv[1]`: This is a command-line argument provided by the user."
+  },
+  {
+   "id": "code4",
+   "decode_tps": 51.77932849296537,
+   "prefill_tps": 107.97368228569836,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   *Goal:* Refactor nested JavaScript callbacks (callback hell) into `async/await`.\n*   *Requirement:* Include error handling.\n*   *Context:* The user hasn't provided the specific code yet, so I need to provide a *representative example* and then explain the *pattern* for how to do it.\n\n    *   *Scenario:* A common real-world scenario is fetching user data, then fetching their posts,"
+  },
+  {
+   "id": "code5",
+   "decode_tps": 54.33004760455962,
+   "prefill_tps": 105.56425798542531,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "*   Goal: Rotate logs older than 7 days and compress them.\n    *   Language: Bash script.\n    *   Key actions: Find files, check age, compress them, (optionally) delete the original uncompressed files.\n\n    *   Where are the logs? (Need a variable for the directory).\n    *   What is the age threshold? (7 days).\n    *   What is the file extension to look"
+  },
+  {
+   "id": "code6",
+   "decode_tps": 54.056883774285765,
+   "prefill_tps": 105.54896380034502,
+   "n": 96,
+   "n_prompt": 29,
+   "text": "*   Goal: Design a REST API for a library system.\n*   Output: API design (endpoints, methods, resources) and example requests (JSON).\n\n    *   Books (Title, Author, ISBN, Genre, Publication Year, Availability).\n    *   Authors (Name, Bio, Nationality).\n    *   Members/Users (Name, Email, Membership Date).\n    *   Loans/Borrowing (Book, Member, Due"
+  },
+  {
+   "id": "chat0",
+   "decode_tps": 47.39237192336204,
+   "prefill_tps": 91.61927913951173,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Destination: Kyoto, Japan.\n    *   Duration: 3 days.\n    *   Vibe: Relaxed (not a frantic \"see everything\" itinerary).\n    *   Group: Two people (implies romantic/scenic/leisurely pace).\n    *   Season: Spring (Cherry blossoms/Sakura season or lush greenery).\n\n    *   *Spring in Kyoto:* High season. Crowds are a major"
+  },
+  {
+   "id": "chat1",
+   "decode_tps": 51.977810399173165,
+   "prefill_tps": 97.74331420921214,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "Friend forgot the user's birthday.\nHurt, disappointed, perhaps lonely or undervalued.\nHow to bring it up (communication strategy).\n\n    *   *Why did they forget?* (Busy, stress, bad memory, didn't see the notification, different values regarding birthdays).\n    *   *What is the goal?* (To express feelings, to feel seen, to strengthen the friendship, or to vent?)\n    *   "
+  },
+  {
+   "id": "chat2",
+   "decode_tps": 51.39240971976531,
+   "prefill_tps": 91.14662453667133,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Vegetarian dinners.\nBusy family (needs to be quick, easy, minimal cleanup, or meal-prep friendly).\nOne week (7 days).\n\n    *   *Speed:* 30 minutes or less, or slow cooker/one-pot.\n    *   *Nutritional Balance:* Protein (beans, lentils, tofu, eggs, cheese, quinoa), fiber (veggies), and complex carbs.\n    *   *Kid-"
+  },
+  {
+   "id": "chat4",
+   "decode_tps": 52.40298001957113,
+   "prefill_tps": 94.62592344762794,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sleeping better while working night shifts.\nProvide actionable, effective \"good habits\" to mitigate the negative effects of shift work.\n\n    *   *Circadian Rhythm:* The body's internal clock is disrupted.\n    *   *Light Exposure:* Light tells the brain it's daytime; darkness tells it to sleep.\n    *   *Temperature:* Body temperature drops during sleep; it rises during the day.\n    *   *Diet/Stim"
+  },
+  {
+   "id": "chat5",
+   "decode_tps": 53.91640233440996,
+   "prefill_tps": 93.09624822119669,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Someone who has never exercised before.\nHow to start running.\nEncouraging, structured, safe, and realistic.\n\n    *   *Physical preparation:* Gear, health check, mindset.\n    *   *The \"How-To\" (Methodology):* Walk-run method (Couch to 5K style), pacing, posture.\n    *   *Consistency/Schedule:* Frequency, rest days.\n    *   *Injury"
+  },
+  {
+   "id": "chat6",
+   "decode_tps": 50.04543598793641,
+   "prefill_tps": 96.84204155128845,
+   "n": 96,
+   "n_prompt": 32,
+   "text": "A lighthouse keeper.\nFinds a message in a bottle.\nShort story.\n\n    *   *The Keeper:* Needs to be solitary, perhaps a bit weathered, someone who finds comfort in the rhythm of the sea. Let's call him Elias. He's old, maybe a bit lonely, but not necessarily sad\u2014just attuned to the isolation.\n    *   *The Setting:* A rugged, rocky island. A lighthouse (The Sentinel"
+  },
+  {
+   "id": "reason0",
+   "decode_tps": 43.393677952220365,
+   "prefill_tps": 72.54948735794441,
+   "n": 96,
+   "n_prompt": 59,
+   "text": "*   Train 1: Leaves at 3:00 PM, speed = 60 km/h.\n    *   Train 2: Leaves at 4:00 PM, speed = 90 km/h.\n    *   Goal: Find the time when Train 2 catches up to Train 1.\n\n    *   Let $t$ be the time (in hours) that Train 2 has been traveling."
+  },
+  {
+   "id": "reason1",
+   "decode_tps": 47.45693283345364,
+   "prefill_tps": 85.81944859415029,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "The objective is to provide a formal mathematical proof that $\\sqrt{2}$ is an irrational number.\n\n    *   The most common and elegant way to prove this is by *reductio ad absurdum* (proof by contradiction).\n    *   *Core logic:* Assume the opposite (that $\\sqrt{2}$ is rational), show that this leads to a logical impossibility (a contradiction), and therefore the original assumption must be false.\n\n    *"
+  },
+  {
+   "id": "reason2",
+   "decode_tps": 49.784537761047844,
+   "prefill_tps": 99.57314564668827,
+   "n": 96,
+   "n_prompt": 38,
+   "text": "*   Topic: Comparison of economic causes.\n    *   Subjects: 1929 Stock Market Crash (Great Depression era) and 2008 Financial Crisis (Great Recession era).\n    *   Goal: Identify similarities and differences in the underlying economic drivers.\n\n    *   *1929 Crash:*\n        *   Speculation (buying on margin).\n        *   Overproduction (agriculture and industry).\n        *"
+  },
+  {
+   "id": "reason4",
+   "decode_tps": 49.27531571213465,
+   "prefill_tps": 98.72611464968153,
+   "n": 96,
+   "n_prompt": 31,
+   "text": "Photosynthesis (energy storage mechanism).\nStep-by-step.\nCollege level (requires biochemical detail, specific terminology, and a focus on thermodynamics/redox reactions).\n\n    *   *Overview:* Conversion of light energy to chemical energy.\n    *   *Equation:* $6CO_2 + 6H_2O + \\text{light} \\rightarrow C_6H_{12}O_6 + 6O_"
+  },
+  {
+   "id": "reason5",
+   "decode_tps": 50.48041413069008,
+   "prefill_tps": 98.86633271816504,
+   "n": 96,
+   "n_prompt": 33,
+   "text": "*   *Topic:* Small city investment decision: Light Rail Transit (LRT) vs. Bus Rapid Transit (BRT).\n*   *Goal:* Weigh the tradeoffs.\n*   *Context:* \"Small city\" (implies limited budget, specific population density, potentially different land use patterns than a megacity).\n\n    *   *Light Rail Transit (LRT):* Fixed rail, high capacity, high cost, permanent infrastructure, high prestige/"
+  },
+  {
+   "id": "reason6",
+   "decode_tps": 46.08925402359188,
+   "prefill_tps": 86.32649915215045,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "Sum of a geometric series.\nDerive the formula.\nMathematical derivation (clear, step-by-step).\n\n    *   What is a geometric series? It's a sum of terms where each term is the previous term multiplied by a constant ratio $r$.\n    *   General form: $S_n = a + ar + ar^2 + ar^3 + \\dots + ar^{n-1}$.\n    *   "
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+check,result,note
+Math answers at 5.9 GB,58 of 60 correct,0 wrong and 2 with no parsable answer. Stock cache got 58 and stock CPU got 57.
+Soak in one server,24 prompts on the final build,"2,304 tokens with no crash and no empty or garbled reply. An earlier build ran 252 prompts."
+Long prompts,No prefill gain on an earlier build,Prefill was about equal on a 1948-token prompt. The final build was not tested on long prompts.
+Exact logits,Not identical,Stock CPU and GPU differ by about 0.14 in top-token probability. An earlier build differed from the stock cache by about 0.13. The final build was not run through this test.
+Scope,One laptop and one model,RTX 5060 Laptop GPU with 8.5 GB/s upload. A faster link would favour the stock cache. Other engines were not tested.

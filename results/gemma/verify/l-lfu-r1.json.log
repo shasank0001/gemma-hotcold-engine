@@ -1,0 +1,49 @@
+0.00.091.668 I srv  llama_server: initializing ...
+0.00.091.678 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.091.784 I srv  init_listene: The UI is disabled
+0.00.091.785 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.091.867 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.094.558 I srv    load_model: loading model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+llama_moe_cache: swaps = 0
+0.00.669.712 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.669.743 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.673.234 W load: '</s>' is a normal token here, removing it from EOG list
+llama_moe_cache: hybrid: 915 hot experts loaded
+0.11.681.772 I cmn          init: llama threadpool init, n_threads = 6
+0.11.824.449 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.11.828.815 I srv  server_run_i: model loaded
+0.11.828.826 I srv  server_on_li: listening on http://127.0.0.1:18080
+0.12.091.394 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.12.091.453 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.15.338.411 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1432, progress = 0.74, t =   3.25 s / 441.04 tokens per second
+0.16.510.445 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1944, progress = 1.00, t =   4.42 s / 439.92 tokens per second
+0.17.472.122 I slot print_timing: id  0 | task 0 | prompt eval time =    4599.22 ms /  1948 tokens (    2.36 ms per token,   423.55 tokens per second)
+0.17.472.124 I slot print_timing: id  0 | task 0 |        eval time =     781.42 ms /    32 tokens (   25.21 ms per token,    39.67 tokens per second)
+0.17.472.125 I slot print_timing: id  0 | task 0 |       total time =    5380.64 ms /  1980 tokens
+0.17.472.129 I slot print_timing: id  0 | task 0 |    graphs reused =         31
+0.17.472.130 I slot print_timing: id  0 | task 0 |   graph reallocs =          2    /     0        (same size) / (changed size)
+0.17.472.190 I slot      release: id  0 | task 0 | stop processing: n_tokens = 1979, truncated = 0
+0.17.497.324 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 1979, t_last = 29279334080
+0.17.773.952 I slot launch_slot_: id  0 | task 36 | processing task, is_child = 0
+0.20.909.562 I slot print_timing: id  0 | task 36 | prompt processing, n_tokens =   1431, progress = 0.73, t =   3.14 s / 456.38 tokens per second
+0.22.050.419 I slot print_timing: id  0 | task 36 | prompt processing, n_tokens =   1943, progress = 1.00, t =   4.28 s / 454.35 tokens per second
+0.22.917.545 I slot print_timing: id  0 | task 36 | prompt eval time =    4447.13 ms /  1947 tokens (    2.28 ms per token,   437.81 tokens per second)
+0.22.917.549 I slot print_timing: id  0 | task 36 |        eval time =     696.44 ms /    32 tokens (   22.47 ms per token,    44.51 tokens per second)
+0.22.917.549 I slot print_timing: id  0 | task 36 |       total time =    5143.57 ms /  1979 tokens
+0.22.917.550 I slot print_timing: id  0 | task 36 |    graphs reused =         61
+0.22.917.550 I slot print_timing: id  0 | task 36 |   graph reallocs =          4    /     0        (same size) / (changed size)
+0.22.917.590 I slot      release: id  0 | task 36 | stop processing: n_tokens = 1978, truncated = 0
+0.22.940.797 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 1978, t_last = 29284779480
+0.23.215.681 I slot launch_slot_: id  0 | task 72 | processing task, is_child = 0
+0.26.296.815 I slot print_timing: id  0 | task 72 | prompt processing, n_tokens =   1430, progress = 0.73, t =   3.08 s / 464.12 tokens per second
+0.27.430.827 I slot print_timing: id  0 | task 72 | prompt processing, n_tokens =   1942, progress = 1.00, t =   4.22 s / 460.72 tokens per second
+0.28.234.621 I slot print_timing: id  0 | task 72 | prompt eval time =    4378.57 ms /  1946 tokens (    2.25 ms per token,   444.44 tokens per second)
+0.28.234.625 I slot print_timing: id  0 | task 72 |        eval time =     640.35 ms /    32 tokens (   20.66 ms per token,    48.41 tokens per second)
+0.28.234.626 I slot print_timing: id  0 | task 72 |       total time =    5018.91 ms /  1978 tokens
+0.28.234.627 I slot print_timing: id  0 | task 72 |    graphs reused =         91
+0.28.234.627 I slot print_timing: id  0 | task 72 |   graph reallocs =          6    /     0        (same size) / (changed size)
+0.28.234.664 I slot      release: id  0 | task 72 | stop processing: n_tokens = 1977, truncated = 0
+0.28.253.454 I srv    operator(): operator(): cleaning up before exit...
+llama_moe_cache: hybrid: hits = 16189, misses = 11198, hit rate = 59.11%, uploaded = 0.00 MiB
+llama_moe_cache: swaps = 623
+llama_moe_cache: large batches: 17272 experts copied from the cache, 27552.55 MiB

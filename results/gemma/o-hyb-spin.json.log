@@ -1,0 +1,655 @@
+0.00.187.387 I srv  llama_server: initializing ...
+0.00.187.400 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.187.492 I srv  init_listene: The UI is disabled
+0.00.187.492 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.187.550 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.189.613 I srv    load_model: loading model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.00.521.028 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.00.724.603 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.724.635 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.728.327 W load: '</s>' is a normal token here, removing it from EOG list
+llama_moe_cache: hybrid: 1542 hot experts loaded
+0.11.770.140 I cmn          init: llama threadpool init, n_threads = 6
+splits: 152
+splits: 152
+0.11.914.905 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.11.919.500 I srv  server_run_i: model loaded
+0.11.919.507 I srv  server_on_li: listening on http://127.0.0.1:18080
+0.12.260.563 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.12.260.648 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.14.640.047 I slot print_timing: id  0 | task 0 | prompt eval time =     520.49 ms /    30 tokens (   17.35 ms per token,    57.64 tokens per second)
+0.14.640.054 I slot print_timing: id  0 | task 0 |        eval time =    1858.87 ms /    96 tokens (   19.57 ms per token,    51.11 tokens per second)
+0.14.640.054 I slot print_timing: id  0 | task 0 |       total time =    2379.36 ms /   126 tokens
+0.14.640.059 I slot print_timing: id  0 | task 0 |    graphs reused =         95
+0.14.640.059 I slot print_timing: id  0 | task 0 |   graph reallocs =          1    /     0        (same size) / (changed size)
+0.14.640.091 I slot      release: id  0 | task 0 | stop processing: n_tokens = 125, truncated = 0
+0.14.663.069 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.433 (> 0.100 thold), f_keep = 0.104
+0.14.686.100 I slot launch_slot_: id  0 | task 99 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.16.741.583 I slot print_timing: id  0 | task 99 | prompt eval time =     296.25 ms /    30 tokens (    9.88 ms per token,   101.26 tokens per second)
+0.16.741.587 I slot print_timing: id  0 | task 99 |        eval time =    1759.20 ms /    96 tokens (   18.52 ms per token,    54.00 tokens per second)
+0.16.741.587 I slot print_timing: id  0 | task 99 |       total time =    2055.46 ms /   126 tokens
+0.16.741.588 I slot print_timing: id  0 | task 99 |    graphs reused =        189
+0.16.741.588 I slot print_timing: id  0 | task 99 |   graph reallocs =          2    /     0        (same size) / (changed size)
+0.16.741.606 I slot      release: id  0 | task 99 | stop processing: n_tokens = 125, truncated = 0
+0.16.764.079 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.481 (> 0.100 thold), f_keep = 0.104
+0.16.784.522 I slot launch_slot_: id  0 | task 198 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.18.966.670 I slot print_timing: id  0 | task 198 | prompt eval time =     293.59 ms /    27 tokens (   10.87 ms per token,    91.96 tokens per second)
+0.18.966.674 I slot print_timing: id  0 | task 198 |        eval time =    1888.54 ms /    96 tokens (   19.88 ms per token,    50.30 tokens per second)
+0.18.966.674 I slot print_timing: id  0 | task 198 |       total time =    2182.13 ms /   123 tokens
+0.18.966.675 I slot print_timing: id  0 | task 198 |    graphs reused =        283
+0.18.966.676 I slot print_timing: id  0 | task 198 |   graph reallocs =          3    /     0        (same size) / (changed size)
+0.18.966.690 I slot      release: id  0 | task 198 | stop processing: n_tokens = 122, truncated = 0
+0.18.987.381 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.393 (> 0.100 thold), f_keep = 0.090
+0.19.007.831 I slot launch_slot_: id  0 | task 297 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.21.068.885 I slot print_timing: id  0 | task 297 | prompt eval time =     300.29 ms /    28 tokens (   10.72 ms per token,    93.24 tokens per second)
+0.21.068.891 I slot print_timing: id  0 | task 297 |        eval time =    1760.74 ms /    96 tokens (   18.53 ms per token,    53.95 tokens per second)
+0.21.068.892 I slot print_timing: id  0 | task 297 |       total time =    2061.03 ms /   124 tokens
+0.21.068.892 I slot print_timing: id  0 | task 297 |    graphs reused =        377
+0.21.068.893 I slot print_timing: id  0 | task 297 |   graph reallocs =          4    /     0        (same size) / (changed size)
+0.21.068.913 I slot      release: id  0 | task 297 | stop processing: n_tokens = 123, truncated = 0
+0.21.089.981 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.268 (> 0.100 thold), f_keep = 0.089
+0.21.111.756 I slot launch_slot_: id  0 | task 396 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.23.709.589 I slot print_timing: id  0 | task 396 | prompt eval time =     396.39 ms /    41 tokens (    9.67 ms per token,   103.43 tokens per second)
+0.23.709.593 I slot print_timing: id  0 | task 396 |        eval time =    2201.42 ms /    96 tokens (   23.17 ms per token,    43.15 tokens per second)
+0.23.709.594 I slot print_timing: id  0 | task 396 |       total time =    2597.81 ms /   137 tokens
+0.23.709.595 I slot print_timing: id  0 | task 396 |    graphs reused =        471
+0.23.709.596 I slot print_timing: id  0 | task 396 |   graph reallocs =          5    /     0        (same size) / (changed size)
+0.23.709.613 I slot      release: id  0 | task 396 | stop processing: n_tokens = 136, truncated = 0
+0.23.730.280 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.393 (> 0.100 thold), f_keep = 0.081
+0.23.752.644 I slot launch_slot_: id  0 | task 495 | processing task, is_child = 0
+splits: 149
+splits: 149
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+splits: 152
+0.26.010.484 I slot print_timing: id  0 | task 495 | prompt eval time =     300.68 ms /    28 tokens (   10.74 ms per token,    93.12 tokens per second)
+0.26.010.489 I slot print_timing: id  0 | task 495 |        eval time =    1957.14 ms /    96 tokens (   20.60 ms per token,    48.54 tokens per second)
+0.26.010.490 I slot print_timing: id  0 | task 495 |       total time =    2257.81 ms /   124 tokens
+0.26.010.490 I slot print_timing: id  0 | task 495 |    graphs reused =        565
+0.26.010.491 I slot print_timing: id  0 | task 495 |   graph reallocs =          6    /     0        (same size) / (changed size)
+0.26.010.507 I slot      release: id  0 | task 495 | stop processing: n_tokens = 123, truncated = 0
+0.26.033.040 I srv    operator(): operator(): cleaning up before exit...
+llama_moe_cache: hybrid: hits = 108031, misses = 46535, hit rate = 69.89%, uploaded = 0.00 MiB

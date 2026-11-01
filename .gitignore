@@ -1,0 +1,6 @@
+models/
+llama.cpp/
+llama.cpp-engine/
+logs/
+__pycache__/
+*.gguf

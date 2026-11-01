@@ -1,0 +1,83 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "1500",
+  "-lm",
+  "none",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 18.03544857925912,
+ "prefill_tps_mean": 26.799922949074883,
+ "peak_vram_mib": 4101,
+ "tokens": 576,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 17.105328309768492,
+   "prefill_tps": 22.800580046756387,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 19.1207282783495,
+   "prefill_tps": 28.02452332621199,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key Features:\n    *   Task queue (to hold pending work).\n    *   Worker threads (to execute tasks).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 18.79119227147932,
+   "prefill_tps": 25.580632997500672,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nFriends, family, the couple.\nNostalgic, heartfelt, funny (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* A lighthearted anecdote or a general description of their personality back then.\n    *   *The \"Transition\" Section:* When they"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 20.796961454473806,
+   "prefill_tps": 26.895767374665724,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: What do they do?"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 15.317511043119278,
+   "prefill_tps": 32.60673336996951,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 18.072573367038366,
+   "prefill_tps": 24.891300579345017,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change too (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the"
+  }
+ ]
+}

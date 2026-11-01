@@ -1,0 +1,82 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Deep_learing/projects/custem-model/models/24B-Q4KM/LFM2.5-24B-A2B-Q4_K_M.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-ncmoe",
+  "26"
+ ],
+ "decode_tps": 50.61219837670341,
+ "prefill_tps_mean": 105.83648362644708,
+ "peak_vram_mib": 6063,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 50.833875694762995,
+   "prefill_tps": 60.12008987953436,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to respond with a SQL query that returns the top three customers by revenue per month. The user asks: \"Write a SQL query for the top three customers by revenue per month.\"\n\nInterpretation: We have some table(s) presumably containing sales data, like orders or transactions, with fields such as customer_id, order_date (or month), amount (revenue). Need to compute monthly revenue per customer and then find top 3 customers each month? Or overall top three customers by total revenue across all months? The phrase \"per month\" suggests grouping by month and ranking within each month.\n\nThus we need a query that"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 50.734937516129314,
+   "prefill_tps": 100.35243776141809,
+   "n": 128,
+   "n_prompt": 25,
+   "text": "\nWe need to answer the question: \"Write a C++ thread pool with a task queue and graceful shutdown.\" This is a coding task. The user expects a solution. We should provide a concise but complete implementation. Since it's a complex question, we need to produce a reasonable thread pool. We'll write a class ThreadPool with a task queue (std::queue of std::function<void()>) protected by a mutex and condition variable. Use std::vector<std::thread> for workers. Graceful shutdown: stop accepting new tasks, wait for pending tasks to finish, then join threads. Typically we have a stop flag"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 50.67459052337276,
+   "prefill_tps": 115.51846129409557,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to produce a warm wedding toast for an old college roommate. The user asks: \"Write a warm wedding toast for an old college roommate.\"\n\nWe must consider the context: It's a wedding toast, presumably delivered at a wedding (the roommate is getting married). The speaker is an old college roommate, so they have a shared history, likely some inside jokes, memories. The tone should be warm, heartfelt, maybe humorous but respectful. Should include congratulations, mention of the couple's love, personal anecdotes, well-wishes for marriage.\n\nWe"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 50.490673935203375,
+   "prefill_tps": 114.38290423167014,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Preparing for a first job interview.\n    *   **Field:** Marketing (this is crucial\u2014it implies creativity, data analysis, strategy, brand awareness, and communication skills).\n    *   **Target Audience:** Someone likely entering the workforce (entry-level/new grad or career changer with some experience but no full-time experience yet).\n\n2.  **Determine the Key Areas of Preparation:**\n    To provide a comprehensive answer, I need to cover several pillars:\n    *   Research (Company & Role).\n    *   Self-Assessment (Resume/Experience"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 50.282452770127634,
+   "prefill_tps": 131.37743611302963,
+   "n": 128,
+   "n_prompt": 35,
+   "text": "We need to parse the problem: \"Five people sit in a row. Alice is not next to Bob and Carol is at one end. How many arrangements exist?\" So we have 5 distinct people: presumably Alice, Bob, Carol, plus two other people (maybe Dave and Eve?). The problem states: \"Alice is not next to Bob\" and \"Carol is at one end\". We need to count the number of permutations of the five people satisfying these constraints.\n\nWe need to interpret \"Carol is at one end\" meaning Carol sits either in the leftmost seat or the rightmost seat. So Carol must be placed at an end"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 50.66050124377514,
+   "prefill_tps": 113.26757247893468,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Difference between correlation and causation.\n    *   **Requirement:** Explain the concept.\n    *   **Constraint:** Provide exactly three real-world examples.\n\n2.  **Define the Concepts:**\n    *   *Correlation:* A statistical relationship where two variables change together (they move in relation to each other). One goes up, the other might go up (positive) or down (negative).\n    *   *Causation:* A mechanism where one event (the cause) directly brings about another event (the effect). A changes B because A made"
+  }
+ ]
+}

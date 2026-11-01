@@ -1,0 +1,88 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000"
+ ],
+ "decode_tps": 49.9689346570254,
+ "prefill_tps_mean": 84.33997794528446,
+ "peak_vram_mib": 7603,
+ "tokens": 384,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 1542 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 83995, misses = 24485, hit rate = 77.43%, uploaded = 0.00 MiB",
+  "llama_moe_cache: swaps = 1609"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 50.528625669504294,
+   "prefill_tps": 55.972759923503894,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table ("
+  },
+  {
+   "id": "code7",
+   "decode_tps": 56.989283300964026,
+   "prefill_tps": 95.05010724820434,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 49.14836800113587,
+   "prefill_tps": 82.09107244385122,
+   "n": 64,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nFriends, family, the couple.\nNostalgic, heartfelt, humorous (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \""
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 56.57896627534378,
+   "prefill_tps": 91.55862204273825,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "First job interview in marketing.\nProvide a comprehensive guide on how to prepare.\nLikely a recent graduate or someone transitioning into marketing.\n\n    To make the advice actionable and organized, I should divide it into phases:\n    *   Phase 1: Research (The Foundation)\n    *"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 40.46032287337653,
+   "prefill_tps": 92.8633391391795,
+   "n": 64,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 49.99964285969386,
+   "prefill_tps": 88.50396687422953,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explain the difference.\n*   Requirement: Provide three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same"
+  }
+ ]
+}

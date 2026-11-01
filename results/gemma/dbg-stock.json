@@ -1,0 +1,79 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 30.170722493100882,
+ "prefill_tps_mean": 65.6677569704388,
+ "peak_vram_mib": 2571,
+ "tokens": 192,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 29.13197064625048,
+   "prefill_tps": 52.024173899471954,
+   "n": 32,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 30.643220978151383,
+   "prefill_tps": 69.5794156256813,
+   "n": 32,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 30.54346680171477,
+   "prefill_tps": 64.40301978603885,
+   "n": 32,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 30.286451209504087,
+   "prefill_tps": 64.77433085802855,
+   "n": 32,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 30.294442435673172,
+   "prefill_tps": 75.43490060071939,
+   "n": 32,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note:"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 30.17460388532093,
+   "prefill_tps": 67.79070105269274,
+   "n": 32,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation"
+  }
+ ]
+}

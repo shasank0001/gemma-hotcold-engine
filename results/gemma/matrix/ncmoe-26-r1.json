@@ -1,0 +1,82 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-ncmoe",
+  "26",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 36.57648690619369,
+ "prefill_tps_mean": 80.10703660583393,
+ "peak_vram_mib": 4227,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 36.58595957625969,
+   "prefill_tps": 65.8456446398353,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *   `order_date` (Date/Timestamp)\n        *   `total_amount` (Decimal/Float) - *Note: Sometimes revenue is"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 36.72178017937578,
+   "prefill_tps": 83.79560575843402,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ is preferred, so C++11/14/17/20 features like `std::thread`, `std::mutex`, `std::condition_variable`, `std::future`, `std::packaged_task`, and `std::function`"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 36.56833527692596,
+   "prefill_tps": 79.69162293465878,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow.\n    *   *The \"Transition\" Section:* When they met their partner, how they changed (for the better), why they are a good match.\n    *   *The \"Partner\" Section:* Welcoming the partner into the fold, acknowledging their impact on the roommate.\n    *   *The"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 36.2838067941571,
+   "prefill_tps": 81.26990024119746,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company (Mission, products, target audience).\n        *   Competitors (Who are they fighting against?).\n        *   The Role (Job description analysis).\n        *   The Brand's"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 36.57617088387037,
+   "prefill_tps": 91.19663328721602,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 36.72642084256193,
+   "prefill_tps": 78.84281277366199,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does not imply causation.\" Just because two things"
+  }
+ ]
+}

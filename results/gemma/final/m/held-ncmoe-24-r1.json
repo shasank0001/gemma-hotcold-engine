@@ -1,0 +1,90 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99",
+  "-ncmoe",
+  "24"
+ ],
+ "decode_tps": 43.006630809747136,
+ "prefill_tps_mean": 82.67415644828483,
+ "peak_vram_mib": 5339,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 44.9250918311326,
+   "prefill_tps": 63.54451293130838,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output requirements: Customer information (name/ID), Month, and Revenue.\n    *   Ranking requirement: Top 3 per month.\n\n    *   `Orders` table: `order_id`, `customer_id`, `order_date`, `total_amount`.\n    *   `Customers` table: `customer_id`, `customer_name`.\n\n    *   *Step 1: Aggregate revenue by customer and month.*\n        *   Need to extract the month/year from `order_"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 45.13252793685711,
+   "prefill_tps": 87.807105350965,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ is preferred, so C++11/14/17/20 features like `std::thread`, `std::mutex`, `std::condition_variable`, `std::future`, `std::packaged_task`, and `std::function`"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 38.18836788328191,
+   "prefill_tps": 83.01510874979246,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow.\n    *   *The \"Transition\" Section:* When they met their partner, how they changed (for the better), why they are a good match.\n    *   *The \"Partner\" Section:* Welcoming the partner into the fold, acknowledging their impact on the roommate.\n    *   *The \"Closing/Toast"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 40.97491915519396,
+   "prefill_tps": 82.8522478110732,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: Mission, values, products, target audience.\n        *   Industry: Competitors, trends.\n        *   The Role: Job description (JD) analysis.\n        *"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 49.42018834150517,
+   "prefill_tps": 94.77292637992848,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 41.20088578660277,
+   "prefill_tps": 84.05303746664146,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does not imply causation.\" Just because two things"
+  }
+ ]
+}

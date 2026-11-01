@@ -1,0 +1,83 @@
+{
+ "cmd": [
+  "llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Deep_learing/projects/custem-model/models/24B-Q4KM/LFM2.5-24B-A2B-Q4_K_M.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-cmoe",
+  "--moe-cache-mib",
+  "4000"
+ ],
+ "decode_tps": 24.06795425800013,
+ "prefill_tps_mean": 26.57533884523058,
+ "peak_vram_mib": 5145,
+ "tokens": 768,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 22.48208602602045,
+   "prefill_tps": 24.499945895952813,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to respond with a SQL query that returns the top three customers by revenue per month. The user asks: \"Write a SQL query for the top three customers by revenue per month.\"\n\nInterpretation: We have some table(s) presumably containing sales data, like orders or transactions, with fields such as customer_id, order_date (or month), amount (revenue). Need to compute monthly revenue per customer and then find top 3 customers per month.\n\nThus we need something like:\n\nSELECT \n    DATE_TRUNC('month', order_date) AS month,\n    customer_id,\n    SUM(revenue) AS total_revenue"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 23.62738387745462,
+   "prefill_tps": 25.858555768630055,
+   "n": 128,
+   "n_prompt": 25,
+   "text": "\nWe need to answer the question: \"Write a C++ thread pool with a task queue and graceful shutdown.\" This is a coding task. The user expects a solution. We should provide a concise but complete implementation. Since it's a complex question, we need to produce a reasonable thread pool. We'll write a class ThreadPool with a task queue (std::queue of std::function<void()> or similar), worker threads that pull tasks, and graceful shutdown via a stop flag and condition variable. Also handle joining threads on shutdown. Provide a simple example usage. We must ensure correctness: use mutex, condition_variable,"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 25.14419801590499,
+   "prefill_tps": 25.195607145894115,
+   "n": 128,
+   "n_prompt": 24,
+   "text": "We need to produce a warm wedding toast for an old college roommate. The user asks: \"Write a warm wedding toast for an old college roommate.\"\n\nWe must consider the context: It's a wedding toast, presumably delivered at a wedding (the roommate is getting married). The speaker is an old college roommate, so they have a shared history, likely some inside jokes, memories. The tone should be warm, heartfelt, maybe humorous but respectful. Should include congratulations, mention of the couple's love, personal anecdotes, well-wishes for marriage.\n\nWe"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 26.613211133291117,
+   "prefill_tps": 26.80355904649252,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Preparing for a first job interview.\n    *   **Field:** Marketing (this is crucial\u2014needs specific examples, terminology, and mindset).\n    *   **Target Audience:** Someone likely entering the workforce (entry-level/new grad) or transitioning into their first role. They need actionable advice.\n\n2.  **Deconstruct the Interview Process (General + Marketing Specific):**\n    *   What are the standard stages? (Research, Resume/Portfolio, Practice, Questions to Ask, Follow-up).\n    *   How does \"marketing\""
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 22.332371810427354,
+   "prefill_tps": 32.44661373233398,
+   "n": 128,
+   "n_prompt": 35,
+   "text": "\nWe need to parse the problem: \"Five people sit in a row. Alice is not next to Bob and Carol is at one end. How many arrangements exist?\" We have five distinct individuals: presumably Alice, Bob, Carol, plus two other people (maybe Dave and Eve). The constraints:\n\n- Carol is at one end (i.e., either leftmost or rightmost seat).\n- Alice is not adjacent to Bob.\n\nWe need number of permutations satisfying both constraints.\n\nLet's denote persons: A (Alice), B (Bob), C (Carol), D, E (the other two). There are 5! = 120 total"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 24.772995484292558,
+   "prefill_tps": 24.64775148208001,
+   "n": 128,
+   "n_prompt": 23,
+   "text": "1.  **Analyze the Request:**\n    *   **Topic:** Difference between correlation and causation.\n    *   **Requirement:** Explain the concept.\n    *   **Constraint:** Provide exactly three real-world examples.\n\n2.  **Define the Concepts:**\n    *   *Correlation:* A statistical relationship where two variables change together (they move in relation to each other). One goes up, the other goes up (positive) or down (negative). However, this doesn't mean one *causes* the other.\n    *   *Causation:* A relationship where one event (the cause) is directly"
+  }
+ ]
+}

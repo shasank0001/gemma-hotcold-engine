@@ -1,0 +1,90 @@
+{
+ "cmd": [
+  "/home/shasank/shasank/Hackathons/hacktober/llama.cpp/build-stock/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Hackathons/hacktober/models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "--spec-type",
+  "draft-mtp",
+  "-md",
+  "/home/shasank/shasank/Hackathons/hacktober/models/mtp-gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--spec-draft-n-max",
+  "4",
+  "-ngld",
+  "99",
+  "-ncmoe",
+  "24"
+ ],
+ "decode_tps": 33.88423149136273,
+ "prefill_tps_mean": 67.37278225108828,
+ "peak_vram_mib": 5339,
+ "tokens": 576,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 35.79490499090244,
+   "prefill_tps": 47.51511772662335,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output requirements: Customer information (name/ID), Month, and Revenue.\n    *   Ranking requirement: Top 3 per month.\n\n    *   `Orders` table: `order_id`, `customer_id`, `order_date`, `total_amount`.\n    *   `Customers` table: `customer_id`, `customer_name"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 34.375240852838864,
+   "prefill_tps": 65.88700378850272,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ is preferred, so C++11/14/17/20 features like `std::"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 30.458441220338287,
+   "prefill_tps": 61.35485146444941,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow.\n    *   *The \"Transition\" Section:* When they met their partner, how they changed (for the better), why they are a good match.\n    *   "
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 32.17846515495625,
+   "prefill_tps": 75.65073138046372,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company: Mission, values, products"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 37.409277579596115,
+   "prefill_tps": 82.68029345454399,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 34.00639749827462,
+   "prefill_tps": 71.14869569194649,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen ("
+  }
+ ]
+}

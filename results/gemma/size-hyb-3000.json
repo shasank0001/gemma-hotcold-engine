@@ -1,0 +1,86 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "3000",
+  "-lm",
+  "none",
+  "-t",
+  "6"
+ ],
+ "decode_tps": 41.82036261335887,
+ "prefill_tps_mean": 79.04927356369892,
+ "peak_vram_mib": 5611,
+ "tokens": 576,
+ "cache_stats": [
+  "llama_moe_cache: hybrid: 915 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 80629, misses = 73911, hit rate = 52.17%, uploaded = 0.00 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 40.8562787929249,
+   "prefill_tps": 60.646491600460905,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   To solve this, I need a table containing sales/order data.\n    *   Common columns: `order_id`, `customer_id`, `order_date`, `"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 44.89017500552858,
+   "prefill_tps": 88.24463766751774,
+   "n": 96,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11/14/17/20).\n\n    "
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 42.401931028572655,
+   "prefill_tps": 80.17103153393907,
+   "n": 96,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nLikely a friend/best friend (the \"roommate\" implies a deep, shared history).\nWarm, nostalgic, heartfelt, slightly humorous (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of being roommates, a glimpse into"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 44.702348237880486,
+   "prefill_tps": 71.96481948396084,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft Skills, and Logistics.\n\n    *   *Phase 1: Research (The Foundation)*\n        *   Company (Mission, products, target audience)."
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 37.35661449979297,
+   "prefill_tps": 91.87283902758202,
+   "n": 96,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 41.67516620714312,
+   "prefill_tps": 81.39582206873295,
+   "n": 96,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen ("
+  }
+ ]
+}

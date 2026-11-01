@@ -1,0 +1,19 @@
+0.00.090.786 I srv  llama_server: initializing ...
+0.00.090.797 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.090.900 I srv  init_listene: The UI is disabled
+0.00.090.901 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.090.956 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.093.108 I srv    load_model: loading model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.00.516.925 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.00.702.104 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.702.139 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.705.979 W load: '</s>' is a normal token here, removing it from EOG list
+0.00.722.801 W llama_model_loader: tensor overrides to CPU are used with mmap enabled - consider using --load-mode none for better performance
+0.02.056.053 E ggml_backend_cuda_buffer_type_alloc_buffer: allocating 300.00 MiB on device 0: cudaMalloc failed: out of memory
+0.02.056.057 E ggml_backend_buft_alloc_buffer_n_default: failed to allocate CUDA0 buffer of size 314572800
+0.02.057.222 E llama_init_from_model: failed to initialize the context: failed to allocate buffer for kv cache
+0.02.057.225 E cmn  common_init_: failed to create context with model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.02.057.228 E cmn  common_init_: failed to create context with model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.02.057.233 E srv    load_model: failed to create_context with model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.02.057.235 I srv    operator(): operator(): cleaning up before exit...
+0.02.076.138 E srv  server_run_i: exiting due to model loading error

@@ -1,0 +1,179 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000"
+ ],
+ "decode_tps": 43.42224629523807,
+ "prefill_tps_mean": 34.42281563842018,
+ "peak_vram_mib": 7583,
+ "tokens": 4608,
+ "cache_stats": [
+  "llama_moe_cache: ubatch <= 8: hits = 1018607, misses = 109773, hit rate = 90.27%, uploaded = 350223.04 MiB",
+  "llama_moe_cache: ubatch  > 8: hits = 9924, misses = 14074, hit rate = 41.35%, uploaded = 44902.11 MiB",
+  "llama_moe_cache: large batches: 2076 experts copied from the cache, 3311.67 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code0",
+   "decode_tps": 36.81834622095772,
+   "prefill_tps": 29.20122564592608,
+   "n": 256,
+   "n_prompt": 29,
+   "text": ""
+  },
+  {
+   "id": "code1",
+   "decode_tps": 43.919984333483235,
+   "prefill_tps": 39.707207268883515,
+   "n": 256,
+   "n_prompt": 29,
+   "text": ""
+  },
+  {
+   "id": "code2",
+   "decode_tps": 37.1126530569474,
+   "prefill_tps": 37.52911939294361,
+   "n": 256,
+   "n_prompt": 41,
+   "text": ""
+  },
+  {
+   "id": "code4",
+   "decode_tps": 46.74172593548065,
+   "prefill_tps": 31.409199045160353,
+   "n": 256,
+   "n_prompt": 31,
+   "text": ""
+  },
+  {
+   "id": "code5",
+   "decode_tps": 45.74509612569532,
+   "prefill_tps": 30.633954873219896,
+   "n": 256,
+   "n_prompt": 31,
+   "text": ""
+  },
+  {
+   "id": "code6",
+   "decode_tps": 56.228881093777424,
+   "prefill_tps": 39.13112705742021,
+   "n": 256,
+   "n_prompt": 29,
+   "text": ""
+  },
+  {
+   "id": "chat0",
+   "decode_tps": 42.20331072559904,
+   "prefill_tps": 29.844213207059152,
+   "n": 256,
+   "n_prompt": 30,
+   "text": ""
+  },
+  {
+   "id": "chat1",
+   "decode_tps": 50.93610574894852,
+   "prefill_tps": 39.353458453480634,
+   "n": 256,
+   "n_prompt": 33,
+   "text": ""
+  },
+  {
+   "id": "chat2",
+   "decode_tps": 49.48695611166819,
+   "prefill_tps": 33.39839836125192,
+   "n": 256,
+   "n_prompt": 27,
+   "text": ""
+  },
+  {
+   "id": "chat4",
+   "decode_tps": 47.154424638353305,
+   "prefill_tps": 33.88025748995692,
+   "n": 256,
+   "n_prompt": 28,
+   "text": ""
+  },
+  {
+   "id": "chat5",
+   "decode_tps": 46.88624752812945,
+   "prefill_tps": 32.49138108096504,
+   "n": 256,
+   "n_prompt": 28,
+   "text": ""
+  },
+  {
+   "id": "chat6",
+   "decode_tps": 50.01049239742455,
+   "prefill_tps": 34.109974822574834,
+   "n": 256,
+   "n_prompt": 32,
+   "text": ""
+  },
+  {
+   "id": "reason0",
+   "decode_tps": 32.0206981793031,
+   "prefill_tps": 55.54159170905243,
+   "n": 256,
+   "n_prompt": 59,
+   "text": ""
+  },
+  {
+   "id": "reason1",
+   "decode_tps": 34.63015806018966,
+   "prefill_tps": 30.508302212981846,
+   "n": 256,
+   "n_prompt": 27,
+   "text": ""
+  },
+  {
+   "id": "reason2",
+   "decode_tps": 50.36364526929342,
+   "prefill_tps": 35.10658544111425,
+   "n": 256,
+   "n_prompt": 38,
+   "text": ""
+  },
+  {
+   "id": "reason4",
+   "decode_tps": 49.1015381297513,
+   "prefill_tps": 29.572082427887043,
+   "n": 256,
+   "n_prompt": 31,
+   "text": ""
+  },
+  {
+   "id": "reason5",
+   "decode_tps": 47.39394628760431,
+   "prefill_tps": 30.137811994849173,
+   "n": 256,
+   "n_prompt": 33,
+   "text": ""
+  },
+  {
+   "id": "reason6",
+   "decode_tps": 34.331306260428136,
+   "prefill_tps": 28.05479100683635,
+   "n": 256,
+   "n_prompt": 28,
+   "text": ""
+  }
+ ]
+}

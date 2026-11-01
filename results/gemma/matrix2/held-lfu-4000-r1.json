@@ -1,0 +1,88 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-cmoe",
+  "--moe-cache-mib",
+  "4000",
+  "-lm",
+  "none"
+ ],
+ "decode_tps": 52.78284748638659,
+ "prefill_tps_mean": 96.19891194499718,
+ "peak_vram_mib": 6607,
+ "tokens": 768,
+ "cache_stats": [
+  "llama_moe_cache: swaps = 0",
+  "llama_moe_cache: hybrid: 1228 hot experts loaded",
+  "llama_moe_cache: hybrid: hits = 147483, misses = 53127, hit rate = 73.52%, uploaded = 0.00 MiB",
+  "llama_moe_cache: swaps = 2483"
+ ],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 52.369816676776374,
+   "prefill_tps": 71.93589073417769,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table (or similar):\n        *   `order_id` (Primary Key)\n        *   `customer_id` (Foreign Key)\n        *   `order_date` (Date/Timestamp)\n        *   `total_amount` (Decimal/Float) - *Note: Sometimes revenue is"
+  },
+  {
+   "id": "code7",
+   "decode_tps": 56.38022110813326,
+   "prefill_tps": 108.45320424991955,
+   "n": 128,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key Features:\n    *   Task queue (to hold pending work).\n    *   Worker threads (to execute tasks).\n    *   Graceful shutdown (ensuring all tasks are finished or at least threads exit cleanly).\n*   Language: C++ (modern C++ preferred, e.g., C++11 or later).\n\n    *   `std::vector<std::thread>`: To manage the worker threads.\n    *   `std::queue<std::function<void()>>`: To store the"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 50.91316979381769,
+   "prefill_tps": 89.37467518925915,
+   "n": 128,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm wedding toast.\nFriends, family, the couple.\nNostalgic, heartfelt, funny (but not embarrassing), and celebratory.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* A brief, lighthearted anecdote or a general description of the roommate dynamic (late-night talks, messy dorms, shared struggles).\n    *   *The \"Transition\" Section:* When the roommate met their partner. How the roommate changed for the better.\n    *   *The"
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 58.26698390821895,
+   "prefill_tps": 100.51008870015328,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills/Tools, Soft Skills, and Logistics.\n\n    A logical flow is essential for a \"how-to\" guide.\n    *   Phase 1: Research (The Foundation)\n    *   Phase 2: Self-Assessment & Portfolio (The Proof)\n    *   Phase 3: Mastering the Content"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 46.7513516478379,
+   "prefill_tps": 106.45424285068884,
+   "n": 128,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *   Constraint 1: Alice is not next to Bob ($A \\not\\leftrightarrow B$).\n    *   Constraint 2: Carol is at one end.\n    *   Goal: Find the total number of valid arrangements.\n\n    *   Total people = 5.\n    *   Total possible arrangements"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 53.62451020132414,
+   "prefill_tps": 100.46536994578459,
+   "n": 128,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about *association*.\n    *   *Causation (Causality):* A relationship where one event (the cause) directly makes another event happen (the effect). It's about *influence/production*.\n    *   *The Golden Rule:* \"Correlation does not imply causation.\" Just because two things"
+  }
+ ]
+}

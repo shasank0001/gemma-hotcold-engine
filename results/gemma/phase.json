@@ -1,0 +1,81 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "models/gemma-4-26B-A4B-it-Q4_0.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-t",
+  "6",
+  "-lm",
+  "none",
+  "-cmoe"
+ ],
+ "decode_tps": 25.685399250312507,
+ "prefill_tps_mean": 52.98365438176819,
+ "peak_vram_mib": 2595,
+ "tokens": 384,
+ "cache_stats": [],
+ "rows": [
+  {
+   "id": "code3",
+   "decode_tps": 25.448992946993386,
+   "prefill_tps": 45.10884764937795,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Find the top three customers by revenue per month.\n    *   Output: A list of customers, their revenue, and the month they achieved it.\n    *   Constraint: \"Top three\" implies a ranking within each month.\n\n    *   `Orders` table ("
+  },
+  {
+   "id": "code7",
+   "decode_tps": 25.7635940786264,
+   "prefill_tps": 54.77581173188335,
+   "n": 64,
+   "n_prompt": 30,
+   "text": "*   Goal: Implement a C++ thread pool.\n*   Key components:\n    *   Task queue (to hold work).\n    *   Worker threads (to execute work).\n    *   Graceful shutdown (to ensure all tasks are finished or at least threads exit cleanly).\n"
+  },
+  {
+   "id": "chat3",
+   "decode_tps": 25.9284654217162,
+   "prefill_tps": 52.20871885604896,
+   "n": 64,
+   "n_prompt": 27,
+   "text": "Old college roommate.\nWarm, heartfelt, celebratory.\nWedding toast.\n\n    *   *Introduction:* Who am I? How do I know the groom/bride?\n    *   *The \"College Years\" Section:* Shared memories, the \"chaos\" of college, seeing them grow."
+  },
+  {
+   "id": "chat7",
+   "decode_tps": 25.751241373334143,
+   "prefill_tps": 52.88566873928121,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "*   *Target Audience:* Someone preparing for their *first* job interview in marketing.\n    *   *Goal:* Provide a comprehensive, actionable guide to help them succeed.\n    *   *Key Areas to Cover:* Research, Portfolio/Work Samples, Common Questions, Technical Skills, Soft"
+  },
+  {
+   "id": "reason3",
+   "decode_tps": 25.528997293926288,
+   "prefill_tps": 59.933021194362794,
+   "n": 64,
+   "n_prompt": 41,
+   "text": "*   Five people: Alice (A), Bob (B), Carol (C), David (D), and Eve (E). (Note: The problem only names A, B, and C, but implies there are five people total. Let's call the others X and Y).\n    *"
+  },
+  {
+   "id": "reason7",
+   "decode_tps": 25.696948140703437,
+   "prefill_tps": 52.98985811965488,
+   "n": 64,
+   "n_prompt": 28,
+   "text": "*   Topic: Difference between correlation and causation.\n*   Requirement: Explanation + three real-world examples.\n\n    *   *Correlation:* A statistical relationship between two variables. When one changes, the other tends to change as well (either in the same direction or opposite). It's about"
+  }
+ ]
+}

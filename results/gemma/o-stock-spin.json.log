@@ -1,0 +1,655 @@
+0.02.779.684 I srv  llama_server: initializing ...
+0.02.779.696 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.02.779.787 I srv  init_listene: The UI is disabled
+0.02.779.787 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.02.779.844 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.02.781.882 I srv    load_model: loading model 'models/gemma-4-26B-A4B-it-Q4_0.gguf'
+0.03.098.489 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.03.282.752 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.03.282.783 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.03.286.686 W load: '</s>' is a normal token here, removing it from EOG list
+0.13.707.925 I cmn          init: llama threadpool init, n_threads = 6
+splits: 32
+splits: 32
+0.14.048.999 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+0.14.054.462 I srv  server_run_i: model loaded
+0.14.054.469 I srv  server_on_li: listening on http://127.0.0.1:18080
+0.14.825.402 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+0.14.825.477 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.17.764.857 I slot print_timing: id  0 | task 0 | prompt eval time =     815.19 ms /    30 tokens (   27.17 ms per token,    36.80 tokens per second)
+0.17.764.861 I slot print_timing: id  0 | task 0 |        eval time =    2124.16 ms /    96 tokens (   22.36 ms per token,    44.72 tokens per second)
+0.17.764.861 I slot print_timing: id  0 | task 0 |       total time =    2939.35 ms /   126 tokens
+0.17.764.865 I slot print_timing: id  0 | task 0 |    graphs reused =         95
+0.17.764.865 I slot print_timing: id  0 | task 0 |   graph reallocs =          1    /     0        (same size) / (changed size)
+0.17.764.892 I slot      release: id  0 | task 0 | stop processing: n_tokens = 125, truncated = 0
+0.17.785.900 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.433 (> 0.100 thold), f_keep = 0.104
+0.17.808.428 I slot launch_slot_: id  0 | task 99 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.20.247.135 I slot print_timing: id  0 | task 99 | prompt eval time =     619.32 ms /    30 tokens (   20.64 ms per token,    48.44 tokens per second)
+0.20.247.139 I slot print_timing: id  0 | task 99 |        eval time =    1819.37 ms /    96 tokens (   19.15 ms per token,    52.22 tokens per second)
+0.20.247.139 I slot print_timing: id  0 | task 99 |       total time =    2438.69 ms /   126 tokens
+0.20.247.140 I slot print_timing: id  0 | task 99 |    graphs reused =        189
+0.20.247.140 I slot print_timing: id  0 | task 99 |   graph reallocs =          2    /     0        (same size) / (changed size)
+0.20.247.155 I slot      release: id  0 | task 99 | stop processing: n_tokens = 125, truncated = 0
+0.20.267.317 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.481 (> 0.100 thold), f_keep = 0.104
+0.20.289.351 I slot launch_slot_: id  0 | task 198 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.22.613.610 I slot print_timing: id  0 | task 198 | prompt eval time =     600.04 ms /    27 tokens (   22.22 ms per token,    45.00 tokens per second)
+0.22.613.613 I slot print_timing: id  0 | task 198 |        eval time =    1724.20 ms /    96 tokens (   18.15 ms per token,    55.10 tokens per second)
+0.22.613.613 I slot print_timing: id  0 | task 198 |       total time =    2324.24 ms /   123 tokens
+0.22.613.614 I slot print_timing: id  0 | task 198 |    graphs reused =        283
+0.22.613.614 I slot print_timing: id  0 | task 198 |   graph reallocs =          3    /     0        (same size) / (changed size)
+0.22.613.626 I slot      release: id  0 | task 198 | stop processing: n_tokens = 122, truncated = 0
+0.22.632.993 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.393 (> 0.100 thold), f_keep = 0.090
+0.22.655.263 I slot launch_slot_: id  0 | task 297 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.24.937.067 I slot print_timing: id  0 | task 297 | prompt eval time =     593.24 ms /    28 tokens (   21.19 ms per token,    47.20 tokens per second)
+0.24.937.071 I slot print_timing: id  0 | task 297 |        eval time =    1688.55 ms /    96 tokens (   17.77 ms per token,    56.26 tokens per second)
+0.24.937.071 I slot print_timing: id  0 | task 297 |       total time =    2281.79 ms /   124 tokens
+0.24.937.071 I slot print_timing: id  0 | task 297 |    graphs reused =        377
+0.24.937.072 I slot print_timing: id  0 | task 297 |   graph reallocs =          4    /     0        (same size) / (changed size)
+0.24.937.084 I slot      release: id  0 | task 297 | stop processing: n_tokens = 123, truncated = 0
+0.24.957.902 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.268 (> 0.100 thold), f_keep = 0.089
+0.24.978.277 I slot launch_slot_: id  0 | task 396 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.28.329.904 I slot print_timing: id  0 | task 396 | prompt eval time =     898.35 ms /    41 tokens (   21.91 ms per token,    45.64 tokens per second)
+0.28.329.909 I slot print_timing: id  0 | task 396 |        eval time =    2453.26 ms /    96 tokens (   25.82 ms per token,    38.72 tokens per second)
+0.28.329.910 I slot print_timing: id  0 | task 396 |       total time =    3351.61 ms /   137 tokens
+0.28.329.911 I slot print_timing: id  0 | task 396 |    graphs reused =        471
+0.28.329.911 I slot print_timing: id  0 | task 396 |   graph reallocs =          5    /     0        (same size) / (changed size)
+0.28.329.936 I slot      release: id  0 | task 396 | stop processing: n_tokens = 136, truncated = 0
+0.28.349.646 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.393 (> 0.100 thold), f_keep = 0.081
+0.28.372.730 I slot launch_slot_: id  0 | task 495 | processing task, is_child = 0
+splits: 33
+splits: 33
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+splits: 32
+0.31.060.094 I slot print_timing: id  0 | task 495 | prompt eval time =     718.77 ms /    28 tokens (   25.67 ms per token,    38.96 tokens per second)
+0.31.060.096 I slot print_timing: id  0 | task 495 |        eval time =    1968.58 ms /    96 tokens (   20.72 ms per token,    48.26 tokens per second)
+0.31.060.097 I slot print_timing: id  0 | task 495 |       total time =    2687.35 ms /   124 tokens
+0.31.060.097 I slot print_timing: id  0 | task 495 |    graphs reused =        565
+0.31.060.098 I slot print_timing: id  0 | task 495 |   graph reallocs =          6    /     0        (same size) / (changed size)
+0.31.060.111 I slot      release: id  0 | task 495 | stop processing: n_tokens = 123, truncated = 0
+0.31.078.674 I srv    operator(): operator(): cleaning up before exit...
+llama_moe_cache: ubatch <= 8: hits = 128830, misses = 17418, hit rate = 88.09%, uploaded = 55570.90 MiB
+llama_moe_cache: ubatch  > 8: hits = 3536, misses = 4729, hit rate = 42.78%, uploaded = 15087.54 MiB

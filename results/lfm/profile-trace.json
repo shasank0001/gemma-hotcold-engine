@@ -1,0 +1,179 @@
+{
+ "cmd": [
+  "llama.cpp-engine/build-engine/bin/llama-server",
+  "-m",
+  "/home/shasank/shasank/Deep_learing/projects/custem-model/models/24B-Q4KM/LFM2.5-24B-A2B-Q4_K_M.gguf",
+  "--port",
+  "18080",
+  "-np",
+  "1",
+  "-c",
+  "4096",
+  "--no-webui",
+  "--cache-prompt",
+  "--temp",
+  "0",
+  "--seed",
+  "1",
+  "-ngl",
+  "99",
+  "-cmoe",
+  "--moe-cache-mib",
+  "5000"
+ ],
+ "decode_tps": 26.491266242183467,
+ "prefill_tps_mean": 25.889187266396476,
+ "peak_vram_mib": 6127,
+ "tokens": 4608,
+ "cache_stats": [
+  "llama_moe_cache: ubatch <= 8: hits = 535917, misses = 170447, hit rate = 75.87%, uploaded = 926900.72 MiB",
+  "llama_moe_cache: ubatch  > 8: hits = 5241, misses = 15004, hit rate = 25.89%, uploaded = 81323.09 MiB",
+  "llama_moe_cache: large batches: 1914 experts copied from the cache, 3467.32 MiB"
+ ],
+ "rows": [
+  {
+   "id": "code0",
+   "decode_tps": 24.412405369618654,
+   "prefill_tps": 21.14541170997658,
+   "n": 256,
+   "n_prompt": 24,
+   "text": ""
+  },
+  {
+   "id": "code1",
+   "decode_tps": 22.97489168690034,
+   "prefill_tps": 25.008570645564987,
+   "n": 256,
+   "n_prompt": 24,
+   "text": ""
+  },
+  {
+   "id": "code2",
+   "decode_tps": 22.39166123998171,
+   "prefill_tps": 27.078591356204164,
+   "n": 256,
+   "n_prompt": 35,
+   "text": ""
+  },
+  {
+   "id": "code4",
+   "decode_tps": 26.53169835643932,
+   "prefill_tps": 23.338072517925973,
+   "n": 256,
+   "n_prompt": 25,
+   "text": ""
+  },
+  {
+   "id": "code5",
+   "decode_tps": 22.058626986282047,
+   "prefill_tps": 23.57479056972108,
+   "n": 256,
+   "n_prompt": 26,
+   "text": ""
+  },
+  {
+   "id": "code6",
+   "decode_tps": 25.299539101925888,
+   "prefill_tps": 24.332856550404983,
+   "n": 256,
+   "n_prompt": 23,
+   "text": ""
+  },
+  {
+   "id": "chat0",
+   "decode_tps": 26.460840757415106,
+   "prefill_tps": 22.954008774169857,
+   "n": 256,
+   "n_prompt": 24,
+   "text": ""
+  },
+  {
+   "id": "chat1",
+   "decode_tps": 31.083247519191165,
+   "prefill_tps": 26.953989539855467,
+   "n": 256,
+   "n_prompt": 27,
+   "text": "I\u2019m really sorry you\u2019re dealing with that sting. It\u2019s completely understandable to feel hurt when someone you care about forgets a special day\u2014especially a birthday that\u2019s meant to be a reminder that you matter to them. Below are some practical steps and phrasing ideas that can help you bring it up in a way that feels honest, calm, and constructive.\n\n---\n\n## 1\ufe0f\u20e3 Check In With Yourself First\n\n| Question"
+  },
+  {
+   "id": "chat2",
+   "decode_tps": 28.108233232198806,
+   "prefill_tps": 26.215725788067513,
+   "n": 256,
+   "n_prompt": 23,
+   "text": "\n\nHere\u2019s a week of vegetarian dinners built for a busy family: simple, mostly one-pot or sheet-pan meals, with ingredients that overlap so you\u2019re not running to the store twice. Each dinner is designed to be on the table in 30 minutes or less (or less if you prep a little ahead).\n\n**Monday: One-Pan Chickpea Curry** \nSaut\u00e9 onion, garlic, and ginger; add curry powder, a can of chickpeas, coconut milk, and a handful of spinach. Simmer 10 minutes. Serve with quick-cook rice or naan. Leftovers reheat beautifully.\n\n**Tuesday: Pasta with Roasted Veggie Sauce** \nRoast zucchini, bell pepper, and cherry"
+  },
+  {
+   "id": "chat4",
+   "decode_tps": 30.239665357190333,
+   "prefill_tps": 23.777177584173913,
+   "n": 256,
+   "n_prompt": 22,
+   "text": ""
+  },
+  {
+   "id": "chat5",
+   "decode_tps": 31.62928787712654,
+   "prefill_tps": 26.02272256820615,
+   "n": 256,
+   "n_prompt": 22,
+   "text": ""
+  },
+  {
+   "id": "chat6",
+   "decode_tps": 30.68962105900134,
+   "prefill_tps": 26.500414191658848,
+   "n": 256,
+   "n_prompt": 27,
+   "text": ""
+  },
+  {
+   "id": "reason0",
+   "decode_tps": 24.26611188942418,
+   "prefill_tps": 46.355466965107574,
+   "n": 256,
+   "n_prompt": 49,
+   "text": ""
+  },
+  {
+   "id": "reason1",
+   "decode_tps": 25.074190103659653,
+   "prefill_tps": 24.04900500104785,
+   "n": 256,
+   "n_prompt": 21,
+   "text": ""
+  },
+  {
+   "id": "reason2",
+   "decode_tps": 30.13896188886902,
+   "prefill_tps": 25.454383472105178,
+   "n": 256,
+   "n_prompt": 28,
+   "text": ""
+  },
+  {
+   "id": "reason4",
+   "decode_tps": 27.713168058519777,
+   "prefill_tps": 24.407031177541626,
+   "n": 256,
+   "n_prompt": 25,
+   "text": ""
+  },
+  {
+   "id": "reason5",
+   "decode_tps": 29.408501617236936,
+   "prefill_tps": 25.507601265177026,
+   "n": 256,
+   "n_prompt": 29,
+   "text": ""
+  },
+  {
+   "id": "reason6",
+   "decode_tps": 24.629516534180794,
+   "prefill_tps": 23.3295511182278,
+   "n": 256,
+   "n_prompt": 22,
+   "text": ""
+  }
+ ]
+}
