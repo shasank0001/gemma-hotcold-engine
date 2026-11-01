@@ -73,7 +73,7 @@ The GPU kernel needs distinct expert ids within a token, so 24 all-zero slots st
 ```bash
 git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp
 git checkout 0ec4027
-git apply ../patches/engine.patch
+git apply ../patches/engine-frozen.patch
 cmake -B build -DCMAKE_BUILD_TYPE=Release -DGGML_CUDA=ON
 cmake --build build -j --target llama-server
 ```
@@ -99,4 +99,4 @@ These projects use different models and hardware, and none was benchmarked here,
 
 ## License
 
-MIT for the code in this repository. The patch modifies llama.cpp, which is MIT licensed; keep its notices.
+MIT for the code in this repository, see [LICENSE](LICENSE). The patch modifies llama.cpp, which is MIT licensed; its license is in [LICENSE-llama.cpp](LICENSE-llama.cpp).
