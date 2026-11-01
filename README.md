@@ -31,6 +31,17 @@ Short-prompt prefill also improved: at 5.9 GB it was 98.4 tok/s against 82.7 for
 
 Stock was also tried with `--n-cpu-moe` and `--moe-cache-mib` together and with 8 to 16 threads, on an earlier run. None beat stock's best single-mode settings.
 
+### Without MTP
+
+MTP is a stock feature, so this table shows the engine on its own. Same frozen build, no MTP on any engine, 2 alternating rounds. Stock varied by up to 5.4 tok/s between rounds while the engine stayed within about 1.2, so each stock figure is its faster round, which is the cautious comparison.
+
+| VRAM | Mixed prompts: stock -> engine | Unseen math prompts: stock -> engine |
+|---|---|---|
+| 4.6 GB | 35.0 -> 41.3 tok/s (+18%) | 36.0 -> 42.5 tok/s (+18%) |
+| 5.6 GB | 38.0 -> 46.8 tok/s (+23%) | 36.0 -> 49.8 tok/s (+38%) |
+| 6.6 GB | 40.0 -> 52.1 tok/s (+30%) | 40.3 -> 56.1 tok/s (+39%) |
+| 7.6 GB | 49.3 -> 57.8 tok/s (+17%) | 43.2 -> 61.8 tok/s (+43%) |
+
 ### Second model
 
 On an earlier build, without overlap or the MTP fix, on LFM2.5-24B-A2B Q4_K_M, with a hot list from that model's own profile, decode reached 55.3 tok/s at 6.2 GB against 50.5 for `--n-cpu-moe 26` (+9%), and 48.3 at 5.2 GB against 45.3 for `--n-cpu-moe 30` (+6%). Stock's layer split has better prefill on this model, and the engine varied more between runs (up to 3.6 tok/s).

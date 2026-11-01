@@ -83,3 +83,6 @@ Combined with overlap against the old engine in the same short test: 41.8 -> 52.
 
 ## 12:20 Final benchmark (frozen build, MTP on all, 3 reps, tools/final.sh)
 Mixed: 39.1 -> 55.6, 43.3 -> 72.6, 45.6 -> 81.2, 51.3 -> 91.2. Math: 48.9 -> 72.3, 53.3 -> 91.1, 57.9 -> 107.0, 61.2 -> 118.2 (4.9, 5.9, 6.9, 7.5 GB). Quality 58/60, 0 wrong. Soak 24 prompts (split all covers prompts.jsonl only), 71.5 tok/s, no faults. README, PITCH, page updated. Long prompts and logits not rerun on the final build.
+
+## 13:25 No-MTP on final build
+2 rounds, stock figure is its faster round. Gains 17-43%. In README and PITCH.

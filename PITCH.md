@@ -19,6 +19,8 @@ Our goal is an inference engine that fits itself to your hardware. This laptop i
 - MTP cache fix: swaps count every token that uses an expert. The GPU share of expert uses rose from 54% to 63% at 5.9 GB.
 
 ## Judge questions
+**How much of the gain is MTP?** MTP is a stock feature and stock used it too in our main table. Without MTP on either side, the final build is 17-43% faster than stock's faster round, from 2 rounds.
+
 **Did you build an engine from scratch?** No. It is a patch of about 500 lines on llama.cpp. We changed scheduling and expert handling, and reused its kernels.
 
 **Is this new?** Not entirely. Several forks explored hot/cold experts and we credit them in the README. We did not benchmark against them. Our work is the measurements on this hardware, the tuning for Gemma, and the MTP cache fix.
